@@ -39,17 +39,16 @@ Flow/
 
 The flow file structure is pretty basic.
 
-**_includes** contains:
+- **_includes** contains:
   - the head of our website (head.html)
   - the footer of our website (footer.html)
   - the navbar/header of our website (header.html)
-
-**_layouts** contains our layouts(templates) or the site.
-**_posts** contains all our posts(tutorials) that belong to the site.
-**inc** contains our styling files.
-**js** contains our javascript files.
-**index.html** our landing/home page.
-**contact.html** our contact page.
+- **_layouts** contains our layouts(templates) or the site.
+- **_posts** contains all our posts(tutorials) that belong to the site.
+- **inc** contains our styling files.
+- **js** contains our javascript files.
+- **index.html** our landing/home page.
+- **contact.html** our contact page.
 
 ## Posts
 #### Where are posts located?
