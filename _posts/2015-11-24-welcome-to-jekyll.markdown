@@ -9,15 +9,19 @@ materials: computer, internet connection
 blurb: "This is a basic introduction on how to write a post in jekyll."
 published: true
 ---
-## Where are posts located?
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# Simple post
 
-## How to add new posts?
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+This is a simple post written in markdown.
 
-## Still confused?
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## Sub-heading 1
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis. Nam fermentum risus nec velit rutrum, nec egestas urna fringilla. Praesent ornare lobortis porttitor. Sed sollicitudin vestibulum nunc. Maecenas cursus finibus accumsan. Suspendisse porta arcu euismod laoreet pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor nisl quis hendrerit placerat. Nam feugiat ex nunc, at lobortis felis elementum et. Aliquam erat volutpat. Suspendisse potenti. Maecenas et purus ante.
+
+## Sub-heading 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis. Nam fermentum risus nec velit rutrum, nec egestas urna fringilla. Praesent ornare lobortis porttitor. Sed sollicitudin vestibulum nunc. Maecenas cursus finibus accumsan. Suspendisse porta arcu euismod laoreet pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor nisl quis hendrerit placerat. Nam feugiat ex nunc, at lobortis felis elementum et. Aliquam erat volutpat. Suspendisse potenti. Maecenas et purus ante.
+
+
+If you want to read more on how to use markdown, use this link from [github](https://help.github.com/articles/markdown-basics/).
+
+
