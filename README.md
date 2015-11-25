@@ -12,7 +12,7 @@ All posts are written using markdown. Hence, the reason why post files have an e
 
 #### Front-matter and posts
 Each post requires the following front matter:
-`
+```
 layout: post
 title:  "Sample Title"
 date:   2015-11-24 13:46:32
@@ -22,17 +22,17 @@ author: Myles Enriquez
 materials: computer, internet connection
 blurb: "This is a basic introduction on how to write a post in jekyll."
 published: true
-`
+```
 
-- **layout** is the type of layout that this post will be using. Use 'post' as default.
-- **title** is the title given to this post
-- **date** is the date that this post was written. If you're updating the post please make sure to also update the date.
-- **category** is the category that this post belongs two. There can only be 1 category assigned to a post.
-- **tags** are the tags assigned to this post. There can be multiple tags assigned to a post.
-- **author** is the author of this post. If you're updating the post please make sure to also update the author.
-- **materials** are the materials needed to work through this post.
-- **blurb** is 1 - 3 sentences describing what this post is about.
-- **published** set this to **true** if you want the post to be published and **false** if you don't want it to be published.
+- **layout:** the type of layout that this post will be using. Use 'post' as default.
+- **title:** the title given to this post
+- **date:** the date that this post was written. If you're updating the post please make sure to also update the date.
+- **category:** the category that this post belongs two. There can only be 1 category assigned to a post.
+- **tags:** the tags assigned to this post. There can be multiple tags assigned to a post.
+- **author:** the author of this post. If you're updating the post please make sure to also update the author.
+- **materials:** the materials needed to work through this post.
+- **blurb:** 1 - 3 sentences describing what this post is about.
+- **published:** set this to **true** if you want the post to be published and **false** if you don't want it to be published.
 
 ## Further Reading
 #### Still confused?
