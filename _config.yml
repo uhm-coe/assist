@@ -9,7 +9,7 @@
 title: Flow
 email: prar@hawaii.edu
 description: Flow makes your life easier.
-baseurl: "/flow/flow" # the subpath of your site, e.g. /blog
+baseurl: "/flow" # the subpath of your site, e.g. /blog
 url: "https://flow.coe.hawaii.edu" # the base hostname & protocol for your site
 
 # Social Media
