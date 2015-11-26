@@ -1,5 +1,55 @@
 #Flow
 
+## File Structure
+Our basic file structure is as follows:
+
+**folder/** = folder/directory
+**file.ext** = file
+
+```
+Flow/
+|_includes/
+| |_head.html
+| |_footer.html
+| |_header.html
+|
+|_layouts/
+| |_default.html
+| |_page.html
+| |_post.html
+|
+|_posts/
+| |_YYYY-MM-DD-sample-post.markdown
+|
+|_inc/
+| |_css/
+| | |_bootstrap.min.css
+| | |_custom-styling.css
+| |
+| |_less/
+|   |_custom-styling.less
+|
+|_js/
+| |_jquery.min.js
+| |_bootstrap.min.js
+|
+|_index.html
+|_contact.html
+```
+
+The flow file structure is pretty basic.
+
+- **_includes** contains:
+  - the head of our website (head.html)
+  - the footer of our website (footer.html)
+  - the navbar/header of our website (header.html)
+- **_layouts** contains our layouts(templates) or the site.
+- **_posts** contains all our posts(tutorials) that belong to the site.
+- **inc** contains our styling files.
+- **js** contains our javascript files.
+- **index.html** our landing/home page.
+- **contact.html** our contact page.
+
 ## Posts
 #### Where are posts located?
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve` in your terminal, which launches a web server (localhost) and auto-regenerates your site when a file is updated.
