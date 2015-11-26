@@ -9,8 +9,8 @@
 title: Flow
 email: your-email@domain.com
 description: Flow makes your life easier.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/flow" # the subpath of your site, e.g. /blog
+url: "https://flow.coe.hawaii.edu/" # the base hostname & protocol for your site
 
 # Social Media
 #twitter_username: jekyllrb
