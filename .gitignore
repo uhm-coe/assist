@@ -1,3 +1,5 @@
 _site
 .sass-cache
 .jekyll-metadata
+flow.sublime-project
+flow.sublime-workspace
