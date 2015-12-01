@@ -29,9 +29,11 @@ Flow/
 | |_less/
 |   |_custom-styling.less
 |
-|_js/
-| |_jquery.min.js
-| |_bootstrap.min.js
+|_assets/
+| |_js/
+|   |_jquery.min.js
+|   |_bootstrap.min.js
+|   |_custom.js
 |
 |_index.html
 |_contact.html
