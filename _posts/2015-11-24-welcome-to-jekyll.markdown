@@ -2,7 +2,7 @@
 layout: post
 title:  "Sample Post"
 date:   2015-11-24 13:46:32 -1000
-category: category1
+category: category2
 tags: tag1, tag2, tag3
 author: Myles Enriquez
 materials: computer, internet connection
