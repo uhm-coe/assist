@@ -1,31 +1,43 @@
 ---
 layout: default
 ---
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="sidebar col-md-2">
-        <br />
-<!-- <form action="get" id="site_search"> -->
-  <label for="search_box">Search</label><input type="text" id="search_box" autocomplete="off">
-  <!-- <input type="submit" value="search"> -->
-<!-- </form> -->
-
-<ul id="search_results"></ul>
-        <h2><u>Categories</u></h2>
-        {% for post in site.posts %}
-          <input type="checkbox"> {{ post.category }} <br />
-        {% endfor %}
-      </div>
-      <div class="content col-md-offset-2">
-        {{ content }}
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>{{ page.title }}</h1>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
 
-</article>
+  <div class="container">
+    <div class="row">
+      <div class="sidebar col-md-4">
+        <br />
+        <!-- <form action="get" id="site_search"> -->
+          <!-- <label for="search_box">Search</label><input type="text" id="search_box" autocomplete="off" /> -->
+          <!-- <input type="submit" value="search"> -->
+        <!-- </form> -->
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for..." />
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div>
+
+        <ul id="search_results"></ul>
+        <ul class="list-group">
+          <h2>Categories</h2>
+          {% for post in site.posts %}
+            <li class="list-group-item">
+              <input type="checkbox"> {{ post.category }} <br />
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="content col-md-8">
+        {{ content }}
+      </div>
+    </div><!-- .row -->
+  </div><!-- .container-fluid -->
