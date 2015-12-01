@@ -21,8 +21,8 @@ jQuery(function() {
   });
 
   // Event when the form is submitted
-  $("#site_search").submit(function(){
-      event.preventDefault();
+  $("#search_box").on('keypress', function(){
+      // event.preventDefault();
       var query = $("#search_box").val(); // Get the value for the text field
       var results = window.idx.search(query); // Get lunr to perform a search
       display_search_results(results); // Hand the results off to be displayed
@@ -41,7 +41,7 @@ jQuery(function() {
         // Iterate over the results
         results.forEach(function(result) {
           var item = loaded_data[result.ref];
-          console.log(loaded_data[result.ref]);
+          // console.log(loaded_data[result.ref]);
 
           // Build a snippet of HTML for this result
           var appendString = '<li><a href="' + item.url + '">' + item.title + '</a></li>';
