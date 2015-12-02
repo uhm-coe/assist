@@ -70,7 +70,7 @@ layout: post
 title:  "Sample Title"
 date:   2015-11-24 13:46:32
 category: category1
-tags: tag1, tag2, tag3
+tags: tag1 tag2 tag3
 author: firstName lastName
 materials: computer, internet connection
 blurb: "This is a basic introduction on how to write a post in jekyll."
@@ -88,6 +88,7 @@ published: true
   - **NOTE:** There can only be 1 category assigned to a post.
 - **tags:** the tags assigned to this post.
   - There can be multiple tags assigned to a post.
+  - **NOTE:** For multiple tags, separate them with a single space.
 - **author:** the author of this post.
   - If you're updating the post please make sure to also update the author.
 - **materials:** the materials needed to work through this post.
