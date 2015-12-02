@@ -3,7 +3,10 @@ layout: post
 title:  "How to shorten a URL"
 date:   2015-11-24 16:57:00 -1000
 category: How-to
-tags: tag1 tag2 tag3
+tags:
+- tag one
+- tag two is long
+- tag three
 author: Myles Enriquez
 materials: Computer, Internet Connection
 blurb: "Have you ever had to share a website link that was long and hard to remember? TinyUrl is a service that shortens your URLs into a short and sweet link that is easier to remember."
