@@ -3,16 +3,16 @@
 /* Base */
 /* ----------------------------------------------------------*/
 body {
-  padding-bottom: 186px;
   font-size: 18px;
+  color: #434343;
+  font-family: 'Montserrat', sans-serif;
 }
 a {
-  color: #2a7ae2;
+  color: #00b5e2;
   text-decoration: none;
 }
 a:hover {
   color: #000;
-  text-decoration: underline;
 }
 a:visited {
   color: #205caa;
@@ -28,10 +28,40 @@ ul {
 /* ----------------------------------------------------------*/
 /* Home styles */
 /* ----------------------------------------------------------*/
+#home {
+  margin-bottom: 50px;
+}
+#home .page-heading {
+  font-size: 48px;
+  font-weight: 700;
+}
+#home .post-link {
+  color: #666666;
+  font-weight: 700;
+  text-decoration: none;
+}
+#home .post-link:hover {
+  color: #B7B7B7;
+}
+#home .post-link:visited {
+  color: #666666;
+}
+#home .post-blurb {
+  color: #666666;
+  padding: 10px 0px;
+}
 #home .post-meta {
   font-size: 12px;
   color: grey;
   font-weight: 400;
+}
+#home .tag-label {
+  background-color: #00a499;
+  color: white;
+  font-size: 14px;
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 3px;
 }
 /* Post styles */
 /* ----------------------------------------------------------*/
