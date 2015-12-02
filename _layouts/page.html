@@ -13,7 +13,7 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="sidebar col-md-4">
+      <div class="sidebar col-md-3">
         <br />
         <!-- <form action="get" id="site_search"> -->
           <label for="search_box">Search</label><input type="text" id="search_box" autocomplete="off" />
@@ -29,14 +29,14 @@ layout: default
         <ul id="search_results"></ul>
         <ul class="list-group">
           <h2>Categories</h2>
-          {% for post in site.posts %}
+          {% for category in site.categories %}
             <li class="list-group-item">
-              <input type="checkbox"> {{ post.category }} <br />
+              <input type="checkbox"> {{ category | first }} <br />
             </li>
           {% endfor %}
         </ul>
       </div>
-      <div class="content col-md-8">
+      <div class="content col-md-9">
         {{ content }}
       </div>
     </div><!-- .row -->
