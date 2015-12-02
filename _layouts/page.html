@@ -23,11 +23,11 @@ layout: default
         </div>
 
         <ul id="search_results"></ul>
-        <ul class="list-group">
+        <ul class="list-group" id="filter">
           <h2>Categories</h2>
           {% for category in site.categories %}
             <li class="list-group-item">
-              <input type="checkbox"> {{ category | first }} <br />
+              <input type="checkbox" value="{{ category | first }}"> {{ category | first }} <br />
             </li>
           {% endfor %}
         </ul>
