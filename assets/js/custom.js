@@ -41,7 +41,6 @@ jQuery(function() {
         // Iterate over the results
         results.forEach(function(result) {
           var item = loaded_data[result.ref];
-          // console.log(loaded_data[result.ref]);
 
           // Build a snippet of HTML for this result
           var appendString = '<li><a href="' + item.url + '">' + item.title + '</a></li>';
