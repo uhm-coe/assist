@@ -39,7 +39,7 @@ Flow/
 |_contact.html
 ```
 
-The flow file structure is pretty basic.
+The flow file structure is pretty simple.
 
 - **_includes** contains:
   - the head of our website (head.html)
