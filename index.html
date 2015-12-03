@@ -1,15 +1,18 @@
 ---
 layout: page
+title: Tutorials
+weight: 1
 ---
 
 <div id="home">
 
   <h1 class="page-heading">Tutorials</h1>
+  <hr />
   {% for post in paginator.posts %}
     <h2>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
-    <p class="post-meta">Posted {{ post.date | date: "%b %-d, %Y" }}  |  By {{ post.author }} in <b>{{ post.category }}</b></p>
+    <p class="post-meta">Posted {{ post.date | date: "%b %-d, %Y" }}  |  By {{ post.author }} in <b class="highlight-orange">{{ post.category }}</b></p>
 
     {% if post.blurb %}
       <p class="post-blurb">
