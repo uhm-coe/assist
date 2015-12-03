@@ -13,6 +13,7 @@ a {
 }
 a:hover {
   color: #000;
+  text-decoration: underline;
 }
 a:visited {
   color: #205caa;
@@ -20,13 +21,57 @@ a:visited {
 ul {
   list-style-type: none;
 }
+.highlight-orange {
+  color: #F68932;
+}
+a.btn-info {
+  margin: 10px 0px;
+  background-color: #8CC63E;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+a.btn-info:hover {
+  background-color: #A0D062;
+}
 /* Layout Styles */
 /* ----------------------------------------------------------*/
-/* Site header */
-/* Site footer */
-/* Page Content styles */
+/* Site header (header.html) */
+#header {
+  background-color: #434343;
+  border-radius: 0px;
+  border: none;
+}
+#header a {
+  color: white;
+}
+#header a.navbar-brand {
+  font-weight: 700;
+}
+#header .active a {
+  background-color: #666666;
+}
+/* Site footer (footer.html) */
+#footer {
+  margin-bottom: 0px;
+  border: none;
+}
+#footer #help-container {
+  color: white;
+  padding: 30px 0px;
+  background-color: #666666;
+}
+#footer #links-container {
+  padding: 30px 50px;
+  background-color: #434343;
+}
+#footer #links-container li {
+  color: white;
+  list-style-type: none;
+}
+/* Page Content styles (page.html) */
 /* ----------------------------------------------------------*/
-/* Home styles */
+/* Home styles (index.html) */
 /* ----------------------------------------------------------*/
 #home {
   margin-bottom: 50px;
@@ -57,13 +102,66 @@ ul {
 }
 #home .tag-label {
   background-color: #00a499;
+  border-radius: 0 2px 2px 0;
   color: white;
-  font-size: 14px;
-  padding: 5px 15px;
   display: inline-block;
-  border-radius: 3px;
+  font-size: 14px;
+  height: 40px;
+  left: 0;
+  line-height: 40px;
+  padding: 0px 15px;
+  margin: 0px 0px 10px 15px;
+  position: relative;
+  top: 0;
 }
-/* Post styles */
+#home .tag-label:before {
+  border-bottom: 20px transparent solid;
+  border-right: 12px #00a499 solid;
+  border-top: 20px transparent solid;
+  content: '';
+  height: 0;
+  left: -12px;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+#home .tag-label:after {
+  background: white;
+  border: 2px #add solid;
+  border-radius: 50%;
+  content: '';
+  height: 6px;
+  left: 0;
+  position: absolute;
+  width: 6px;
+  top: 16px;
+}
+/* Post styles (post.html) */
 /* ----------------------------------------------------------*/
+.tutorial-post h1,
+.tutorial-post h2,
+.tutorial-post h3,
+.tutorial-post h4,
+.tutorial-post h5,
+.tutorial-post h6 {
+  font-weight: 700;
+}
+.tutorial-post p {
+  color: #666666;
+}
+.tutorial-post .details {
+  background-color: #00a499;
+  color: white;
+  font-weight: 700;
+  padding: 10px 5px;
+}
+.tutorial-post .tutorial-title {
+  font-weight: 700;
+}
+.tutorial-post .tutorial-blurb {
+  color: #666666;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
 /* media queries */
 /* ----------------------------------------------------------*/

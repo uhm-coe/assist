@@ -25,35 +25,81 @@ a {
 	text-decoration: none;
 	&:hover {
 		color: #000;
+		text-decoration: underline;
 	}
 	&:visited {
 		color: #205caa;
 	}
 }
-
 ul {
 	list-style-type: none;
+}
+.highlight-orange {
+	color: #F68932;
+}
+a {
+	&.btn-info {
+		margin: 10px 0px;
+		background-color: #8CC63E;
+		border-radius: 3px;
+		border: none;
+		color: white;
+		&:hover {
+			background-color: #A0D062;
+		}
+	}
 }
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
 
-/* Site header */
+/* Site header (header.html) */
+
+#header {
+	background-color: #434343;
+	border-radius: 0px;
+	border: none;
+	a {
+		color: white;
+		&.navbar-brand {
+			font-weight: 700;
+		}
+	}
+	.active {
+		a {
+			background-color: #666666;
+		}
+	}
+}
+
+/* Site footer (footer.html) */
+#footer {
+	margin-bottom: 0px;
+	border: none;
+	#help-container {
+		color: white;
+		padding: 30px 0px;
+		background-color: #666666;
+	}
+	#links-container {
+		padding: 30px 50px;
+		background-color: #434343;
+		li {
+			color: white;
+			list-style-type: none;
+		}
+	}
+}
 
 
 
-/* Site footer */
-
-
-
-
-/* Page Content styles */
+/* Page Content styles (page.html) */
 /* ----------------------------------------------------------*/
 
 
 
 
-/* Home styles */
+/* Home styles (index.html) */
 /* ----------------------------------------------------------*/
 #home {
 	margin-bottom: 50px;
@@ -82,20 +128,69 @@ ul {
 		font-weight: 400;
 	}
 	.tag-label {
-		background-color: #00a499;
-		color: white;
-		font-size: 14px;
-		padding: 5px 15px;
-		display: inline-block;
-		border-radius: 3px;
+	  background-color: #00a499;
+	  border-radius: 0 2px 2px 0;
+	  color: white;
+	  display: inline-block;
+	  font-size: 14px;
+	  height: 40px;
+	  left: 0;
+	  line-height: 40px;
+	  padding: 0px 15px;
+	  margin: 0px 0px 10px 15px;
+	  position: relative;
+	  top: 0;
+	  &:before { // triangle shape on left
+			border-bottom: 20px transparent solid;
+		  border-right: 12px #00a499 solid;
+		  border-top: 20px transparent solid;
+		  content: '';
+		  height: 0;
+		  left: -12px;
+		  position: absolute;
+		  top: 0;
+		  width: 0;
+	  }
+	  &:after { // "hole"
+			background: white; // hole background
+		  border: 2px #add solid; // hole border
+		  border-radius: 50%;
+		  content: '';
+		  height: 6px;
+		  left: 0;
+		  position: absolute;
+		  width: 6px;
+		  top: 16px;
+	  }
 	}
 }
 
 
 
-/* Post styles */
+/* Post styles (post.html) */
 /* ----------------------------------------------------------*/
-
+.tutorial-post {
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 700;
+	}
+	p {
+		color: #666666;
+	}
+	.details {
+		background-color: #00a499;
+		color: white;
+		font-weight: 700;
+		padding: 10px 5px;
+	}
+	.tutorial-title {
+		font-weight: 700;
+	}
+	.tutorial-blurb {
+		color: #666666;
+		margin-bottom: 20px;
+		font-weight: 400;
+	}
+}
 
 
 
