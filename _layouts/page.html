@@ -15,25 +15,7 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="sidebar col-md-3">
-        <br />
-        <div class="input-group">
-          <input type="text" class="form-control" id="search_box" autocomplete="off" placeholder="Search for..." />
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
-          </span>
-        </div>
-
-        <ul id="search_results"></ul>
-        <ul class="list-group" id="filter">
-          <h2>Categories</h2>
-          {% for category in site.categories %}
-            <li class="list-group-item">
-              <input type="checkbox" value="{{ category | first }}"> {{ category | first }} <br />
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+      {% include sidebar.html %}
       <div class="content col-md-9">
         {{ content }}
       </div>
