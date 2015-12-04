@@ -1,12 +1,16 @@
 ---
 layout: post
-title:  "Adding an ITS Wireless Passthrough"
+title:  "Sample Post 1"
 date:   2015-11-24 13:46:32 -1000
 category: How-to
-tags: ITS
+tags:
+- Tag One
+- Tag Two
+- Tag Three
+- Tag Four
 author: Myles Enriquez
 materials: Computer, Internet Connection
-blurb: "Tired of having to type in your password to connect to the Internet every time you come on campus? This tutorial can help save your information to avoid having to login each time."
+blurb: "This post is just used as a 'dummy' post and will eventually get deleted. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis."
 published: true
 ---
 # Adding an ITS Wireless Passthrough

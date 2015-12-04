@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Sample Post 4"
+title:  "Sample Post 5"
 date:   2015-11-24 13:46:32 -1000
-category: How-to
+category: Strategies
 tags:
 - Tag One
 - Tag Two

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sample Post 4"
+title:  "Sample Post 7"
 date:   2015-11-24 13:46:32 -1000
 category: How-to
 tags:
@@ -10,7 +10,7 @@ tags:
 - Tag Four
 author: Myles Enriquez
 materials: Computer, Internet Connection
-blurb: "This post is just used as a 'dummy' post and will eventually get deleted. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis."
+blurb: "This post is just used as a 'dummy' post and will eventually get deleted. This post blurb is bigger than the usual. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis."
 published: true
 ---
 # Adding an ITS Wireless Passthrough

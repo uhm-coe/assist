@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "How to shorten a URL"
-date:   2015-11-24 16:57:00 -1000
-category: How-to
+title:  "Sample Post 2"
+date:   2015-11-24 13:46:32 -1000
+category: Strategies
 tags:
-- tag one
-- tag two is long
-- tag three
+- Tag One
+- Tag Two
+- Tag Three
+- Tag Four
 author: Myles Enriquez
 materials: Computer, Internet Connection
-blurb: "Have you ever had to share a website link that was long and hard to remember? TinyUrl is a service that shortens your URLs into a short and sweet link that is easier to remember."
+blurb: "This post is just used as a 'dummy' post and will eventually get deleted. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis."
 published: true
 ---
-# Shortening your URL
+# Adding an ITS Wireless Passthrough
 
 This is a simple post written in markdown.
 
