@@ -65,7 +65,7 @@ All posts are written using markdown. Hence, the reason why post files have an e
 #### Front-matter and posts
 Each post requires the following front matter:
 ```
-===
+---
 layout: post
 title:  "Sample Title"
 date:   2015-11-24 13:46:32
@@ -78,7 +78,7 @@ author: firstName lastName
 materials: computer, internet connection
 blurb: "This is a basic introduction on how to write a post in jekyll."
 published: true
-===
+---
 ```
 
 - **layout:** the type of layout that this post will be using.
