@@ -136,6 +136,15 @@ a.btn-info:hover {
   width: 6px;
   top: 16px;
 }
+#home .pager li > a {
+  background-color: #F68932;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 15px;
+}
+#home .pager li > a:hover {
+  background-color: #F9B176;
+}
 /* Post styles (post.html) */
 /* ----------------------------------------------------------*/
 .tutorial-post h1,
