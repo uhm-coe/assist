@@ -172,5 +172,14 @@ a.btn-info:hover {
   margin-bottom: 20px;
   font-weight: 400;
 }
+/* Sidebar styles (sidebar.html) */
+/* ----------------------------------------------------------*/
+.sidebar-container {
+  heigh: 100%;
+  background-color: grey;
+}
+.sidebar-container .sidebar-content {
+  color: white;
+}
 /* media queries */
 /* ----------------------------------------------------------*/
