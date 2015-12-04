@@ -1,0 +1,33 @@
+<div class="sidebar-container col-md-3">
+  <ul id="sidebar-content">
+    <li>
+      <a href="#">Search</a>
+    </li>
+    {% if site.categories %}
+    <li class="collapsed active" data-toggle="collapse" data-target="#categories">
+      <a href="#">Categories</a>
+    </li>
+    <ul id="categories" class="sub-menu collapse">
+      {% for category in site.categories %}
+      <li><a href="#">{{ category | first }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </ul>
+  <!-- <div class="input-group">
+    <input type="text" class="form-control" id="search_box" autocomplete="off" placeholder="Search for..." />
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button">Go!</button>
+    </span>
+  </div>
+
+  <ul id="search_results"></ul>
+  <ul class="list-group" id="filter">
+    <h2>Categories</h2>
+    {% for category in site.categories %}
+      <li class="list-group-item">
+        <input type="checkbox" value="{{ category | first }}"> {{ category | first }} <br />
+      </li>
+    {% endfor %}
+  </ul> -->
+</div><!-- .sidebar-container -->
