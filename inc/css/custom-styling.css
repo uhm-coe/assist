@@ -1,6 +1,6 @@
 /* Colors */
 /* ----------------------------------------------------------*/
-/* Base */
+/* Base styling */
 /* ----------------------------------------------------------*/
 body {
   font-size: 18px;
@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #000;
+  color: #000000;
   text-decoration: underline;
 }
 a:visited {
@@ -22,28 +22,32 @@ ul {
   list-style-type: none;
 }
 .highlight-orange {
-  color: #F68932;
+  color: #f68932;
+}
+.highlight-violet-red {
+  color: #ed1555;
 }
 a.btn-info {
   margin: 10px 0px;
-  background-color: #8CC63E;
+  background-color: #f68932;
   border-radius: 3px;
   border: none;
-  color: white;
+  color: #ffffff;
 }
 a.btn-info:hover {
-  background-color: #A0D062;
+  background-color: #a0d062;
 }
-/* Layout Styles */
+/* _includes styles */
 /* ----------------------------------------------------------*/
 /* Site header (header.html) */
 #header {
+  margin-bottom: 0px;
   background-color: #434343;
   border-radius: 0px;
   border: none;
 }
 #header a {
-  color: white;
+  color: #ffffff;
 }
 #header a.navbar-brand {
   font-weight: 700;
@@ -57,7 +61,7 @@ a.btn-info:hover {
   border: none;
 }
 #footer #help-container {
-  color: white;
+  color: #ffffff;
   padding: 30px 0px;
   background-color: #666666;
 }
@@ -66,13 +70,34 @@ a.btn-info:hover {
   background-color: #434343;
 }
 #footer #links-container li {
-  color: white;
+  color: #ffffff;
   list-style-type: none;
 }
-/* Page Content styles (page.html) */
+/* Site sidebar (sidebar.html) */
+.sidebar-container {
+  padding: 0px;
+  background-color: #666666;
+}
+.sidebar-container a {
+  color: #ffffff;
+}
+.sidebar-container ul {
+  padding-left: 0px;
+}
+.sidebar-container li {
+  padding: 10px 15px;
+}
+.sidebar-container .sidebar-content {
+  margin-bottom: 0px;
+  font-weight: 700;
+  background-color: #434343;
+}
+.sidebar-container .sidebar-content .sub-menu {
+  background-color: #666666;
+}
+/* _layouts styles */
 /* ----------------------------------------------------------*/
-/* Home styles (index.html) */
-/* ----------------------------------------------------------*/
+/* Front-page styling (index.html) */
 #home {
   margin-bottom: 50px;
 }
@@ -86,24 +111,25 @@ a.btn-info:hover {
   text-decoration: none;
 }
 #home .post-link:hover {
-  color: #B7B7B7;
+  color: #b7b7b7;
+  text-decoration: underline;
 }
 #home .post-link:visited {
   color: #666666;
+}
+#home .post-meta {
+  font-size: 12px;
+  color: #999999;
+  font-weight: 400;
 }
 #home .post-blurb {
   color: #666666;
   padding: 10px 0px;
 }
-#home .post-meta {
-  font-size: 12px;
-  color: grey;
-  font-weight: 400;
-}
 #home .tag-label {
-  background-color: #00a499;
+  background-color: #00a9a6;
   border-radius: 0 2px 2px 0;
-  color: white;
+  color: #ffffff;
   display: inline-block;
   font-size: 14px;
   height: 40px;
@@ -116,7 +142,7 @@ a.btn-info:hover {
 }
 #home .tag-label:before {
   border-bottom: 20px transparent solid;
-  border-right: 12px #00a499 solid;
+  border-right: 12px #00a9a6 solid;
   border-top: 20px transparent solid;
   content: '';
   height: 0;
@@ -126,7 +152,7 @@ a.btn-info:hover {
   width: 0;
 }
 #home .tag-label:after {
-  background: white;
+  background: #ffffff;
   border: 2px #add solid;
   border-radius: 50%;
   content: '';
@@ -137,16 +163,16 @@ a.btn-info:hover {
   top: 16px;
 }
 #home .pager li > a {
-  background-color: #F68932;
+  background-color: #f68932;
   border-radius: 3px;
-  color: white;
+  color: #ffffff;
   padding: 5px 15px;
 }
 #home .pager li > a:hover {
-  background-color: #F9B176;
+  background-color: #a0d062;
 }
-/* Post styles (post.html) */
-/* ----------------------------------------------------------*/
+/* Single-page styling (page.html) */
+/* Single-post styling (post.html) */
 .tutorial-post h1,
 .tutorial-post h2,
 .tutorial-post h3,
@@ -159,8 +185,8 @@ a.btn-info:hover {
   color: #666666;
 }
 .tutorial-post .details {
-  background-color: #00a499;
-  color: white;
+  background-color: #00a9a6;
+  color: #ffffff;
   font-weight: 700;
   padding: 10px 5px;
 }
@@ -171,15 +197,6 @@ a.btn-info:hover {
   color: #666666;
   margin-bottom: 20px;
   font-weight: 400;
-}
-/* Sidebar styles (sidebar.html) */
-/* ----------------------------------------------------------*/
-.sidebar-container {
-  heigh: 100%;
-  background-color: grey;
-}
-.sidebar-container .sidebar-content {
-  color: white;
 }
 /* media queries */
 /* ----------------------------------------------------------*/
