@@ -21,3 +21,4 @@ paginate_path: "/page:num/"
 gems:
 - jekyll-paginate
 - jekyll-time-to-read
+- jekyll-lunr-js-search
