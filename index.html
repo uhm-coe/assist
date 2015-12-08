@@ -28,6 +28,18 @@ weight: 1
     <hr />
   {% endfor %}
 
+  {% raw %}
+  <script id="search-results-template" type="text/mustache">
+    {{#entried}}
+      <article>
+        <h3>
+          <a href="{{url}}">{{title}}</a>
+        </h3>
+      </article>
+    {{/entries}}
+  </script>
+  {% endraw %}
+
   <!-- Pager -->
   {% if paginator.total_pages > 1 %}
     <ul class="pager">
@@ -50,5 +62,5 @@ weight: 1
 
 <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/lunr.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/search.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
 <script type="text/javascript" src="{{ "/assets/js/custom.js" | prepend: site.baseurl }}"></script>
