@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sample Post 6"
+title:  "Sample Post 6 - Sequential Post"
 date:   2015-11-24 13:46:32 -1000
 category: Troubleshooting
 tags:
@@ -15,15 +15,10 @@ published: true
 ---
 # Adding an ITS Wireless Passthrough
 
-This is a simple post written in markdown.
+This is a simple post written in markdown. This post uses inline html to help format the post.
 
-## Sub-heading 1
+<span class="col-xs-12 col-md-8">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="col-xs-12 col-md-4">![](http://placehold.it/500x300)</span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis. Nam fermentum risus nec velit rutrum, nec egestas urna fringilla. Praesent ornare lobortis porttitor. Sed sollicitudin vestibulum nunc. Maecenas cursus finibus accumsan. Suspendisse porta arcu euismod laoreet pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor nisl quis hendrerit placerat. Nam feugiat ex nunc, at lobortis felis elementum et. Aliquam erat volutpat. Suspendisse potenti. Maecenas et purus ante.
+<span class="col-xs-12 col-md-8">2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="col-xs-12 col-md-4">![](http://placehold.it/500x300)</span>
 
-## Sub-heading 2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis libero at tempor luctus. Suspendisse bibendum sem sed metus fermentum, convallis pharetra lorem iaculis. Nam fermentum risus nec velit rutrum, nec egestas urna fringilla. Praesent ornare lobortis porttitor. Sed sollicitudin vestibulum nunc. Maecenas cursus finibus accumsan. Suspendisse porta arcu euismod laoreet pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor nisl quis hendrerit placerat. Nam feugiat ex nunc, at lobortis felis elementum et. Aliquam erat volutpat. Suspendisse potenti. Maecenas et purus ante.
-
-
-If you want to read more on how to use markdown, use this link from [github](https://help.github.com/articles/markdown-basics/).
+<span class="col-xs-12 col-md-8">3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="col-xs-12 col-md-4">![](http://placehold.it/500x300)</span>
