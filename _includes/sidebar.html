@@ -5,12 +5,15 @@
     </li>
     <ul id="search-field" class="sub-menu collapse">
       <li>
-        <div class="input-group">
-          <input type="text" class="form-control" id="search_box" autocomplete="off" placeholder="Search for..." />
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
-          </span>
+        <div id="search" class="input-group">
+          <form action="/sidebar" method="get">
+            <input type="text" id="search-query" name="q" placeholder="Enter a keyword..." class="form-control" autocomplete="off" />
+          </form>
         </div>
+        <section id="search-results" style="display: none;">
+          <p>Search Results:</p>
+          <div class="entries"></div>
+        </section>
       </li>
     </ul>
     {% if site.categories %}
