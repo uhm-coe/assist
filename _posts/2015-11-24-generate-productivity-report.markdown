@@ -1,7 +1,12 @@
 ---
 layout: post
+<<<<<<< Updated upstream:_posts/2015-12-01-generate-productivity-report.markdown
 title:  "Sample Post 4"
 date:   2015-11-24 13:46:32 -1000
+=======
+title:  "Generate COE Departmental Productivity Reports Using The Academic Productivity Tool"
+date:   2015-11-24 16:57:00 -1000
+>>>>>>> Stashed changes:_posts/2015-11-24-generate-productivity-report.markdown
 category: How-to
 tags:
 - Tag One
