@@ -185,10 +185,11 @@ a.btn-info:hover {
   color: #666666;
 }
 .tutorial-post .details {
+  margin-top: 20px;
+  padding: 10px 5px;
   background-color: #00a9a6;
   color: #ffffff;
   font-weight: 700;
-  padding: 10px 5px;
 }
 .tutorial-post .tutorial-title {
   font-weight: 700;
@@ -197,6 +198,16 @@ a.btn-info:hover {
   color: #666666;
   margin-bottom: 20px;
   font-weight: 400;
+}
+.tutorial-post .tutorial-content p {
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.tutorial-post .tutorial-content img {
+  margin-bottom: 30px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* media queries */
 /* ----------------------------------------------------------*/
