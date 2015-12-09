@@ -240,15 +240,26 @@ a {
 		font-weight: 400;
 	}
 	.tutorial-content {
-		p {
-			margin-bottom: 30px;
-			font-weight: 400;
-		}
-		img {
-			margin-bottom: 30px;
-			display: block;
-			max-width: 100%;
-			height: auto;
+		ol {
+			margin-top: 50px;
+			padding-left: 30px;
+			li {
+				margin-bottom: 50px;
+				padding-left: 20px;
+			}
+			p {
+				font-weight: 400;
+				vertical-align: top;
+				display: inline-block;
+				width: 45%;
+				img {
+					padding-right: 0px;
+					border-radius: 3px;
+					display: block;
+					max-width: 100%;
+					height: auto;
+				}
+			}
 		}
 	}
 }
@@ -258,3 +269,25 @@ a {
 
 /* media queries */
 /* ----------------------------------------------------------*/
+@media (min-width: 992px) {
+	ol {
+		margin-top: 50px;
+		padding-left: 30px;
+		li {
+			margin-bottom: 50px;
+		}
+		p {
+			font-weight: 400;
+			vertical-align: top;
+			display: block;
+			width: 100%;
+			img {
+				padding-right: 0px;
+				border-radius: 3px;
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
