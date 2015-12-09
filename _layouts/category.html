@@ -1,34 +1,38 @@
 ---
 layout: page
-weight: 1
 ---
-
 <div id="home">
 
-  <h1 class="page-heading">Tutorials</h1>
-  <hr />
-  {% for post in paginator.posts %}
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <p class="post-meta">Posted {{ post.date | date: "%b %-d, %Y" }}  |  By {{ post.author }} in <b class="highlight-violet-red">{{ post.category }}</b></p>
+	{% unless page.content == '' %}
+	<p>{{ page.content }}</p>
+	{% endunless %}
 
-    {% if post.blurb %}
-      <p class="post-blurb">
-        {{ post.blurb }}
-      </p>
-    {% endif %}
-    {% if post.tags %}
-      {% for tag in post.tags %}
-      <div class="tag-label">
-        {{ tag }}
-      </div>
-      {% endfor %}
-    {% endif %}
-    <hr />
+  <h1 class="page-heading">{{ page.type }}</h1>
+  <hr />
+
+	{% for post in site.categories.[page.type] %}
+  <h2>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
+  <p class="post-meta">Posted {{ post.date | date: "%b %-d, %Y" }}  |  By {{ post.author }} in <b class="highlight-violet-red">{{ post.category }}</b></p>
+
+  {% if post.blurb %}
+    <p class="post-blurb">
+      {{ post.blurb }}
+    </p>
+  {% endif %}
+  {% if post.tags %}
+    {% for tag in post.tags %}
+    <div class="tag-label">
+      {{ tag }}
+    </div>
+    {% endfor %}
+  {% endif %}
+  <hr />
   {% endfor %}
 
-  {% raw %}
+
+ <!--  {% raw %}
   <script id="search-results-template" type="text/mustache">
     {{#entried}}
       <article>
@@ -38,7 +42,7 @@ weight: 1
       </article>
     {{/entries}}
   </script>
-  {% endraw %}
+  {% endraw %} -->
 
   <!-- Pager -->
   {% if paginator.total_pages > 1 %}
