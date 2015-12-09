@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Sample Post 6"
-date:   2015-11-24 13:46:32 -1000
+title:  "Generate COE Departmental Productivity Reports Using The Academic Productivity Tool"
+date:   2015-11-24 16:57:00 -1000
 category: How-to
 tags:
 - Tag One
