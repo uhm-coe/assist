@@ -17,8 +17,26 @@ published: true
 
 This is a simple post written in markdown. This post uses inline html to help format the post.
 
-<span class="col-xs-12 col-md-8">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="col-xs-12 col-md-4">![](http://placehold.it/500x300)</span>
+1. Go to the ITS Wireless Pasthrough Page. You can access the page here, [ITS Wireless Passthrough](http://www.hawaii.edu/wireless/pt/)
 
-<span class="col-xs-12 col-md-8">2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="col-xs-12 col-md-4">![](http://placehold.it/500x300)</span>
+    ![](http://placehold.it/500x300)
 
-<span class="col-xs-12 col-md-8">3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="col-xs-12 col-md-4">![](http://placehold.it/500x300)</span>
+2. Click "login"
+
+    ![](http://placehold.it/500x300)
+
+3. Enter your credentials.
+
+    ![](http://placehold.it/500x300)
+
+4. Locate your MAC address.
+
+    ![](http://placehold.it/500x300)
+
+5. Enter your MAC address.
+
+    ![](http://placehold.it/500x300)
+
+6. Finalize by clicking "add".
+
+    ![](http://placehold.it/500x300)
