@@ -4,7 +4,7 @@
     <li class="collapsed active" data-toggle="collapse" data-target="#search-field">
       <a href="#">Search</a>
     </li>
-    <ul id="search-field" class="sub-menu collapse">
+    <ul id="search-field" class="sub-menu collapse in">
       <li>
         <div id="search" class="input-group">
           <form action="/sidebar" method="get">
@@ -21,7 +21,7 @@
     <li class="collapsed active" data-toggle="collapse" data-target="#categories">
       <a href="#">Categories</a>
     </li>
-    <ul id="categories" class="sub-menu collapse">
+    <ul id="categories" class="sub-menu collapse in">
       {% for category in site.categories %}
       <li><a href="{{ category | first | downcase | prepend: "/" | prepend: site.baseurl }}">{{ category | first }}</a></li>
       {% endfor %}
