@@ -13,7 +13,7 @@ blurb: "How to generate your personal productivity report using the Academic Pro
 published: true
 ---
 
-1. Go to the COE Website (https://coe.hawaii.edu). Click on **Faculty & Staff Login**.
+1. Go to the COE Website (<https://coe.hawaii.edu>). Click on **Faculty & Staff Login**.
 
     ![]({{ site.baseurl }}/img/2015-12-10-generate-personal-productivity-report/image00.png)
 

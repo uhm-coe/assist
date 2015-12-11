@@ -14,7 +14,7 @@ published: true
 ---
 # Generate COE Departmental Productivity Reports Using the Academic Productivity Tool
 
-1. Go to the COE Website (https://coe.hawaii.edu). Click on **Faculty & Staff Login**.
+1. Go to the COE Website (<https://coe.hawaii.edu>). Click on **Faculty & Staff Login**.
 
     ![]({{ site.baseurl }}/img/2015-12-10-generate-productivity-report/image04.png)
 
