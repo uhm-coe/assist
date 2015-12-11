@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 flow.sublime-project
 flow.sublime-workspace
+.DS_Store
