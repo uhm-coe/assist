@@ -7,14 +7,14 @@
     <ul id="search-field" class="sub-menu collapse in">
       <li>
         <div id="search" class="input-group">
-          <form action="/sidebar" method="get">
-            <input type="text" id="search-query" name="q" placeholder="Enter a keyword..." class="form-control" autocomplete="off" />
+          <form action="/search" method="get" data-search-form>
+            <input type="search" id="q" name="q" placeholder="Enter a keyword..." class="form-control" autocomplete="off" data-search-input />
           </form>
+          <!-- Search results placeholder -->
+          <p data-search-found>
+            <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
+          </p>
         </div>
-        <section id="search-results" style="display: none;">
-          <p>Search Results:</p>
-          <div class="entries"></div>
-        </section>
       </li>
     </ul>
     {% if site.categories %}
@@ -29,3 +29,4 @@
     {% endif %}
   </ul>
 </div><!-- .sidebar-container -->
+
