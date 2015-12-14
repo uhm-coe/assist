@@ -62,6 +62,7 @@ function initSearch() {
         q = $searchInput.val();
         execSearch(q);
         $('#template').hide();
+        $('#postcontent').hide();
     });
 }
 

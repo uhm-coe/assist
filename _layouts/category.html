@@ -2,11 +2,12 @@
 layout: page
 ---
 <div id="home">
-
+  <!-- div to show search results -->
+  <div data-search-results></div>
 	{% unless page.content == '' %}
 	<p>{{ page.content }}</p>
 	{% endunless %}
-
+  <div id="template">
   <h1 class="page-heading">{{ page.type }}</h1>
   <hr />
 
@@ -28,6 +29,7 @@ layout: page
     </div>
     {% endfor %}
   {% endif %}
+  </div>
   <hr />
   {% endfor %}
 
