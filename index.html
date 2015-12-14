@@ -7,38 +7,32 @@ weight: 1
 
   <h1 class="page-heading">Tutorials</h1>
   <hr />
+  <!-- div to show search results -->
+  <div data-search-results></div>
+
+  <!-- div template to hide default posts when item is searched -->
+  <div id="template">
   {% for post in paginator.posts %}
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <p class="post-meta">Posted {{ post.date | date: "%b %-d, %Y" }}  |  By {{ post.author }} in <b class="highlight-violet-red">{{ post.category }}</b></p>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <p class="post-meta">Posted {{ post.date | date: "%b %-d, %Y" }}  |  By {{ post.author }} in <b class="highlight-violet-red">{{ post.category }}</b></p>
 
-    {% if post.blurb %}
-      <p class="post-blurb">
-        {{ post.blurb }}
-      </p>
-    {% endif %}
-    {% if post.tags %}
-      {% for tag in post.tags %}
-      <div class="tag-label">
-        {{ tag }}
-      </div>
-      {% endfor %}
-    {% endif %}
-    <hr />
+      {% if post.blurb %}
+        <p class="post-blurb">
+          {{ post.blurb }}
+        </p>
+      {% endif %}
+      {% if post.tags %}
+        {% for tag in post.tags %}
+        <div class="tag-label">
+          {{ tag }}
+        </div>
+        {% endfor %}
+      {% endif %}
+      <hr />
   {% endfor %}
-
-  {% raw %}
-  <script id="search-results-template" type="text/mustache">
-    {{#entried}}
-      <article>
-        <h3>
-          <a href="{{url}}">{{title}}</a>
-        </h3>
-      </article>
-    {{/entries}}
-  </script>
-  {% endraw %}
+  </div>
 
   <!-- Pager -->
   {% if paginator.total_pages > 1 %}
@@ -60,7 +54,18 @@ weight: 1
 
 </div>
 
+<!-- Search result template -->
+<script type="text/x-template" id="search-result">
+  <div>
+    <h2><a class="post-link" href="##Url##">##Title##</a></h2>
+    <p class="post-meta">Posted ##Date## | By ##Author## in <b class="highlight-violet-red">##Category##</b></p>
+    <p class="post-blurb">##Blurb##</p>
+    {% for tag in site.tags %}
+      <div class="tag-label">{{ tag[0] }}</div>
+    {% endfor %}
+  </div>
+</script>
+
 <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{ "/js/search.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
-<script type="text/javascript" src="{{ "/assets/js/custom.js" | prepend: site.baseurl }}"></script>
