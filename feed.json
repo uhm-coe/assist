@@ -31,7 +31,7 @@ layout: null
         "author": "{{ post.author }}",
         "category": "{{ post.category }}",
         "blurb": "{{ post.blurb }}",
-        "tag": "{{ post.tags }}",
+        "tag": "{{ post.tags | last }}",
         "search_omit": "{{ post.search_omit }}"
     }
     {% assign first = false %}

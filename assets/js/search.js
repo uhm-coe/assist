@@ -159,7 +159,6 @@ function populateResultContent(html, item) {
     html = injectContent(html, item.category, '##Category##');
     html = injectContent(html, item.blurb, '##Blurb##');
     html = injectContent(html, item.tag, '##Tags##');
-    console.log(item.tag);
     return html;
 }
 
