@@ -7,9 +7,12 @@ weight: 1
 
   <h1 class="page-heading">Tutorials</h1>
   <hr />
-  {% for post in paginator.posts %}
-      <div data-search-results></div>
+  <!-- div to show search results -->
+  <div data-search-results></div>
 
+  <!-- div template to hide default posts when item is searched -->
+  <div id="template">
+  {% for post in paginator.posts %}
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
@@ -28,8 +31,8 @@ weight: 1
         {% endfor %}
       {% endif %}
       <hr />
-    
   {% endfor %}
+  </div>
 
   <!-- Pager -->
   {% if paginator.total_pages > 1 %}

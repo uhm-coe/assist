@@ -59,6 +59,7 @@ function initSearch() {
         e.preventDefault();
         q = $searchInput.val();
         execSearch(q);
+        $('#template').hide();
     });
 }
 
