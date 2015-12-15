@@ -13,9 +13,11 @@ layout: default
 </header>
 {% endif %} -->
 
-<div class="container">
+<div class="container is-page">
   <div class="row">
+    {% if page.title != "Contact" %}
     {% include sidebar.html %}
+    {% endif %}
     <div class="content col-md-7">
       {{ content }}
     </div>
