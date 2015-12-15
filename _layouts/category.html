@@ -4,10 +4,7 @@ layout: page
 <div id="home">
   <!-- div to show search results -->
   <!-- <div data-search-results></div> -->
-	{% unless page.content == '' %}
-	<p>{{ page.content }}</p>
-	{% endunless %}
-  <div id="template">
+  <!-- <div id="template"> -->
   <h1 class="page-heading">{{ page.type }}</h1>
   <hr />
 
@@ -29,12 +26,12 @@ layout: page
     </div>
     {% endfor %}
   {% endif %}
-  </div>
-  <hr />
+  <!-- </div>
+ -->  <hr />
   {% endfor %}
 
   <!-- Pager -->
-  {% if paginator.total_pages > 1 %}
+  <!-- {% if paginator.total_pages > 1 %}
     <ul class="pager">
       {% if paginator.previous_page %}
         <li class="previous">
@@ -47,7 +44,7 @@ layout: page
         </li>
       {% endif %}
     </ul>
-  {% endif %}
+  {% endif %} -->
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
