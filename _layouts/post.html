@@ -3,9 +3,10 @@ layout: default
 ---
 <div class="container tutorial-post" id="home">
 	<div class="row">
-		<div class="col-xs-12">
+	{% include sidebar.html %}
+		<div class="col-xs-7">
 			<!-- div to show search results -->
-  		<!-- <div data-search-results></div> -->
+  		<div data-search-results></div>
   		<div id="template">
 				<header>
 					<div class="row details">
@@ -43,5 +44,5 @@ layout: default
 </div>
 
 <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
-<!-- <script type="text/javascript" src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script> -->
+<script type="text/javascript" src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>

@@ -3,8 +3,8 @@ layout: page
 ---
 <div id="home">
   <!-- div to show search results -->
-  <!-- <div data-search-results></div> -->
-  <!-- <div id="template"> -->
+  <div data-search-results></div>
+  <div id="template">
   <h1 class="page-heading">{{ page.type }}</h1>
   <hr />
 
@@ -26,9 +26,9 @@ layout: page
     </div>
     {% endfor %}
   {% endif %}
-  <!-- </div>
- -->  <hr />
   {% endfor %}
+  </div>
+  <hr />
 
   <!-- Pager -->
   <!-- {% if paginator.total_pages > 1 %}
@@ -52,4 +52,4 @@ layout: page
 
 <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-<!-- <script type="text/javascript" src="{{ "/assets/js/search.js" | prepend: site.baseurl }}" charset="utf-8"></script> -->
+<script type="text/javascript" src="{{ "/assets/js/search.js" | prepend: site.baseurl }}" charset="utf-8"></script>

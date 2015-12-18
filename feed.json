@@ -31,8 +31,11 @@ layout: null
         "author": "{{ post.author }}",
         "category": "{{ post.category }}",
         "blurb": "{{ post.blurb }}",
-        "tag": "{{ post.tags | join: ', ' | split: ',' }}",
-        "search_omit": "{{ post.search_omit }}"
+        "tag": [
+            {% for tag in post.tags %}
+                "<div class='tag-label'>{{ tag }}</div>",
+            {% endfor %}
+            null]
     }
     {% assign first = false %}
     {% endif %}
