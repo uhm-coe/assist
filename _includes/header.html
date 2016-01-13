@@ -13,6 +13,11 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div id="search" class="input-group">
+        <form action="/search" method="get" data-search-form>
+          <input type="search" id="q" name="q" placeholder="Enter a keyword..." class="form-control" autocomplete="off" data-search-input />
+        </form>
+      </div>
       {% assign pages = site.pages | sort:"weight" %}
       <ul class="nav navbar-nav navbar-right">
         {% for p in pages %}
