@@ -128,40 +128,12 @@ a.btn-info:hover {
   padding: 10px 0px;
 }
 #home .tag-label {
-  background-color: #00a9a6;
-  border-radius: 0 2px 2px 0;
-  color: #ffffff;
+  color: #00a9a6;
   display: inline-block;
   font-size: 14px;
-  height: 40px;
-  left: 0;
   line-height: 40px;
-  padding: 0px 15px;
-  margin: 0px 0px 10px 15px;
   position: relative;
   top: 0;
-}
-#home .tag-label:before {
-  border-bottom: 20px transparent solid;
-  border-right: 12px #00a9a6 solid;
-  border-top: 20px transparent solid;
-  content: '';
-  height: 0;
-  left: -12px;
-  position: absolute;
-  top: 0;
-  width: 0;
-}
-#home .tag-label:after {
-  background: #ffffff;
-  border: 2px #add solid;
-  border-radius: 50%;
-  content: '';
-  height: 6px;
-  left: 0;
-  position: absolute;
-  width: 6px;
-  top: 16px;
 }
 #home .pager li > a {
   background-color: #f68932;

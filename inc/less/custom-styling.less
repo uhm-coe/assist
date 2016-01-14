@@ -167,40 +167,12 @@ a {
 		padding: 10px 0px;
 	}
 	.tag-label {
-	  background-color: @turquoise-secondary-color;
-	  border-radius: 0 2px 2px 0;
-	  color: @white;
+		color: @turquoise-secondary-color;
 	  display: inline-block;
 	  font-size: 14px;
-	  height: 40px;
-	  left: 0;
 	  line-height: 40px;
-	  padding: 0px 15px;
-	  margin: 0px 0px 10px 15px;
 	  position: relative;
 	  top: 0;
-	  &:before { // triangle shape on left
-			border-bottom: 20px transparent solid;
-		  border-right: 12px @turquoise-secondary-color solid;
-		  border-top: 20px transparent solid;
-		  content: '';
-		  height: 0;
-		  left: -12px;
-		  position: absolute;
-		  top: 0;
-		  width: 0;
-	  }
-	  &:after { // "hole"
-			background: @white; // hole background
-		  border: 2px #add solid; // hole border
-		  border-radius: 50%;
-		  content: '';
-		  height: 6px;
-		  left: 0;
-		  position: absolute;
-		  width: 6px;
-		  top: 16px;
-	  }
 	}
 	.pager {
 		li > a {
