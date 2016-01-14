@@ -3,7 +3,7 @@
 /* Base styling */
 /* ----------------------------------------------------------*/
 body {
-  font-size: 18px;
+  font-size: 16px;
   color: #434343;
   font-family: 'Montserrat', sans-serif;
 }
@@ -72,6 +72,10 @@ a.btn-info:hover {
 #footer #links-container li {
   color: #ffffff;
   list-style-type: none;
+}
+#footer #links-container .logo {
+  width: 36px;
+  height: 36px;
 }
 /* Site sidebar (sidebar.html) */
 .sidebar-container {
