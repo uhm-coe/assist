@@ -1,5 +1,7 @@
 #Flow
 
+This README contains the general information about the Support Site. Detailed documentation for the site is located at: [Support Site Documentation](https://www.gitbook.com/book/enriquezm/flow-support-site-documentation/details)
+
 ## File Structure
 Our basic file structure is as follows:
 
