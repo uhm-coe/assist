@@ -20,12 +20,19 @@ layout: page
     </p>
   {% endif %}
   {% if post.tags %}
-    {% for tag in post.tags %}
-    <div class="tag-label">
-      {{ tag }}
-    </div>
-    {% endfor %}
-  {% endif %}
+      <i class="fa fa-tags"></i>
+        {% for tag in post.tags %}
+          {% if forloop.last == false %}
+          <div class="tag-label">
+            {{ tag | append: "," }}
+          </div>
+          {% else %}
+          <div class="tag-label">
+            {{ tag }}
+          </div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
   {% endfor %}
   </div>
   <hr />
