@@ -1,10 +1,20 @@
 /* Colors */
 /* ----------------------------------------------------------*/
+/* Fonts */
+/* ----------------------------------------------------------*/
+@font-face {
+  font-family: Museo Sans;
+  src: url(../fonts/MuseoSans_500.otf);
+}
 /* Base styling */
 /* ----------------------------------------------------------*/
 body {
   font-size: 16px;
   color: #434343;
+  font-family: 'Museo Sans', sans-serif;
+}
+h1,
+h2 {
   font-family: 'Montserrat', sans-serif;
 }
 a {

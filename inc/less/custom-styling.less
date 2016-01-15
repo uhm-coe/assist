@@ -24,13 +24,23 @@
 @link-hover-color: #000;
 @link-visited-color: #205caa;
 
+/* Fonts */
+/* ----------------------------------------------------------*/
+@font-face {
+	font-family: Museo Sans;
+	src: url(../fonts/MuseoSans_500.otf);
+}
+
 /* Base styling */
 /* ----------------------------------------------------------*/
 body {
 	// padding-bottom: 186px; // Based on footer height (will need to change)
   font-size: 16px;
   color: @neutral-gray-dark;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Museo Sans', sans-serif;
+}
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
 }
 a {
 	color: @link-color;
