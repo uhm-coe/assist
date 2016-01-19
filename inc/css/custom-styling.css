@@ -19,7 +19,6 @@ h2 {
 }
 a {
   color: #00b5e2;
-  text-decoration: none;
 }
 a:hover {
   color: #000000;
@@ -141,13 +140,13 @@ a.btn-info:hover {
   color: #666666;
   padding: 10px 0px;
 }
-#home .tag-label {
+#home .tag-link:hover {
+  text-decoration: underline;
+}
+#home .tag-link .tag-label {
   color: #00a9a6;
   display: inline-block;
   font-size: 14px;
-  line-height: 40px;
-  position: relative;
-  top: 0;
 }
 #home .pager li > a {
   background-color: #f68932;

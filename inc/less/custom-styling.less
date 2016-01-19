@@ -44,7 +44,6 @@ h1, h2 {
 }
 a {
 	color: @link-color;
-	text-decoration: none;
 	&:hover {
 		color: @link-hover-color;
 		text-decoration: underline;
@@ -180,13 +179,15 @@ a {
 		color: @neutral-gray-semi-dark;
 		padding: 10px 0px;
 	}
-	.tag-label {
-		color: @turquoise-secondary-color;
-	  display: inline-block;
-	  font-size: 14px;
-	  line-height: 40px;
-	  position: relative;
-	  top: 0;
+	.tag-link {
+		&:hover {
+			text-decoration: underline;
+		}
+		.tag-label {
+			color: @turquoise-secondary-color;
+		  display: inline-block;
+		  font-size: 14px;
+		}
 	}
 	.pager {
 		li > a {
