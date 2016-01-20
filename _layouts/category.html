@@ -22,7 +22,7 @@ layout: page
   {% if post.tags %}
       <i class="fa fa-tags"></i>
         {% for tag in post.tags %}
-        <a class="tag-link" href="{{tag}}">
+        <a class="tag-link" href="{{tag | prepend: site.baseurl | prepend: '/tag/'}}">
           {% if forloop.last == false %}
           <div class="tag-label">
             {{ tag | append: "," }}
