@@ -3,7 +3,7 @@
 This README contains the general information about the Support Site. Detailed documentation for the site is located at: [Support Site Documentation](https://www.gitbook.com/book/enriquezm/flow-support-site-documentation/details)
 
 ## File Structure
-Our basic file structure is as follows:
+The current file structure is as follows:
 
 **folder/** = folder/directory
 **file.ext** = file
@@ -14,16 +14,28 @@ Flow/
 | |_head.html
 | |_footer.html
 | |_header.html
+| |_sidebar.html
 |
 |_layouts/
 | |_default.html
 | |_page.html
 | |_post.html
+| |_category.html
+| |_tag.html
+|
+|_plugins
+| |_tag_gen.rb
 |
 |_posts/
 | |_YYYY-MM-DD-sample-post.markdown
 |
+|_site/
+| |_(our generated site)
+|
 |_inc/
+| |_fonts/
+| | |_(fonts)
+| |
 | |_css/
 | | |_bootstrap.min.css
 | | |_custom-styling.css
@@ -35,7 +47,12 @@ Flow/
 | |_js/
 |   |_jquery.min.js
 |   |_bootstrap.min.js
-|   |_custom.js
+|   |_main.js
+|   |_modalizer.js
+|   |_search.js
+|
+|_img/
+| |_YYYY-MM-DD-sample-post-images-folder/
 |
 |_index.html
 |_contact.html
@@ -48,9 +65,12 @@ The flow file structure is pretty simple.
   - the footer of our website (footer.html)
   - the navbar/header of our website (header.html)
 - **_layouts** contains our layouts(templates) or the site.
+- **_plugins** contains custom plugins for the site
 - **_posts** contains all our posts(tutorials) that belong to the site.
-- **inc** contains our styling files.
-- **js** contains our javascript files.
+- **_site** contains our generated site
+- **inc** contains our styling and font files.
+- **assets** contains our javascript files
+- **img** contains images for our posts organized in sub-folders
 - **index.html** our landing/home page.
 - **contact.html** our contact page.
 
