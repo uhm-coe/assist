@@ -188,27 +188,6 @@ a.btn-info:hover {
   margin-bottom: 20px;
   font-weight: 400;
 }
-.tutorial-post .tutorial-content ol {
-  margin-top: 50px;
-  padding-left: 30px;
-}
-.tutorial-post .tutorial-content ol li {
-  margin-bottom: 50px;
-  padding-left: 20px;
-}
-.tutorial-post .tutorial-content ol p {
-  font-weight: 400;
-  vertical-align: top;
-  display: inline-block;
-  width: 45%;
-}
-.tutorial-post .tutorial-content ol p img {
-  padding-right: 0px;
-  border-radius: 3px;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 /* media queries */
 /* ----------------------------------------------------------*/
 @media (min-width: 992px) {
