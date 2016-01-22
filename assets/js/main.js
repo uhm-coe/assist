@@ -1,16 +1,15 @@
-$(function() {
-	// Calculate top of sidebar container in relation to window
-	var stickyTop = $('.sidebar-container').offset().top;
+$(document).ready(function(){
 
-	// Calculate the current position of window top (will change as user scrolls)
-	$(window).scroll(function(){
-		var windowTop = $(window).scrollTop();
-	
-		if (stickyTop < windowTop) {
-			$('.sticky').css({ position: 'fixed', top: 0 });
-		}
-		else {
-			$('.sticky').css('position', 'static');
-		}
+	$('#postcontent li').each(function(){
+		$(this).after('<hr/>');
 	});
+
+	$('#postcontent li').each(function(){
+		$(this).addClass('row');
+	});
+
+	$('#postcontent li p').each(function(){
+		$(this).addClass('col-xs-12 col-md-6');
+	});
+
 });
