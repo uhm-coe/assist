@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 			if (innerParagraphHtmlStr.substring(0, searchFor.length) === searchFor) {
 				console.log(innerParagraphHtmlStr);
-				innerParagraphHtmlStr = insertString(innerParagraphHtmlStr, ' class="img-responsive"', 4);
+				innerParagraphHtmlStr = insertString(innerParagraphHtmlStr, ' class="img-responsive img-shadow"', 4);
 				console.log(innerParagraphHtmlStr);
 
 				$(this).html('<a href="#' + counter + '" data-toggle="modal">' + innerParagraphHtmlStr + '</a>');
