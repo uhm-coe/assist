@@ -42,4 +42,8 @@ published: true
 
 7. Click on **Choose File** and locate the zip file that you downloaded from the previous step. Click on **Upload**.
 
+    ![]({{ site.baseurl }}/img/2016-01-11-import-an-assessment-using-assignments-test-surveys-tool/image02.png)
+
+8. The assessment is now imported to the new Laulima course site. You can now edit the assessment as necessary, and set dates or other relevant options.
+
     ![]({{ site.baseurl }}/img/2016-01-11-import-an-assessment-using-assignments-test-surveys-tool/image06.png)
