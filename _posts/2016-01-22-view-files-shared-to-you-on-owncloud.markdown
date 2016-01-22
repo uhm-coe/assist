@@ -23,7 +23,7 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-01-22-view-files-shared-to-you-on-owncloud/image00.png)
 
-    Tip: If you set your files to selectively sync, only the selected files can be viewed in your hard drive.
+    `Tip: If you set your files to selectively sync, only the selected files can be viewed in your hard drive.`
 
 4. Double click on the **Shared** folder to view files and folders that were shared with you.
 

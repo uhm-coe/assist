@@ -34,4 +34,4 @@ published: true
 
     ![]({{ site.baseurl }}/img/2015-12-10-generate-productivity-report/image00.png)
 
-*Tip: APA is just text in APA (close to) format.*
+    `Tip: APA is just text in APA (close to) format.`

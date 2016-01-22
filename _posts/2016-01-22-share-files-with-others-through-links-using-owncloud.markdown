@@ -27,7 +27,7 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-01-22-share-files-with-others-through-links-using-owncloud/image04.png)
 
-    Tip: If you are sharing a document that contain sensitive information or personal identifiable information (PII), we recommend using one or both of these options.
+    `Tip: If you are sharing a document that contain sensitive information or personal identifiable information (PII), we recommend using one or both of these options.`
 
 5. Copy the file link, which can then be shared with others.
 
@@ -57,4 +57,4 @@ published: true
 
    ![]({{ site.baseurl }}/img/2016-01-22-share-files-with-others-through-links-using-owncloud/image02.png)
 
-   Tip: You can also share entire folders via a link, the same way you share a file.
+   `Tip: You can also share entire folders via a link, the same way you share a file.`
