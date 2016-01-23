@@ -55,6 +55,6 @@ published: true
 
 11. Click on **Copy** link to share.
 
-   ![]({{ site.baseurl }}/img/2016-01-22-share-files-with-others-through-links-using-owncloud/image02.png)
+    ![]({{ site.baseurl }}/img/2016-01-22-share-files-with-others-through-links-using-owncloud/image02.png)
 
-   `Tip: You can also share entire folders via a link, the same way you share a file.`
+    `Tip: You can also share entire folders via a link, the same way you share a file.`
