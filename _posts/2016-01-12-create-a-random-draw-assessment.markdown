@@ -47,4 +47,4 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-01-12-create-a-random-draw-assessment/image01.png)
 
-    `Tip: If you choose **A studentʻs questions are randomized each time an assessment is submitted**, your studentʻs questions will be randomized each time he or she restarts the same assessment.`
+    Tip: If you choose **A studentʻs questions are randomized each time an assessment is submitted**, your studentʻs questions will be randomized each time he or she restarts the same assessment.
