@@ -1,5 +1,8 @@
-<div class="sidebar-container col-md-3">
+<div class="sidebar-container">
   <ul class="sidebar-content">
+    <li>
+      <a href="{{ site.baseurl }}/">Home</a>
+    </li>
     {% if site.categories %}
     <li class="collapsed active" data-toggle="collapse" data-target="#categories">
       <a href="#">Categories</a>
@@ -11,8 +14,6 @@
     </ul>
     {% endif %}
   </ul>
-  <hr />
-  <a href="{{ site.baseurl }}/" class="btn btn-info">All Posts</a>
 </div><!-- .sidebar-container -->
 
 <!-- Search result template -->
