@@ -3,7 +3,8 @@ $(document).ready(function(){
 	/**
 	 *	@name: modalize()
 	 *	@author: Myles Enriquez
-	 *	@description: Searches for all p elements that enclose and image and create a
+	 * 	@date: 20160125
+	 *	@description: Searches for all p elements that contain an image and creates a
 	 * 	modal for that image.
 	 *
 	 *	@param: null
@@ -12,9 +13,11 @@ $(document).ready(function(){
 	function modalize() {
 		var counter = 0;
 		$('p').each(function(){
+			// String which contains the inner html of each paragraph
 			var innerParagraphHtmlStr = $(this).html();
 			var searchFor = "<img";
 
+			// For each string that contains "<img" (paragraph that contains and image)
 			if (innerParagraphHtmlStr.substring(0, searchFor.length) === searchFor) {
 				console.log(innerParagraphHtmlStr);
 				innerParagraphHtmlStr = insertString(innerParagraphHtmlStr, ' class="img-responsive img-shadow"', 4);
@@ -54,6 +57,7 @@ $(document).ready(function(){
 	/**
 	 *	@name: insertString()
 	 *	@author: Myles Enriquez
+	 *	@date: 20160125
 	 *	@description: Inserts a given string into another 'mainString'.
 	 *
 	 *	@param1: {String} mainString The main string that will be modified
