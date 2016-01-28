@@ -11,9 +11,13 @@ layout: page
 		JEKYLL_POSTS.push({
 			title: "{{ post.title }}",
 			link: "{{ post.url | prepend: site.baseurl }}",
-			content: "{{ post.content | strip_newlines | strip_html }}"
+			content: "{{ post.blurb | strip_newlines | strip_html }}"
 		});
 	{% endfor %}
+
+	for(var i = 0; i < JEKYLL_POSTS.length; i++) {
+		console.log(JEKYLL_POSTS[i].content + "\n\n");
+	}
 </script>
 
 <script src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
