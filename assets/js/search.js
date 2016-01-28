@@ -63,6 +63,7 @@ function initSearch() {
         execSearch(q);
         $('#template').hide();
         $('#postcontent').hide();
+        $('.page-heading').hide();
     });
 }
 
