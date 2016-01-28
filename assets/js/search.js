@@ -1,3 +1,7 @@
+// Documentation: http://benhowdle.im/creating-a-dynamic-search-page-for-your-jekyll-blog.html
+
+// TODO: Move to autocomplete approach: http://danreev.es/posts/jekyll-search-with-typeahead/
+
 !(function() {
 
 	var parseQueryFromURL = function() {
@@ -54,11 +58,15 @@
 
 			var title = document.createElement("h2");
 			var link = document.createElement("a");
+            var excerpt = document.createElement("p");
+
 			link.href = result.link;
 			link.innerHTML = result.title;
+            excerpt.innerHTML = result.content;
 			title.appendChild(link);
 
 			div.appendChild(title);
+            div.appendChild(excerpt);
 
 			frag.appendChild(div);
 
