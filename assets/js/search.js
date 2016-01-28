@@ -1,209 +1,111 @@
----
----
-// /**
-//  * A simple JSON search
-//  * Requires jQuery (v 1.7+)
-//  *
-//  * @author  Mat Hayward - Erskine Design
-//  * @version  0.1
-//  */
+!(function() {
 
+	var parseQueryFromURL = function() {
 
- /* ==========================================================================
-    Initialisation
-    ========================================================================== */
+		var searchQuery = window.location.search;
+		if (!searchQuery) {
+			return null;
+		}
 
-var q, jsonFeedUrl = "{{ "/feed.json" | prepend: site.baseurl }}",
-    $searchForm = $("[data-search-form]"),
-    $searchInput = $("[data-search-input]"),
-    $resultTemplate = $("#search-result"),
-    $resultsPlaceholder = $("[data-search-results]"),
-    $foundContainer = $("[data-search-found]"),
-    $foundTerm = $("[data-search-found-term]"),
-    $foundCount = $("[dat-search-found-count]"),
-    allowEmpty = true,a
-    showLoader = true,
-    loadingClass = "is--loading";
+		var regex = /[?&]([^=#]+)=([^&#]*)/g,
+			params = {},
+			match;
+		while (match = regex.exec(searchQuery)) {
+			params[match[1]] = match[2];
+		}
 
+		if (!params.hasOwnProperty("query")) {
+			return null;
+		}
 
-$(document).ready( function() {
-    // hide items found string
-    $foundContainer.hide();
+		return decodeURIComponent(params.query);
 
-    // initiate search functionality
-    initSearch();
-});
+	};
 
+	var scanPosts = function(posts, properties, query) {
 
+		var results = [];
+		posts.forEach(function(post) {
+			var textToScan = "",
+				regex = new RegExp(query, "ig");
 
+			properties.forEach(function(property) {
+				if (post.hasOwnProperty(property)) {
+					textToScan += post[property];
+				}
+			});
 
- /* ==========================================================================
-    Search functions
-    ========================================================================== */
+			if (regex.test(textToScan)) {
+				results.push(post);
+			}
+		});
 
+		return results;
 
-/**
- * Initiate search functionality.
- * Shows results based on querystring if present.
- * Binds search function to form submission.
- */
-function initSearch() {
+	};
 
-    // Get search results if q parameter is set in querystring
-    if (getParameterByName('q')) {
-        q = decodeURIComponent(getParameterByName('q'));
-        $searchInput.val(q);
-        execSearch(q);
-    }
+	var outputResults = function(results, el) {
 
-    // Get search results on submission of form
-    $(document).on("submit", $searchForm, function(e) {
-        e.preventDefault();
-        q = $searchInput.val();
-        execSearch(q);
-        $('#template').hide();
-        $('#postcontent').hide();
-        $('.page-heading').hide();
-    });
-}
+		var frag = document.createDocumentFragment();
+		results.forEach(function(result) {
 
+			var div = document.createElement("div");
+			div.className = "search-result";
 
-/**
- * Executes search
- * @param {String} q
- * @return null
- */
-function execSearch(q) {
-    if (q != '' || allowEmpty) {
-        if (showLoader) {
-            toggleLoadingClass();
-        }
+			var title = document.createElement("h2");
+			var link = document.createElement("a");
+			link.href = result.link;
+			link.innerHTML = result.title;
+			title.appendChild(link);
 
-        getSearchResults(processData());
-    }
-}
+			div.appendChild(title);
 
+			frag.appendChild(div);
 
-/**
- * Toggles loading class on results and found string
- * @return null
- */
-function toggleLoadingClass() {
-    $resultsPlaceholder.toggleClass(loadingClass);
-    $foundContainer.toggleClass(loadingClass);
-}
+		});
 
+		el.appendChild(frag);
 
-/**
- * Get Search results from JSON
- * @param {Function} callbackFunction
- * @return null
- */
-function getSearchResults(callbackFunction) {
-    $.get(jsonFeedUrl, callbackFunction, 'json');
-}
+	};
 
+	var Search = function(options) {
 
-/**
- * Process search result data
- * @return null
- */
-function processData() {
-    $results = [];
+		options = options || {};
 
-    return function(data) {
+		if (!options.selector) {
+			throw new Error("We need a selector to find");
+		}
 
-        var resultsCount = 0,
-            results = "";
+		this.el = document.querySelector(options.selector);
+		if (!this.el) {
+			throw new Error("We need a HTML element to output to");
+		}
 
-        $.each(data, function(index, item) {
-            // check if search term is in content or title
-            if (item.seach_omit != "true" && (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1)) {
-                var result = populateResultContent($resultTemplate.html(), item);
-                resultsCount++;
-                results += result;
-            }
-        });
+		this.posts = JEKYLL_POSTS;
+		if (!this.posts) {
+			return this.el.innerHTML = this.noResultsMessage;
+		}
 
-        if (showLoader) {
-            toggleLoadingClass();
-        }
+		var defaultMessage = "No results found";
+		this.noResultsMessage = options.noResultsMessage || defaultMessage;
 
-        populateResultsString(resultsCount);
-        showSearchResults(results);
-    }
-}
+		var defaultProperties = ["title"];
+		this.properties = options.properties || defaultProperties;
 
+		this.query = parseQueryFromURL();
+		if (!this.query) {
+			return this.el.innerHTML = this.noResultsMessage;
+		}
 
-/**
- * Add search results to placeholder
- * @param {String} results
- * @return null
- */
-function showSearchResults(results) {
-    // Add results HTML to placeholder
-    $resultsPlaceholder.html(results);
-}
+		this.results = scanPosts(this.posts, this.properties, this.query);
+		if (!this.results.length) {
+			return this.el.innerHTML = this.noResultsMessage;
+		}
 
+		outputResults(this.results, this.el);
 
-/**
- * Add results content to item template
- * @param {String} html
- * @param {object} item
- * @return {String} Populated HTML
- */
-function populateResultContent(html, item) {
-    html = injectContent(html, item.title, '##Title##');
-    html = injectContent(html, item.link, '##Url##');
-    // html = injectContent(html, item.excerpt, '##Excerpt##');
-    html = injectContent(html, item.date, '##Date##');
-    html = injectContent(html, item.author, '##Author##');
-    html = injectContent(html, item.category, '##Category##');
-    html = injectContent(html, item.blurb, '##Blurb##');
-    html = injectContent(html, item.tag.join(' '), '##Tags##');
-    console.log(item.tag);
-    return html;
-}
+	};
 
+	window.jekyllSearch = Search;
 
-/**
- * Populates results string
- * @param {String} count
- * @return null
- */
-function populateResultsString(count) {
-    $foundTerm.text(q);
-    $foundCount.text(count);
-    $foundContainer.show();
-}
-
-
-
-
- /* ==========================================================================
-    Helper functions
-    ========================================================================== */
-
-
-/**
- * Gets query string parameter - taken from http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
- * @param {String} name
- * @return {String} parameter value
- */
-function getParameterByName(name) {
-    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-}
-
-
-/**
- * Injects content into template using placeholder
- * @param {String} originalContent
- * @param {String} injection
- * @param {String} placeholder
- * @return {String} injected content
- */
-function injectContent(originalContent, injection, placeholder) {
-    var regex = new RegExp(placeholder, 'g');
-    return originalContent.replace(regex, injection);
-}
+})();
