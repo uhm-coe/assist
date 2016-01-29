@@ -13,23 +13,11 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      {% assign pages = site.pages | sort:"weight" %}
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <div id="search" class="input-group">
-            <form class="form-inline" action="/search" method="GET">
-              <div class="input-group">
-                <input type="text" name="query" placeholder="Search for ..." class="form-control" />
-              </div>
-            </form>
-          </div>
-        </li>
-        {% for p in pages %}
-          {% if p.title %}
-            <li {% if p.url == page.url %}class="active"{% endif %}><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+      <form class="navbar-form navbar-right" action="/search" method="GET">
+        <div class="form-group">
+          <input type="text" name="query" placeholder="Search for ..." class="form-control" />
+        </div>
+      </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
