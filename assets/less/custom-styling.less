@@ -132,24 +132,27 @@ a {
 
 /* Site sidebar (sidebar.html) */
 .sidebar-container {
-	padding: 0px;
-	margin: 90px 50px 0px 0px;
-	background-color: @neutral-gray-semi-dark;
+	background-color: @white;
+	h3.side-title {
+		font-size: 20px;
+		color: @black;
+	}
 	a {
-		color: @white;
+		color: @black;
 	}
 	ul {
 		padding-left: 0px;
 	}
 	li {
 		padding: 10px 25px;
+		background-color: transparent;
 	}
 	.sidebar-content {
 		margin-bottom: 0px;
-		font-weight: 700;
-		background-color: @neutral-gray-dark;
+		font-size: 18px;
 		.sub-menu {
-			background-color: @neutral-gray-semi-dark;
+			padding-left: 10px;
+			border-left: 1px solid @black;
 		}
 	}
 }
