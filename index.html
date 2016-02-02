@@ -4,22 +4,24 @@ weight: 1
 ---
 
 <div id="home">
-  <h1 class="page-heading">Tutorials</h1>
+  <h1 class="page-heading">All Tutorials</h1>
   <hr />
 
   <!-- div template to hide default posts when item is searched -->
   <div id="template">
   {% for post in paginator.posts %}
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-      <p class="post-meta">Posted {{ post.date | date: "%b %-d, %Y" }}  |  By {{ post.author }} in <b class="highlight-violet-red">{{ post.category }}</b></p>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      </div>
+    </div> <!-- .row -->
 
       {% if post.blurb %}
         <p class="post-blurb">
           {{ post.blurb }}
         </p>
       {% endif %}
+      <p class="post-meta">Posted {{ post.date | date: "%b %-d, %Y" }}  |  By {{ post.author }} in <b class="highlight-violet-red">{{ post.category }}</b></p>
       {% if post.tags %}
       <i class="fa fa-tags"></i>
         {% for tag in post.tags %}
@@ -62,5 +64,4 @@ weight: 1
 
 <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
