@@ -58,6 +58,6 @@ $(document).ready(function(){
 			}
 		});
 	}
-	stickyElement('.sidebar-content');
+	// stickyElement('.sidebar-content');
 
 });
