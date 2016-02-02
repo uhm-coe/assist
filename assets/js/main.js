@@ -28,6 +28,11 @@ $(document).ready(function(){
 	}
 	formatPostContent();
 
+	$('.sidebar-content').on('click', '> li > a', function(){
+		$('.sidebar-content').find('.open').removeClass('open');
+		$(this).addClass('open');
+	});
+
 
 
 	/**
