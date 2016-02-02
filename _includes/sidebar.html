@@ -3,10 +3,10 @@
   <hr/>
   <ul class="sidebar-content">
     <li>
-      <a href="{{ site.baseurl }}/">Return Home</a>
+      <a href="{{ site.baseurl }}/">Home</a>
     </li>
     {% if site.categories %}
-    <li class="collapsed active" data-toggle="collapse" data-target="#categories">
+    <li class="collapsed active open" data-toggle="collapse" data-target="#categories">
       <a href="#">Categories</a>
     </li>
     <ul id="categories" class="sub-menu collapse">
@@ -17,7 +17,7 @@
     {% endif %}
 
     {% if site.tags %}
-    <li class="collapsed active" data-toggle="collapse" data-target="#tags">
+    <li class="collapsed active open" data-toggle="collapse" data-target="#tags">
       <a href="#">Tags</a>
     </li>
     <ul id="tags" class="sub-menu collapse">
