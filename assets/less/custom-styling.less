@@ -24,6 +24,8 @@
 @link-hover-color: #000;
 @link-visited-color: #205caa;
 
+@base-text-color: #575757;
+
 
 
 /* Local Fonts */
@@ -44,7 +46,7 @@
 body {
 	// padding-bottom: 186px; // Based on footer height (will need to change)
   font-size: 16px;
-  color: @neutral-gray-dark;
+  color: @base-text-color;
   font-family: 'Museo Sans', sans-serif;
 }
 h1, h2 {
@@ -132,27 +134,45 @@ a {
 
 /* Site sidebar (sidebar.html) */
 .sidebar-container {
-	background-color: @white;
 	h3.side-title {
+		padding-left: 20px;
 		font-size: 20px;
-		color: @black;
 	}
-	a {
-		color: @black;
-	}
-	ul {
+	ul.sidebar-content {
 		padding-left: 0px;
-	}
-	li {
-		padding: 10px 25px;
-		background-color: transparent;
-	}
-	.sidebar-content {
-		margin-bottom: 0px;
-		font-size: 18px;
-		.sub-menu {
-			padding-left: 10px;
-			border-left: 1px solid @black;
+		li {
+
+			a {
+				display: block;
+				padding: 10px 0px 10px 20px;
+				font-size: 16px;
+				color: @turquoise-secondary-color;
+				text-decoration: none;
+				&:hover {
+					color: #008784;
+					background-color: #e5f6f6;
+				}
+				&.open {
+					color: @white;
+					background-color: @turquoise-secondary-color;
+				}
+			}
+		}
+		ul.sub-menu {
+			padding: 10px 0px 10px 20px;
+			li {
+				border-left: 1px solid @neutral-gray-light;
+				a {
+					color: @base-text-color;
+					font-size: 16px;
+					&:hover {
+						color: @base-text-color;
+						font-weight: 700;
+						background-color: @white;
+						border-left: 3px solid @turquoise-secondary-color;
+					}
+				}
+			}
 		}
 	}
 }

@@ -12,7 +12,7 @@
 /* ----------------------------------------------------------*/
 body {
   font-size: 16px;
-  color: #434343;
+  color: #575757;
   font-family: 'Museo Sans', sans-serif;
 }
 h1,
@@ -89,30 +89,43 @@ a.btn-info:hover {
   height: 36px;
 }
 /* Site sidebar (sidebar.html) */
-.sidebar-container {
-  background-color: #ffffff;
-}
 .sidebar-container h3.side-title {
+  padding-left: 20px;
   font-size: 20px;
-  color: #000000;
 }
-.sidebar-container a {
-  color: #000000;
-}
-.sidebar-container ul {
+.sidebar-container ul.sidebar-content {
   padding-left: 0px;
 }
-.sidebar-container li {
-  padding: 10px 25px;
-  background-color: transparent;
+.sidebar-container ul.sidebar-content li a {
+  display: block;
+  padding: 10px 0px 10px 20px;
+  font-size: 16px;
+  color: #00a9a6;
+  text-decoration: none;
 }
-.sidebar-container .sidebar-content {
-  margin-bottom: 0px;
-  font-size: 18px;
+.sidebar-container ul.sidebar-content li a:hover {
+  color: #008784;
+  background-color: #e5f6f6;
 }
-.sidebar-container .sidebar-content .sub-menu {
-  padding-left: 10px;
-  border-left: 1px solid #000000;
+.sidebar-container ul.sidebar-content li a.open {
+  color: #ffffff;
+  background-color: #00a9a6;
+}
+.sidebar-container ul.sidebar-content ul.sub-menu {
+  padding: 10px 0px 10px 20px;
+}
+.sidebar-container ul.sidebar-content ul.sub-menu li {
+  border-left: 1px solid #b7b7b7;
+}
+.sidebar-container ul.sidebar-content ul.sub-menu li a {
+  color: #575757;
+  font-size: 16px;
+}
+.sidebar-container ul.sidebar-content ul.sub-menu li a:hover {
+  color: #575757;
+  font-weight: 700;
+  background-color: #ffffff;
+  border-left: 3px solid #00a9a6;
 }
 /* _layouts styles */
 /* ----------------------------------------------------------*/
