@@ -22,7 +22,7 @@
     </li>
     <ul id="tags" class="sub-menu collapse">
       {% for tag in site.tags %}
-      <li><a href="{{ tag | first | downcase | prepend: '/tag/' | prepend: site.baseurl }}">{{ tag | first }}</a></li>
+      <li><a href="{{ tag | first | prepend: '/tag/' | prepend: site.baseurl }}">{{ tag | first }}</a></li>
       {% endfor %}
     </ul>
     {% endif %}
