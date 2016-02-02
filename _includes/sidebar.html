@@ -1,17 +1,31 @@
 <div class="sidebar-container">
+  <h3 class="side-title">Support Site</h3>
+  <hr/>
   <ul class="sidebar-content">
     <li>
-      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/">Return Home</a>
     </li>
     {% if site.categories %}
     <li class="collapsed active" data-toggle="collapse" data-target="#categories">
       <a href="#">Categories</a>
     </li>
-    <ul id="categories" class="sub-menu collapse in">
+    <ul id="categories" class="sub-menu collapse">
       {% for category in site.categories %}
       <li><a href="{{ category | first | downcase | prepend: "/" | prepend: site.baseurl }}">{{ category | first }}</a></li>
       {% endfor %}
     </ul>
     {% endif %}
+
+    {% if site.tags %}
+    <li class="collapsed active" data-toggle="collapse" data-target="#tags">
+      <a href="#">Tags</a>
+    </li>
+    <ul id="tags" class="sub-menu collapse">
+      {% for tag in site.tags %}
+      <li><a href="{{ tag | first | downcase | prepend: '/tag/' | prepend: site.baseurl }}">{{ tag | first }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
   </ul>
 </div><!-- .sidebar-container -->
