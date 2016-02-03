@@ -24,7 +24,7 @@ gems:
 # Prose Configuration
 # Documentation: https://github.com/prose/prose/wiki/Prose-Configuration
 prose:
-  rooturl: '_posts'
+  rooturl: '.'
   siteurl: 'https://flow.coe.hawaii.edu'
   ignore: ['_config.yml','.gitignore', 'README.md', 'contact.html', 'index.html', 'search.html']
   relativeLinks: ''
