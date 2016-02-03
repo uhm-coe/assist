@@ -47,6 +47,7 @@ body {
 	// padding-bottom: 186px; // Based on footer height (will need to change)
   font-size: 16px;
   color: @base-text-color;
+  background-color: #F4F5F9;
   font-family: 'Museo Sans', sans-serif;
 }
 h1, h2 {
@@ -134,14 +135,17 @@ a {
 
 /* Site sidebar (sidebar.html) */
 .sidebar-container {
+	background-color: @white;
 	h3.side-title {
 		padding-left: 20px;
+		padding-top: 15px;
 		font-size: 20px;
+		font-weight: 700;
 	}
 	ul.sidebar-content {
 		padding-left: 0px;
 		li {
-
+			border-bottom: 1px solid #F4F5F9;
 			a {
 				display: block;
 				padding: 10px 0px 10px 20px;
@@ -149,10 +153,6 @@ a {
 				color: @turquoise-secondary-color;
 				text-decoration: none;
 				&:hover {
-					color: #008784;
-					background-color: #e5f6f6;
-				}
-				&.open {
 					color: @white;
 					background-color: @turquoise-secondary-color;
 				}

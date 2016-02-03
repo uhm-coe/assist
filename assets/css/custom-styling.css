@@ -13,6 +13,7 @@
 body {
   font-size: 16px;
   color: #575757;
+  background-color: #F4F5F9;
   font-family: 'Museo Sans', sans-serif;
 }
 h1,
@@ -89,12 +90,20 @@ a.btn-info:hover {
   height: 36px;
 }
 /* Site sidebar (sidebar.html) */
+.sidebar-container {
+  background-color: #ffffff;
+}
 .sidebar-container h3.side-title {
   padding-left: 20px;
+  padding-top: 15px;
   font-size: 20px;
+  font-weight: 700;
 }
 .sidebar-container ul.sidebar-content {
   padding-left: 0px;
+}
+.sidebar-container ul.sidebar-content li {
+  border-bottom: 1px solid #F4F5F9;
 }
 .sidebar-container ul.sidebar-content li a {
   display: block;
@@ -104,10 +113,6 @@ a.btn-info:hover {
   text-decoration: none;
 }
 .sidebar-container ul.sidebar-content li a:hover {
-  color: #008784;
-  background-color: #e5f6f6;
-}
-.sidebar-container ul.sidebar-content li a.open {
   color: #ffffff;
   background-color: #00a9a6;
 }
