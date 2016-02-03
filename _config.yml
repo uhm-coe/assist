@@ -20,3 +20,96 @@ paginate_path: "/page:num/"
 # Gems
 gems:
 - jekyll-paginate
+
+# Prose Configuration
+# Documentation: https://github.com/prose/prose/wiki/Prose-Configuration
+prose:
+  rooturl: '_posts'
+  siteurl: 'https://flow.coe.hawaii.edu'
+  ignore: ['_config.yml','.gitignore', 'README.md', 'contact.html', 'index.html', 'search.html']
+  relativeLinks: ''
+  media: 'img'
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Tutorial Title"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "date"
+        field:
+          element: "hidden"
+          value: CURRENT_DATETIME
+      - name: "category"
+        field:
+          element: "select"
+          label: "Category"
+          help: "Select the category that this post belongs to."
+          value: "How-to"
+          placeholder: "How-to"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add tags"
+          placeholder: "Choose tags"
+          options:
+            - name: "Assessments"
+              value: "Assessments"
+            - name: "Assignments"
+              value: "Assignments"
+            - name: "BBC"
+              value: "BBC"
+            - name: "COE Website"
+              value: "COE Website"
+            - name: "DCDC"
+              value: "DCDC"
+            - name: "Gradebook"
+              value: "Gradebook"
+            - name: "Assignments"
+              value: "Assignments"
+            - name: "Intranet"
+              value: "Instranet"
+            - name: "Laulima"
+              value: "Laulima"
+            - name: "Mac"
+              value: "Mac"
+            - name: "Assignments"
+              value: "Assignments"
+            - name: "ownCloud"
+              value: "ownCloud"
+            - name: "PowerPoint 2011"
+              value: "PowerPoint 2011"
+            - name: "Reports"
+              value: "Reports"
+            - name: "Resources"
+              value: "Resources"
+            - name: "Test & Surveys"
+              value: "Test & Surveys"
+            - name: "Test & Quizzes"
+              value: "Test & Quizzes"
+            - name: "WordPress"
+              value: "WordPress"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          helpt: "Write the name of the author or updater for this post."
+      - name: "materials"
+        field:
+          element: "textarea"
+          label: "Materials required"
+          help: "List the materials required for this tutorial. If none, just leave this field blank"
+          placeholder: "ex. Internet connection, Laptop, UH Username"
+      - name: "blurb"
+        field:
+          element: "textarea"
+          label: "Description"
+          help: "Briefly describe what this tutorial is about."
+          placeholder: "ex. How to create a question pool using the Test & Quizzes Tool."
+
+
+
+
