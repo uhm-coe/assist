@@ -26,7 +26,7 @@ gems:
 prose:
   rooturl: ''
   siteurl: 'https://flow.coe.hawaii.edu'
-  ignore: ['_config.yml','.gitignore', 'README.md', 'contact.html', 'index.html', 'search.html']
+  ignore: ['_config.yml','.gitignore', 'README.md', 'contact.html', 'index.html', 'search.html', '_includes', '_layouts', '_plugins', 'assets', 'how-to', 'strategies', 'troubleshooting']
   relativeLinks: ''
   media: 'img'
   metadata:
