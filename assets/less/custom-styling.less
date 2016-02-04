@@ -39,6 +39,11 @@
 
 /* Mixins */
 /* ----------------------------------------------------------*/
+.Box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
 
 
 /* Base styling */
@@ -52,16 +57,6 @@ body {
 }
 h1, h2 {
 	font-family: 'Montserrat', sans-serif;
-}
-a {
-	color: @link-color;
-	&:hover {
-		color: @link-hover-color;
-		text-decoration: underline;
-	}
-	&:visited {
-		color: @link-visited-color;
-	}
 }
 ul {
 	list-style-type: none;
@@ -136,6 +131,7 @@ a {
 /* Site sidebar (sidebar.html) */
 .sidebar-container {
 	background-color: @white;
+	.Box-shadow (4px 4px 20px #dddddd);
 	h3.side-title {
 		padding-left: 20px;
 		padding-top: 15px;
@@ -161,7 +157,6 @@ a {
 		ul.sub-menu {
 			padding: 10px 0px 10px 20px;
 			li {
-				border-left: 1px solid @neutral-gray-light;
 				a {
 					color: @base-text-color;
 					font-size: 16px;
@@ -212,7 +207,8 @@ a {
 	}
 	.tag-link {
 		&:hover {
-			text-decoration: underline;
+			text-decoration: none;
+			border-bottom: 1px solid red;
 		}
 		.tag-label {
 			color: @turquoise-secondary-color;

@@ -20,16 +20,6 @@ h1,
 h2 {
   font-family: 'Montserrat', sans-serif;
 }
-a {
-  color: #00b5e2;
-}
-a:hover {
-  color: #000000;
-  text-decoration: underline;
-}
-a:visited {
-  color: #205caa;
-}
 ul {
   list-style-type: none;
 }
@@ -92,6 +82,9 @@ a.btn-info:hover {
 /* Site sidebar (sidebar.html) */
 .sidebar-container {
   background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 20px #dddddd;
+  -moz-box-shadow: 4px 4px 20px #dddddd;
+  box-shadow: 4px 4px 20px #dddddd;
 }
 .sidebar-container h3.side-title {
   padding-left: 20px;
@@ -118,9 +111,6 @@ a.btn-info:hover {
 }
 .sidebar-container ul.sidebar-content ul.sub-menu {
   padding: 10px 0px 10px 20px;
-}
-.sidebar-container ul.sidebar-content ul.sub-menu li {
-  border-left: 1px solid #b7b7b7;
 }
 .sidebar-container ul.sidebar-content ul.sub-menu li a {
   color: #575757;
@@ -164,7 +154,8 @@ a.btn-info:hover {
   padding: 10px 0px;
 }
 #home .tag-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid red;
 }
 #home .tag-link .tag-label {
   color: #00a9a6;
