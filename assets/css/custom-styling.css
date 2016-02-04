@@ -82,9 +82,9 @@ a.btn-info:hover {
 /* Site sidebar (sidebar.html) */
 .sidebar-container {
   background-color: #ffffff;
-  -webkit-box-shadow: 4px 4px 20px #dddddd;
-  -moz-box-shadow: 4px 4px 20px #dddddd;
-  box-shadow: 4px 4px 20px #dddddd;
+  -webkit-box-shadow: 4px 4px 20px #eeeeee;
+  -moz-box-shadow: 4px 4px 20px #eeeeee;
+  box-shadow: 4px 4px 20px #eeeeee;
 }
 .sidebar-container h3.side-title {
   padding-left: 20px;
@@ -132,6 +132,11 @@ a.btn-info:hover {
   font-size: 48px;
   font-weight: 700;
 }
+#home .post-cat-icon {
+  height: 146px;
+  display: inline-block;
+  background-color: white;
+}
 #home .post-link {
   color: #666666;
   font-weight: 700;
@@ -144,14 +149,19 @@ a.btn-info:hover {
 #home .post-link:visited {
   color: #666666;
 }
-#home .post-meta {
-  font-size: 12px;
-  color: #999999;
-  font-weight: 400;
-}
 #home .post-blurb {
   color: #666666;
   padding: 10px 0px;
+}
+#home .post-details {
+  font-size: 14px;
+  color: #999999;
+  font-weight: 400;
+  background-color: #ffffff;
+  padding: 5px 0px 5px 0px;
+  -webkit-box-shadow: 4px 4px 20px #dedede;
+  -moz-box-shadow: 4px 4px 20px #dedede;
+  box-shadow: 4px 4px 20px #dedede;
 }
 #home .tag-link:hover {
   text-decoration: none;
@@ -203,9 +213,13 @@ a.btn-info:hover {
   font-weight: 400;
 }
 .tutorial-post .tutorial-content .img-shadow {
+  -webkit-box-shadow: 0px 0px 10px #888888;
+  -moz-box-shadow: 0px 0px 10px #888888;
   box-shadow: 0px 0px 10px #888888;
 }
 .tutorial-post .tutorial-content .img-shadow:hover {
+  -webkit-box-shadow: 0px 0px 5px #888888;
+  -moz-box-shadow: 0px 0px 5px #888888;
   box-shadow: 0px 0px 5px #888888;
 }
 /* media queries */

@@ -131,7 +131,7 @@ a {
 /* Site sidebar (sidebar.html) */
 .sidebar-container {
 	background-color: @white;
-	.Box-shadow (4px 4px 20px #dddddd);
+	.Box-shadow (4px 4px 20px #eeeeee);
 	h3.side-title {
 		padding-left: 20px;
 		padding-top: 15px;
@@ -184,6 +184,11 @@ a {
 		font-size: 48px;
 		font-weight: 700;
 	}
+	.post-cat-icon {
+		height: 146px;
+		display: inline-block;
+		background-color: white;
+	}
 	.post-link {
 		color: @neutral-gray-semi-dark;
 		font-weight: 700;
@@ -196,14 +201,17 @@ a {
 			color: @neutral-gray-semi-dark;
 		}
 	}
-	.post-meta {
-		font-size: 12px;
-		color: @neutral-gray-semi-light;
-		font-weight: 400;
-	}
 	.post-blurb {
 		color: @neutral-gray-semi-dark;
 		padding: 10px 0px;
+	}
+	.post-details {
+		font-size: 14px;
+		color: @neutral-gray-semi-light;
+		font-weight: 400;
+		background-color: @white;
+		padding: 5px 0px 5px 0px;
+		.Box-shadow (4px 4px 20px #dedede);
 	}
 	.tag-link {
 		&:hover {
@@ -261,9 +269,9 @@ a {
 	}
 	.tutorial-content {
 		.img-shadow {
-			box-shadow: 0px 0px 10px #888888;
+			.Box-shadow(0px 0px 10px #888888);
 			&:hover {
-				box-shadow: 0px 0px 5px #888888;
+				.Box-shadow(0px 0px 5px #888888);
 			}
 		}
 	}
