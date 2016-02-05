@@ -23,6 +23,9 @@ h2 {
 ul {
   list-style-type: none;
 }
+.glyphicon {
+  margin: 0px 10px;
+}
 .highlight-orange {
   color: #f68932;
 }
@@ -44,7 +47,7 @@ a.btn-info:hover {
 /* Site header (header.html) */
 #header {
   margin-bottom: 0px;
-  background-color: #434343;
+  background-color: #455a64;
   border-radius: 0px;
   border: none;
 }
@@ -65,11 +68,11 @@ a.btn-info:hover {
 #footer #help-container {
   color: #ffffff;
   padding: 30px 0px;
-  background-color: #666666;
+  background-color: #607d8b;
 }
 #footer #links-container {
   padding: 30px 50px;
-  background-color: #434343;
+  background-color: #455a64;
 }
 #footer #links-container li {
   color: #ffffff;
@@ -86,11 +89,18 @@ a.btn-info:hover {
   -moz-box-shadow: 4px 4px 20px #eeeeee;
   box-shadow: 4px 4px 20px #eeeeee;
 }
-.sidebar-container h3.side-title {
+.sidebar-container .sidebar-header {
+  background-color: #0097a7;
+  -webkit-box-shadow: 0px 8px 15px #eeeeee;
+  -moz-box-shadow: 0px 8px 15px #eeeeee;
+  box-shadow: 0px 8px 15px #eeeeee;
+}
+.sidebar-container .sidebar-header h3.side-title {
   padding-left: 20px;
   padding-top: 15px;
   font-size: 20px;
   font-weight: 700;
+  color: #ffffff;
 }
 .sidebar-container ul.sidebar-content {
   padding-left: 0px;
@@ -102,12 +112,12 @@ a.btn-info:hover {
   display: block;
   padding: 10px 0px 10px 20px;
   font-size: 16px;
-  color: #00a9a6;
+  color: #666666;
   text-decoration: none;
 }
 .sidebar-container ul.sidebar-content li a:hover {
   color: #ffffff;
-  background-color: #00a9a6;
+  background-color: #0097a7;
 }
 .sidebar-container ul.sidebar-content ul.sub-menu {
   padding: 10px 0px 10px 20px;
@@ -120,13 +130,20 @@ a.btn-info:hover {
   color: #575757;
   font-weight: 700;
   background-color: #ffffff;
-  border-left: 3px solid #00a9a6;
+  border-left: 3px solid #f50057;
 }
 /* _layouts styles */
 /* ----------------------------------------------------------*/
 /* Front-page styling (index.html) */
 #home {
   margin-bottom: 50px;
+}
+#home .post-block {
+  padding: 5px 10px 20px 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 20px #dedede;
+  -moz-box-shadow: 4px 4px 20px #dedede;
+  box-shadow: 4px 4px 20px #dedede;
 }
 #home .page-heading {
   font-size: 48px;
@@ -138,6 +155,7 @@ a.btn-info:hover {
   background-color: white;
 }
 #home .post-link {
+  font-size: 26px;
   color: #666666;
   font-weight: 700;
   text-decoration: none;
@@ -153,22 +171,42 @@ a.btn-info:hover {
   color: #666666;
   padding: 10px 0px;
 }
+#home .how-to {
+  background-color: #4caf50;
+}
+#home .how-to a {
+  color: orange;
+}
+#home .strategies {
+  background-color: #af504c;
+}
+#home .strategies a {
+  color: orange;
+}
+#home .troubleshooting {
+  background-color: #504caf;
+}
+#home .troubleshooting a {
+  color: orange;
+}
 #home .post-details {
   font-size: 14px;
-  color: #999999;
+  color: #ffffff;
   font-weight: 400;
-  background-color: #ffffff;
   padding: 5px 0px 5px 0px;
   -webkit-box-shadow: 4px 4px 20px #dedede;
   -moz-box-shadow: 4px 4px 20px #dedede;
   box-shadow: 4px 4px 20px #dedede;
+}
+#home .fa-tags {
+  color: #e0f7fa;
 }
 #home .tag-link:hover {
   text-decoration: none;
   border-bottom: 1px solid red;
 }
 #home .tag-link .tag-label {
-  color: #00a9a6;
+  color: #ffffff;
   display: inline-block;
   font-size: 14px;
 }

@@ -26,6 +26,11 @@
 
 @base-text-color: #575757;
 
+// Triadic Colors (3 category colors)
+@how-to-color: #4caf50;
+@strategies-color: spin(@how-to-color, -(360 / 3));
+@troubleshooting-color: spin(@how-to-color, (360 / 3));
+
 
 
 /* Local Fonts */
@@ -61,6 +66,9 @@ h1, h2 {
 ul {
 	list-style-type: none;
 }
+.glyphicon {
+	margin: 0px 10px;
+}
 .highlight-orange {
 	color: @orange-secondary-color;
 }
@@ -89,7 +97,7 @@ a {
 /* Site header (header.html) */
 #header {
 	margin-bottom: 0px;
-	background-color: @neutral-gray-dark;
+	background-color: #455a64;
 	border-radius: 0px;
 	border: none;
 	a {
@@ -112,11 +120,11 @@ a {
 	#help-container {
 		color: @white;
 		padding: 30px 0px;
-		background-color: @neutral-gray-semi-dark;
+		background-color: #607d8b;
 	}
 	#links-container {
 		padding: 30px 50px;
-		background-color: @neutral-gray-dark;
+		background-color: #455a64;
 		li {
 			color: @white;
 			list-style-type: none;
@@ -132,11 +140,16 @@ a {
 .sidebar-container {
 	background-color: @white;
 	.Box-shadow (4px 4px 20px #eeeeee);
-	h3.side-title {
-		padding-left: 20px;
-		padding-top: 15px;
-		font-size: 20px;
-		font-weight: 700;
+	.sidebar-header {
+		background-color: #0097a7;
+		.Box-shadow(0px 8px 15px #eeeeee);
+		h3.side-title {
+			padding-left: 20px;
+			padding-top: 15px;
+			font-size: 20px;
+			font-weight: 700;
+			color: @white;
+		}
 	}
 	ul.sidebar-content {
 		padding-left: 0px;
@@ -146,11 +159,11 @@ a {
 				display: block;
 				padding: 10px 0px 10px 20px;
 				font-size: 16px;
-				color: @turquoise-secondary-color;
+				color: @neutral-gray-semi-dark;
 				text-decoration: none;
 				&:hover {
 					color: @white;
-					background-color: @turquoise-secondary-color;
+					background-color: #0097a7;
 				}
 			}
 		}
@@ -164,7 +177,7 @@ a {
 						color: @base-text-color;
 						font-weight: 700;
 						background-color: @white;
-						border-left: 3px solid @turquoise-secondary-color;
+						border-left: 3px solid #f50057;
 					}
 				}
 			}
@@ -180,6 +193,11 @@ a {
 /* Front-page styling (index.html) */
 #home {
 	margin-bottom: 50px;
+	.post-block {
+		padding: 5px 10px 20px 10px;
+		background-color: @white;
+		.Box-shadow(4px 4px 20px #dedede);
+	}
 	.page-heading {
 		font-size: 48px;
 		font-weight: 700;
@@ -190,6 +208,7 @@ a {
 		background-color: white;
 	}
 	.post-link {
+		font-size: 26px;
 		color: @neutral-gray-semi-dark;
 		font-weight: 700;
 		text-decoration: none;
@@ -205,13 +224,33 @@ a {
 		color: @neutral-gray-semi-dark;
 		padding: 10px 0px;
 	}
+	.how-to {
+		background-color: @how-to-color; // TODO: Add to colors variables
+		a {
+			color: orange;
+		}
+	}
+	.strategies {
+		background-color: @strategies-color; // TODO: Add to colors variables
+		a {
+			color: orange;
+		}
+	}
+	.troubleshooting {
+		background-color:  @troubleshooting-color; // TODO: Add to colors variables
+		a {
+			color: orange;
+		}
+	}
 	.post-details {
 		font-size: 14px;
-		color: @neutral-gray-semi-light;
+		color: @white;
 		font-weight: 400;
-		background-color: @white;
 		padding: 5px 0px 5px 0px;
 		.Box-shadow (4px 4px 20px #dedede);
+	}
+	.fa-tags {
+		color: #e0f7fa;
 	}
 	.tag-link {
 		&:hover {
@@ -219,7 +258,7 @@ a {
 			border-bottom: 1px solid red;
 		}
 		.tag-label {
-			color: @turquoise-secondary-color;
+			color: @white;
 		  display: inline-block;
 		  font-size: 14px;
 		}
