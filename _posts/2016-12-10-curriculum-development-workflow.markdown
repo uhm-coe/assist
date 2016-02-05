@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SME Curriculum Development Workflow"
-date:   2016-12-10 13:46:32
+date:   2016-02-04 13:46:32
 category: Strategies
 tags: ownCloud
 author: Billy Meinke
@@ -18,7 +18,7 @@ This strategy document explains an collaborative approach  for developing instru
 
 ###### Objective mapping of CHL-SI courses [http://bit.ly/CHL-SI](http://bit.ly/CHL-SI)
 
->  
+>
 
 ### Blueprinting
 Each course has a unique layer of learning objectives that work in concert to support the more broad objectives of the program. For each learning objective at the course level, there will be related assessment items, content, and activities. The key piece is the assessment, which will inform decisions about content and activities. The content and activities support students as they gain knowledge, skills, and attitudinal qualities that prepare them for the assessment.
@@ -37,7 +37,7 @@ Beginning with the assessments, we map out the type of test objects or activitie
 
 Also included in the above sheet are activities embedded in the content, preparing the student for assessments. What practice can we give them, and which actions and creative tasks can we give them to help them build their skills?
 
->  
+>
 
 ### Content Development
 
@@ -53,12 +53,12 @@ The rough ideas in the blueprint are fleshed out and recieve several periods of 
 
 ###### The WP visual editor of an example course page
 
->  
+>
 
 ![]({{ site.baseurl }}/img/chl-course.png)
 
 ###### The live, polished version of a WP course site
 
->  
+>
 
 Changes to the course content are made in WP from then on, during instruction and maintenance periods.
