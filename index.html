@@ -10,42 +10,53 @@ weight: 1
   <!-- div template to hide default posts when item is searched -->
   <div id="template">
   {% for post in paginator.posts %}
-    <div class="row">
-      <div class="col-xs-12 col-md-2 post-cat-icon">
-        <h3 class="text-center">{{ post.category }} icon</h3>
-      </div>
-      <div class="col-xs-12 col-md-10">
-        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        {% if post.blurb %}
-          <p class="post-blurb">
-            {{ post.blurb }}
-          </p>
-        {% endif %}
-      </div>
-    </div> <!-- .row -->
-    <div class="row post-details">
-      <div class="col-xs-12 col-md-6">
-        <span>Published {{ post.date | date: "%b %-d, %Y" }} in category: <a href="{{ post.category | prepend: '/' | prepend: site.baseurl }}">{{ post.category }}</a></span>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        {% if post.tags %}
-        <i class="fa fa-tags"></i>
-          {% for tag in post.tags %}
-          <a class="tag-link" href="{{ tag  | prepend: '/tag/' }}">
-            {% if forloop.last == false %}
-            <div class="tag-label">
-              {{ tag | append: "," }}
-            </div>
-            {% else %}
-            <div class="tag-label">
-              {{ tag }}
-            </div>
-            {% endif %}
-          </a>
-          {% endfor %}
-        {% endif %}
+    <div class="post-block">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        </div>
+        <div class="col-xs-12">
+          {% if post.blurb %}
+            <p class="post-blurb">
+              {{ post.blurb }}
+            </p>
+          {% endif %}
+        </div>
+      </div> <!-- .row -->
+      {% if post.category == 'How-to' %}
+      <div class="row post-details how-to">
+      {% elsif post.category == 'Strategies' %}
+      <div class="row post-details strategies">
+      {% else %}
+      <div class="row post-details troubleshooting">
+      {% endif %}
+        <div class="col-xs-12 col-md-5">
+          {% if post.category %}
+          <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+          <a href="{{ post.category | prepend: '/' | prepend: site.baseurl }}" title="View all posts published in {{ post.category }}">{{ post.category }}</a>
+          {% endif %}
+        </div>
+        <div class="col-xs-12 col-md-7 pull-right">
+          {% if post.tags %}
+          <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+            {% for tag in post.tags %}
+            <a class="tag-link" href="{{ tag  | prepend: '/tag/' }}" title="View all posts tagged with {{ tag }}">
+              {% if forloop.last == false %}
+              <div class="tag-label">
+                {{ tag | append: "," }}
+              </div>
+              {% else %}
+              <div class="tag-label">
+                {{ tag }}
+              </div>
+              {% endif %}
+            </a>
+            {% endfor %}
+          {% endif %}
+        </div>
       </div>
     </div>
+
     <hr />
   {% endfor %}
   </div>
