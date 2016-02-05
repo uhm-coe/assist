@@ -90,7 +90,7 @@ a.btn-info:hover {
   box-shadow: 4px 4px 20px #eeeeee;
 }
 .sidebar-container .sidebar-header {
-  background-color: #0097a7;
+  background-color: #455a64;
   -webkit-box-shadow: 0px 8px 15px #eeeeee;
   -moz-box-shadow: 0px 8px 15px #eeeeee;
   box-shadow: 0px 8px 15px #eeeeee;
@@ -119,6 +119,9 @@ a.btn-info:hover {
   color: #ffffff;
   background-color: #0097a7;
 }
+.sidebar-container ul.sidebar-content li a.bold-link {
+  font-weight: 700;
+}
 .sidebar-container ul.sidebar-content ul.sub-menu {
   padding: 10px 0px 10px 20px;
 }
@@ -140,13 +143,18 @@ a.btn-info:hover {
 }
 #home .post-block {
   padding: 5px 10px 20px 10px;
+  margin-bottom: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 4px 4px 20px #dedede;
   -moz-box-shadow: 4px 4px 20px #dedede;
   box-shadow: 4px 4px 20px #dedede;
 }
 #home .page-heading {
-  font-size: 48px;
+  font-size: 32px;
+  font-weight: 700;
+}
+#home .page-results {
+  font-size: 18px;
   font-weight: 700;
 }
 #home .post-cat-icon {
