@@ -3,7 +3,7 @@ layout: post
 title:  "SME Curriculum Development Workflow"
 date:   2016-02-04 13:46:32
 category: Strategies
-tags: ownCloud
+tags: workflow, collaboration
 author: Billy Meinke
 materials: Google Sheets, Google Docs, Wordpress (WP) course site
 blurb: "Content creation for collaborators."
