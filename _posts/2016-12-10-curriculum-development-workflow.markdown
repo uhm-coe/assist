@@ -49,6 +49,8 @@ From there, the course structure is transferred to a content development templat
 
 The rough ideas in the blueprint are fleshed out and recieve several periods of review. As it is finalized at the 25% and 100% milestones, content is migrated into the Wordpress course site.
 
+### Finishing and publishing
+
 ![]({{ site.baseurl }}/img/wp-backend.png)
 
 ###### The WP visual editor of an example course page
