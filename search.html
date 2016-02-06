@@ -2,29 +2,11 @@
 layout: page
 ---
 
-<div id="results"></div>
+<h1>Search results</h1>
+<div class="search-results-count"></div>
+<ul class="search-results"></ul>
 
-<script>
-	var JEKYLL_POSTS = [];
-
-	{% for post in site.posts %}
-		JEKYLL_POSTS.push({
-			title: "{{ post.title }}",
-			link: "{{ post.url | prepend: site.baseurl }}",
-			content: "{{ post.blurb | strip_newlines | strip_html }}"
-		});
-	{% endfor %}
-
-	for(var i = 0; i < JEKYLL_POSTS.length; i++) {
-		console.log(JEKYLL_POSTS[i].content + "\n\n");
-	}
-</script>
-
-<script src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
-<script>
-	new jekyllSearch({
-		selector: "#results",
-		properties: ["title", "content"],
-		noResultsMessage: "Sorry, no results were found."
-	});
-</script>
+<script type="text/javascript" src="{{ "/assets/js/lunr.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/set-query.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/results.js" | prepend: site.baseurl }}"></script>
