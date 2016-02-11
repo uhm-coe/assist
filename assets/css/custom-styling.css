@@ -44,21 +44,24 @@ a.btn-info:hover {
 }
 /* _includes styles */
 /* ----------------------------------------------------------*/
+.container-fluid {
+  padding: 0px;
+}
 /* Site header (header.html) */
 #header {
-  margin-bottom: 0px;
   background-color: #455a64;
   border-radius: 0px;
   border: none;
+}
+#header button {
+  background-color: #F4F5F9;
 }
 #header a {
   color: #ffffff;
 }
 #header a.navbar-brand {
+  font-size: 24px;
   font-weight: 700;
-}
-#header .active a {
-  background-color: #666666;
 }
 /* Site footer (footer.html) */
 #footer {
@@ -116,10 +119,6 @@ a.btn-info:hover {
   text-decoration: none;
 }
 .sidebar-container ul.sidebar-content li a:hover {
-  color: #ffffff;
-  background-color: #0097a7;
-}
-.sidebar-container ul.sidebar-content li a.bold-link {
   font-weight: 700;
 }
 .sidebar-container ul.sidebar-content ul.sub-menu {
@@ -133,7 +132,7 @@ a.btn-info:hover {
   color: #575757;
   font-weight: 700;
   background-color: #ffffff;
-  border-left: 3px solid #f50057;
+  border-left: 3px solid #b4bdc1;
 }
 /* _layouts styles */
 /* ----------------------------------------------------------*/
@@ -236,12 +235,19 @@ a.btn-info:hover {
 .tutorial-post h2,
 .tutorial-post h3,
 .tutorial-post h4,
-.tutorial-post h5,
+.tutorial-post h5 {
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 .tutorial-post h6 {
   font-weight: 700;
 }
 .tutorial-post p {
   color: #666666;
+}
+.tutorial-post img {
+  margin-top: 40px;
 }
 .tutorial-post .details {
   margin-top: 20px;

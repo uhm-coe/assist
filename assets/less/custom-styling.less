@@ -94,21 +94,24 @@ a {
 /* _includes styles */
 /* ----------------------------------------------------------*/
 
+// Bootstrap Overrides
+.container-fluid {
+	padding: 0px;
+}
+
 /* Site header (header.html) */
 #header {
-	margin-bottom: 0px;
 	background-color: #455a64;
 	border-radius: 0px;
 	border: none;
+	button {
+		background-color: #F4F5F9;
+	}
 	a {
 		color: @white;
 		&.navbar-brand {
+			font-size: 24px;
 			font-weight: 700;
-		}
-	}
-	.active {
-		a {
-			background-color: @neutral-gray-semi-dark;
 		}
 	}
 }
@@ -162,13 +165,14 @@ a {
 				color: @neutral-gray-semi-dark;
 				text-decoration: none;
 				&:hover {
-					color: @white;
-					background-color: #0097a7;
+					// color: @white;
+					font-weight: 700;
+					// background-color: #b4bdc1;
 				}
 			}
-			a.bold-link {
-				font-weight: 700;
-			}
+			// a.bold-link {
+			// 	font-weight: 700;
+			// }
 		}
 		ul.sub-menu {
 			padding: 10px 0px 10px 20px;
@@ -180,7 +184,7 @@ a {
 						color: @base-text-color;
 						font-weight: 700;
 						background-color: @white;
-						border-left: 3px solid #f50057;
+						border-left: 3px solid #b4bdc1;
 					}
 				}
 			}
@@ -233,19 +237,19 @@ a {
 		padding: 10px 0px;
 	}
 	.how-to {
-		background-color: @how-to-color; // TODO: Add to colors variables
+		background-color: @how-to-color;
 		a {
 			color: orange;
 		}
 	}
 	.strategies {
-		background-color: @strategies-color; // TODO: Add to colors variables
+		background-color: @strategies-color;
 		a {
 			color: orange;
 		}
 	}
 	.troubleshooting {
-		background-color:  @troubleshooting-color; // TODO: Add to colors variables
+		background-color:  @troubleshooting-color;
 		a {
 			color: orange;
 		}
@@ -293,11 +297,19 @@ a {
 
 /* Single-post styling (post.html) */
 .tutorial-post {
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5 {
+		font-weight: 700;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	h6 {
 		font-weight: 700;
 	}
 	p {
 		color: @neutral-gray-semi-dark;
+	}
+	img {
+		margin-top: 40px;
 	}
 	.details {
 		margin-top: 20px;
