@@ -33,7 +33,7 @@ weight: 1
         <div class="col-xs-12 col-md-5">
           {% if post.category %}
           <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
-          <a href="{{ post.category | prepend: '/' | prepend: site.baseurl }}" title="View all posts published in {{ post.category }}">{{ post.category }}</a>
+          <a href="{{ post.category | downcase | prepend: '/' | prepend: site.baseurl }}" title="View all posts published in {{ post.category }}">{{ post.category }}</a>
           {% endif %}
         </div>
         <div class="col-xs-12 col-md-7 pull-right">
@@ -79,4 +79,5 @@ weight: 1
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+<script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
