@@ -311,6 +311,38 @@ a {
 	img {
 		margin-top: 40px;
 	}
+	ol {
+		counter-reset: li; /* Initiate a counter */
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
+		li {
+			position: relative;
+			margin: 0 0 6px 2em;
+			list-style: none;
+			&:before {
+				content: counter(li);
+				counter-increment: li;
+				/* Position and style number */
+				position: absolute;
+				top: -2px;
+				left: -2em;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				width: 2em;
+				border-radius: 50px;
+
+				margin-right:8px;
+		    padding:4px;
+		    color:#fff;
+		    background:#00e676;
+		    font-weight:bold;
+		    font-family: 'Montserrat', sans-serif;
+		    text-align:center;
+			}
+		}
+	}
 	.details {
 		margin-top: 20px;
 		padding: 10px 5px;
