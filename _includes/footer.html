@@ -1,51 +1,55 @@
-<nav id="footer" class="navbar navbar-default navbar-static-bottom">
-	{% if page.title != "Contact" %}
-	<div id="help-container" class="container-fluid">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-md-5 col-md-offset-3">
-					<p>Not finding what you're looking for? Let us know.</p>
-				</div>
-				<div class="col-xs-12 col-md-2">
-					<a class="btn btn-info btn-lg" href="{{ "/contact.html" | prepend: site.baseurl }}">Contact</a>
+<div class="container-fluid">
+	<nav id="footer" class="navbar navbar-default navbar-static-bottom">
+		{% if page.title != "Contact" %}
+		<div id="help-container" class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-5 col-md-offset-3">
+						<p>Not finding what you're looking for? Let us know.</p>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<a class="btn btn-info btn-lg" href="{{ "/contact.html" | prepend: site.baseurl }}">Contact</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	{% endif %}
-  <div id="links-container" class="container-fluid">
-  	<div class="container">
-	    <div class="row">
-				<div class="col-xs-12 col-md-4">
-					<li>Quick Help</li>
-					<li><a href="{{ site.baseurl }}/">Tutorials</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="http://www.cis.hawaii.edu/">Center for Instructional Support</a></li>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<li>External Support</li>
-					<li><a href="http://www.hawaii.edu/its/">ITS</a></li>
-					<li><a href="http://www.hawaii.edu/talent/laulima_faculty.htm">Laulima Assistance</a></li>
-					<li><a href="http://www.cte.hawaii.edu/">Center for Teaching Excellence</a></li>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<li>Support Resources</li>
-					<li><a href="http://guides.library.manoa.hawaii.edu/sinclairlibrary/WongAudiovisualCenter">Wong Audiovisual Center</a></li>
-					<li><a href="https://dcdc.coe.hawaii.edu/support/collaborate">Web Conferencing Support Manager</a></li>
-					<li><a href="https://coe.hawaii.edu/intranet/faculty-staff-support/web-editors-guide">Web Editor's Guide</a></li>
-				</div>
-	    </div><!-- .row -->
-  	</div>
-    <hr />
-    <div class="row">
-    	<div class="col-xs-4 pull-right">
-    		<a href="https://manoa.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/uhmlogo.png" /></a>
-    		<a href="https://coe.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/logo-coe.png" /></a>
-    		<a href="https://dcdc.coe.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/dcdclogo.png" /></a>
-    	</div>
-    </div>
-  </div><!-- #links-container -->
-</nav>
+		{% endif %}
+	  <div id="links-container" class="container-fluid">
+	  	<div class="container">
+		    <div class="row">
+					<div class="col-xs-12 col-md-4">
+						<li>Quick Help</li>
+						<li><a href="{{ site.baseurl }}/">Tutorials</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="http://www.cis.hawaii.edu/">Center for Instructional Support</a></li>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<li>External Support</li>
+						<li><a href="http://www.hawaii.edu/its/">ITS</a></li>
+						<li><a href="http://www.hawaii.edu/talent/laulima_faculty.htm">Laulima Assistance</a></li>
+						<li><a href="http://www.cte.hawaii.edu/">Center for Teaching Excellence</a></li>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<li>Support Resources</li>
+						<li><a href="http://guides.library.manoa.hawaii.edu/sinclairlibrary/WongAudiovisualCenter">Wong Audiovisual Center</a></li>
+						<li><a href="https://dcdc.coe.hawaii.edu/support/collaborate">Web Conferencing Support Manager</a></li>
+						<li><a href="https://coe.hawaii.edu/intranet/faculty-staff-support/web-editors-guide">Web Editor's Guide</a></li>
+					</div>
+		    </div><!-- .row -->
+		    <hr />
+				<div class="row">
+		    	<div class="col-xs-12">
+		    		<div class="pull-right">
+			    		<a href="https://manoa.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/uhmlogo.png" /></a>
+			    		<a href="https://coe.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/logo-coe.png" /></a>
+			    		<a href="https://dcdc.coe.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/dcdclogo.png" /></a>
+		    		</div>
+		    	</div>
+		    </div>
+	  	</div>
+	  </div><!-- #links-container -->
+	</nav>
+</div>
 
 <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
