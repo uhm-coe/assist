@@ -33,36 +33,26 @@ $(document).ready(function(){
 		$(this).addClass('open');
 	});
 
+	var offset = 300, // how many pixels scrolled until back to top btn appears
+	offset_opacity = 1200,
+	scroll_top_duration = 700,
+	$back_to_top = $('.cd-top');
 
+	// Hide or show the "back to top" button
+	$(window).scroll(function(){
+		$(this).scrollTop() > offset ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+		if( $(this).scrollTop() > offset_opacity ) {
+			$back_to_top.addClass('cd-fade-out');
+		}
+	});
 
-	/**
-	 * @name: stickyElement()
-	 * @author: Myles Enriquez
-	 * @date: 20160125
-	 * @description: Will make an element 'sticky' by sticking it to top of viewport when the two touch.
-	 *
-	 * @params: {String} classOfElement Class name given to the element
-	 * @returns: null
-	 */
-	function stickyElement(classOfElement) {
-		var stickyTop = $(classOfElement).offset().top;
-
-		$(window).scroll(function(event) {
-			var windowTop = $(window).scrollTop();
-
-			if (stickyTop < windowTop) {
-				$(classOfElement).css(
-					{
-						'position': 'fixed',
-						'width': '212.5', // TODO: change to percentage
-						'top': '0'
-					});
-			}
-			else {
-				$(classOfElement).css({'position':'static'});
-			}
-		});
-	}
-	// stickyElement('.sidebar-content');
+	// Ease into scroll top
+	$back_to_top.on('click', function(event) {
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0,
+			}, scroll_top_duration
+		);
+	});
 
 });
