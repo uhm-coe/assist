@@ -44,32 +44,35 @@ ul {
 }
 .cd-top {
   display: inline-block;
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   position: fixed;
   bottom: 40px;
-  right: 10px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  right: 30px;
+  -webkit-box-shadow: 4px 4px 30px #aaaaaa;
+  -moz-box-shadow: 4px 4px 30px #aaaaaa;
+  box-shadow: 4px 4px 30px #aaaaaa;
   overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background-color: red;
+  background-color: #455A64;
+  color: #ffffff;
   visibility: hidden;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-  /* TODO: Create mixin */
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
+  z-index: 1;
 }
-.cd-top .cd-is-visible {
-  visibility: visible;
+.cd-top:hover {
   opacity: 1;
+  color: #ffffff;
+  text-decoration: none;
 }
-.cd-top .cd-fade-out {
+.cd-top:visited {
+  color: #ffffff;
+}
+.cd-top span {
+  vertical-align: middle;
+}
+.cd-is-visible {
+  visibility: visible;
+}
+.cd-fade-out {
   opacity: .5;
 }
 /* _includes styles */

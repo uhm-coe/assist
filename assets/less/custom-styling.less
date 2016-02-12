@@ -87,6 +87,15 @@
 	-ms-transition:     @transition;
 	-o-transition:      @transition;
 }
+.Border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
 
 
 /* Bootstrap Overrides */
@@ -125,29 +134,35 @@ ul {
 }
 .cd-top {
 	display: inline-block;
-	height: 40px;
-	width: 40px;
+	height: 60px;
+	width: 60px;
 	position: fixed;
 	bottom: 40px;
-	right: 10px;
-	.Box-shadow (0 0 10px rgba(0, 0, 0, 0.05));
+	right: 30px;
+	.Box-shadow (4px 4px 30px #aaa);
 	overflow: hidden;
-	text-indent: 100%;
-	white-space: nowrap;
-	background-color: red;
+	background-color: #455A64;
+	color: @white;
 	visibility: hidden;
-	.Opacity (0);
-	/* TODO: Create mixin */
-	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
-	.cd-is-visible {
-		visibility: visible;
+	z-index: 1;
+	&:hover {
 		opacity: 1;
+		color: @white;
+		text-decoration: none;
 	}
-	.cd-fade-out {
-		opacity: .5;
+	&:visited {
+		color: @white;
 	}
+	span {
+		vertical-align: middle;
+	}
+}
+.cd-is-visible {
+		visibility: visible;
+		// opacity: 1;
+	}
+.cd-fade-out {
+	opacity: .5;
 }
 
 
