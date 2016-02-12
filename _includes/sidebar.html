@@ -8,7 +8,10 @@
     </li>
     {% if site.categories %}
     <li class="collapsed active open" data-toggle="collapse" data-target="#categories">
-      <a href="#">Categories</a>
+      <a href="#">
+        Categories
+        <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
+      </a>
     </li>
     <ul id="categories" class="sub-menu collapse">
       {% for category in site.categories %}
@@ -19,7 +22,10 @@
 
     {% if site.tags %}
     <li class="collapsed active open" data-toggle="collapse" data-target="#tags">
-      <a href="#">Tags</a>
+      <a href="#">
+        Tags
+        <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
+      </a>
     </li>
     <ul id="tags" class="sub-menu collapse">
       {% for tag in site.tags %}
