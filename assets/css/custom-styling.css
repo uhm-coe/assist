@@ -8,6 +8,22 @@
 }
 /* Mixins */
 /* ----------------------------------------------------------*/
+/* Bootstrap Overrides */
+/* ----------------------------------------------------------*/
+a.btn-info {
+  margin: 10px 0px;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  background-color: #ff9800;
+}
+a.btn-info:hover {
+  color: #ffffff;
+  background-color: #ffad33;
+}
+.container-fluid {
+  padding: 0px;
+}
 /* Base styling */
 /* ----------------------------------------------------------*/
 body {
@@ -26,27 +42,38 @@ ul {
 .glyphicon {
   margin: 0px 10px;
 }
-.highlight-orange {
-  color: #f68932;
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background-color: red;
+  visibility: hidden;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  /* TODO: Create mixin */
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
 }
-.highlight-violet-red {
-  color: #ed1555;
+.cd-top .cd-is-visible {
+  visibility: visible;
+  opacity: 1;
 }
-a.btn-info {
-  margin: 10px 0px;
-  background-color: #f68932;
-  border-radius: 3px;
-  border: none;
-  color: #ffffff;
-}
-a.btn-info:hover {
-  background-color: #a0d062;
+.cd-top .cd-fade-out {
+  opacity: .5;
 }
 /* _includes styles */
 /* ----------------------------------------------------------*/
-.container-fluid {
-  padding: 0px;
-}
 /* Site header (header.html) */
 #header {
   background-color: #455a64;
@@ -78,8 +105,14 @@ a.btn-info:hover {
   background-color: #455a64;
 }
 #footer #links-container li {
-  color: #ffffff;
+  color: #4caf50;
   list-style-type: none;
+}
+#footer #links-container li a {
+  color: #ffffff;
+}
+#footer #links-container li a:hover {
+  color: #78909c;
 }
 #footer #links-container .logo {
   width: 36px;
@@ -218,13 +251,14 @@ a.btn-info:hover {
   font-size: 14px;
 }
 #home .pager li > a {
-  background-color: #f68932;
   border-radius: 3px;
-  color: #ffffff;
   padding: 5px 15px;
+  color: #ffffff;
+  background-color: #4caf50;
 }
 #home .pager li > a:hover {
-  background-color: #a0d062;
+  color: #ffffff;
+  background-color: #6ec071;
 }
 /* Single-page styling (page.html) */
 .is-page h1 {
@@ -281,6 +315,12 @@ a.btn-info:hover {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
+.tutorial-post code {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #4db6ac;
+  background-color: transparent;
+}
 .tutorial-post .details {
   margin-top: 20px;
   padding: 10px 5px;
@@ -305,28 +345,4 @@ a.btn-info:hover {
   -webkit-box-shadow: 0px 0px 5px #888888;
   -moz-box-shadow: 0px 0px 5px #888888;
   box-shadow: 0px 0px 5px #888888;
-}
-/* media queries */
-/* ----------------------------------------------------------*/
-@media (min-width: 992px) {
-  ol {
-    margin-top: 50px;
-    padding-left: 30px;
-  }
-  ol li {
-    margin-bottom: 50px;
-  }
-  ol p {
-    font-weight: 400;
-    vertical-align: top;
-    display: block;
-    width: 100%;
-  }
-  ol p img {
-    padding-right: 0px;
-    border-radius: 3px;
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
 }

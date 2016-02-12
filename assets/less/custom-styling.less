@@ -50,6 +50,60 @@
 	box-shadow:         @string;
 }
 
+.Create-btn-color-states(@hex) {
+	color: @white;
+	background-color: @hex;
+	&:hover {
+		color: @white;
+		background-color: lighten(@hex, 10%);
+	}
+}
+
+.Create-link-color-states(@hex) {
+	color: @hex;
+	&:hover {
+		color: saturate(@hex, 10%);
+	}
+	&:focus {
+		color: desaturate(@hex, 10%);
+	}
+}
+
+.Box-sizing() {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.Opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+
+.Transition (@transition) {
+	-webkit-transition: @transition;
+	-moz-transition:    @transition;
+	-ms-transition:     @transition;
+	-o-transition:      @transition;
+}
+
+
+/* Bootstrap Overrides */
+/* ----------------------------------------------------------*/
+a {
+	&.btn-info {
+		margin: 10px 0px;
+		border-radius: 3px;
+		border: none;
+		.Create-btn-color-states(#ff9800);
+	}
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
 
 /* Base styling */
 /* ----------------------------------------------------------*/
@@ -69,35 +123,38 @@ ul {
 .glyphicon {
 	margin: 0px 10px;
 }
-.highlight-orange {
-	color: @orange-secondary-color;
-}
-.highlight-violet-red {
-	color: @violetred-secondary-color;
-}
-a {
-	&.btn-info {
-		margin: 10px 0px;
-		background-color: @orange-secondary-color;
-		border-radius: 3px;
-		border: none;
-		color: @white;
-		&:hover {
-			background-color: @orange-seconary-color-highlight;
-		}
+.cd-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	.Box-shadow (0 0 10px rgba(0, 0, 0, 0.05));
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background-color: red;
+	visibility: hidden;
+	.Opacity (0);
+	/* TODO: Create mixin */
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+	.cd-is-visible {
+		visibility: visible;
+		opacity: 1;
+	}
+	.cd-fade-out {
+		opacity: .5;
 	}
 }
-
 
 
 
 /* _includes styles */
 /* ----------------------------------------------------------*/
 
-// Bootstrap Overrides
-.container-fluid {
-	padding: 0px;
-}
 
 /* Site header (header.html) */
 #header {
@@ -129,8 +186,14 @@ a {
 		padding: 30px 50px;
 		background-color: #455a64;
 		li {
-			color: @white;
+			color: #4caf50;
 			list-style-type: none;
+			a {
+				color: @white;
+				&:hover {
+					color: #78909c;
+				}
+			}
 		}
 		.logo {
 			width: 36px;
@@ -224,6 +287,7 @@ a {
 		color: @neutral-gray-semi-dark;
 		font-weight: 700;
 		text-decoration: none;
+
 		&:hover {
 			color: @neutral-gray-light;
 			text-decoration: underline;
@@ -277,13 +341,9 @@ a {
 	}
 	.pager {
 		li > a {
-			background-color: @orange-secondary-color;
 			border-radius: 3px;
-			color: @white;
 			padding: 5px 15px;
-			&:hover {
-				background-color: @orange-seconary-color-highlight;
-			}
+			.Create-btn-color-states(#4caf50);
 		}
 	}
 }
@@ -327,9 +387,7 @@ a {
 				position: absolute;
 				top: -2px;
 				left: -2em;
-				-moz-box-sizing: border-box;
-				-webkit-box-sizing: border-box;
-				box-sizing: border-box;
+				.Box-sizing();
 				width: 2em;
 				border-radius: 50px;
 
@@ -342,6 +400,12 @@ a {
 		    text-align:center;
 			}
 		}
+	}
+	code {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #4db6ac;
+		background-color: transparent;
 	}
 	.details {
 		margin-top: 20px;
@@ -368,30 +432,3 @@ a {
 	}
 }
 
-
-
-
-/* media queries */
-/* ----------------------------------------------------------*/
-@media (min-width: 992px) {
-	ol {
-		margin-top: 50px;
-		padding-left: 30px;
-		li {
-			margin-bottom: 50px;
-		}
-		p {
-			font-weight: 400;
-			vertical-align: top;
-			display: block;
-			width: 100%;
-			img {
-				padding-right: 0px;
-				border-radius: 3px;
-				display: block;
-				max-width: 100%;
-				height: auto;
-			}
-		}
-	}
-}
