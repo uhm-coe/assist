@@ -28,10 +28,6 @@ $(document).ready(function(){
 	}
 	formatPostContent();
 
-	$('.sidebar-content').on('click', '> li > a', function(){
-		$('.sidebar-content').find('.open').removeClass('open');
-		$(this).addClass('open');
-	});
 
 	var offset = 300, // how many pixels scrolled until back to top btn appears
 	offset_opacity = 1200,
