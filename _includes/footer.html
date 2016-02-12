@@ -3,15 +3,18 @@
 		{% if page.title != "Contact" %}
 		<div id="help-container" class="container-fluid">
 			<div class="container">
-				<div class="row">
-
-					<p>Not finding what you're looking for? Let us know.</p>
-
-					<a class="btn btn-info btn-lg" href="{{ "/contact.html" | prepend: site.baseurl }}">Contact</a>
-
-				</div>
+				<div class="row text-center">
+					<div class="col-xs-12">
+						<p>Not finding what you're looking for? Let us know.</p>
+					</div>
+				</div><!-- .row -->
+				<div class="row text-center">
+					<div class="col-xs-12">
+						<a class="btn btn-info btn-lg" href="{{ "/contact.html" | prepend: site.baseurl }}">Contact</a>
+					</div>
+				</div><!-- .row -->
 			</div>
-		</div>
+		</div><!-- #help-container -->
 		{% endif %}
 	  <div id="links-container" class="container-fluid">
 	  	<div class="container">
@@ -44,10 +47,10 @@
 			    		<a href="https://dcdc.coe.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/dcdclogo.png" /></a>
 		    		</div>
 		    	</div>
-		    </div>
+		    </div><!-- .row -->
 	  	</div>
 	  </div><!-- #links-container -->
-	</nav>
+	</nav><!-- #footer -->
 </div>
 
 <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
