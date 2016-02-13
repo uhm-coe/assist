@@ -62,7 +62,8 @@ $(function(Query) {
 		$resultsCount.append( results.length + (results.length === 1 ? ' result' : ' results') + ' for "' + query.get() + '"');
 
 		if (results.length == 0) {
-			$results.append('<p>Hmm...no results found. How about trying our <a href="' + site + '/how-to/">How-to</a>, <a href="' + site + '/strategies/">Strategies</a>, or <a href="' + site + '/troubleshooting/">Troubleshooting</a> categories instead?</p>');
+			// TODO: Will need to set this relative to what is availabe (ex. categories.)
+			$results.append('<p>Hmm...no results found. How about searching through our <a href="' + site + '/how-to/">How-to</a>, <a href="' + site + '/strategies/">Strategies</a>, or <a href="' + site + '/troubleshooting/">Troubleshooting</a> categories instead?</p>');
 		}
 		else {
 			// Get the total score of all items, so that we can divide each result into it, giving us a percentage.
@@ -80,9 +81,15 @@ $(function(Query) {
 				url = result.ref,
 				date = result.date;
 
-				$results.append('<h1><a href="' + site + url + '">' + title + '</a></h1>');
-				$results.append('<p>' + blurb + '</p>');
-				$results.append('<hr />');
+				if (category === "How-to") {
+					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details how-to"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category + '" title="View all posts published in ' + category + '">' + category + '</a></div></div></div>');
+				}
+				else if (category === 'Strategies') {
+					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details strategies"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category + '" title="View all posts published in ' + category + '">' + category + '</a></div></div></div>');
+				}
+				else {
+					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details troubleshooting"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category + '" title="View all posts published in ' + category + '">' + category + '</a></div></div></div>');
+				}
 			});
 		}
 	});
