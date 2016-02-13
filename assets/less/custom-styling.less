@@ -28,8 +28,8 @@
 
 // Triadic Colors (3 category colors)
 @how-to-color: #4caf50;
-@strategies-color: spin(@how-to-color, -(360 / 3));
-@troubleshooting-color: spin(@how-to-color, (360 / 3));
+@strategies-color: #00bcd4;
+@troubleshooting-color: #F68932;
 
 
 
@@ -321,19 +321,19 @@ ul {
 	.how-to {
 		background-color: @how-to-color;
 		a {
-			color: orange;
+			color: lighten(@how-to-color, 30%);
 		}
 	}
 	.strategies {
 		background-color: @strategies-color;
 		a {
-			color: orange;
+			color: lighten(@strategies-color, 30%);
 		}
 	}
 	.troubleshooting {
 		background-color:  @troubleshooting-color;
 		a {
-			color: orange;
+			color: lighten(@troubleshooting-color, 30%);
 		}
 	}
 	.post-details {
@@ -344,12 +344,12 @@ ul {
 		.Box-shadow (4px 4px 20px #dedede);
 	}
 	.fa-tags {
-		color: #e0f7fa;
+		color: @white;
 	}
 	.tag-link {
 		&:hover {
 			text-decoration: none;
-			border-bottom: 1px solid red;
+			border-bottom: 1px solid @white;
 		}
 		.tag-label {
 			color: @white;

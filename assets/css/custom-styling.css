@@ -221,19 +221,19 @@ ul {
   background-color: #4caf50;
 }
 #home .how-to a {
-  color: orange;
+  color: #b5dfb7;
 }
 #home .strategies {
-  background-color: #af504c;
+  background-color: #00bcd4;
 }
 #home .strategies a {
-  color: orange;
+  color: #6eefff;
 }
 #home .troubleshooting {
-  background-color: #504caf;
+  background-color: #f68932;
 }
 #home .troubleshooting a {
-  color: orange;
+  color: #fcddc5;
 }
 #home .post-details {
   font-size: 14px;
@@ -245,11 +245,11 @@ ul {
   box-shadow: 4px 4px 20px #dedede;
 }
 #home .fa-tags {
-  color: #e0f7fa;
+  color: #ffffff;
 }
 #home .tag-link:hover {
   text-decoration: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #ffffff;
 }
 #home .tag-link .tag-label {
   color: #ffffff;
