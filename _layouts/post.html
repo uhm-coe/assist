@@ -10,27 +10,13 @@ layout: default
   		<div>
 	  		<div id="template">
 					<header>
-						<!-- <div class="row details">
-							<div class="col-xs-12">{% if page.category %}{{ page.category }}{% endif %}</div>
-
-							<div class="col-xs-12">
-								<span class="pull-right">
-									<span>Updated {{ page.date | date: "%b %-d, %Y" }}</span>
-						    	{% if page.author %}
-							    		<span> by {{ page.author }}</span>
-						    	{% endif %}
-					    	</span>
-				    	</div>
-			    	</div> -->
-
 						<div>
 					    <h1 class="tutorial-title">{{ page.title }}</h1>
 					    <h3 class="tutorial-blurb">{{ page.blurb }}</h3>
 				  	</div>
-				  	{% if page.category %}<p><b class="highlight-orange">In Category:</b> {{ page.category }}</p>{% endif %}
-				    {% if page.tags %}<p><b class="highlight-orange">Tagged with:</b> {% for tag in page.tags %}{{ tag }} {% endfor %}</p>{% endif %}
-				    {% if page.materials %}<p><b class="highlight-orange">Materials needed:</b> {{ page.materials }}</p>{% endif %}
-				    <p>{{reading_time_as_i}}</p>
+				  	{% if page.category %}<p><b>In Category:</b> {{ page.category }}</p>{% endif %}
+				    {% if page.tags %}<p><b>Tagged with:</b> {% for tag in page.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }}, {% endif %}{% endfor %}</p>{% endif %}
+				    {% if page.materials %}<p><b>Materials needed:</b> {{ page.materials }}</p>{% endif %}
 		  		</header>
 				</div>
 			</div>
