@@ -1,9 +1,15 @@
+/**
+ * @NAME: search.js
+ * @DESCRIPTION: This script is used to submit our search query to our Query object. This file along with
+ * results.js, and set-query.js are used to give the site searching functionality.
+ */
 $(function(Query) {
 	'use strict';
-	console.log("From search.js");
 
+	// Create our Query object (set-query.js)
 	var query = new Query();
 
+	//
 	$('.search').on('submit', function(e) {
 		// stop the form from doing its default behavior
 		e.preventDefault();

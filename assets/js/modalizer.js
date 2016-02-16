@@ -5,7 +5,7 @@ $(document).ready(function(){
 	 *	@author: Myles Enriquez
 	 * 	@date: 20160125
 	 *	@description: Searches for all p elements that contain an image and creates a
-	 * 	modal for that image.
+	 * 	modal for that image. This is needed because markdown cannot format our content for us.
 	 *
 	 *	@param: null
 	 *	@return: null

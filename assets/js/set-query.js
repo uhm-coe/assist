@@ -1,5 +1,7 @@
-//Create a module using an IIFE
-
+/**
+ * @NAME: set-query.js
+ * @DESCRIPTION: Create a module using an IIFE, IIFE is a JavaScript function that runs as soon as it is defined.
+ */
 ;(function(global,$) {
   /*
     Put ourselves into "strict" mode

@@ -1,6 +1,7 @@
 /**
  * @NAME: results.js
- * @DESCRIPTION: This script is used to retrieve our search results from our generated json file.
+ * @DESCRIPTION: This script is used to retrieve our search results from our generated json file. This file along with
+ * search.js, and set-query.js are used to give the site searching functionality.
  */
 $(function(Query) {
 
@@ -13,13 +14,11 @@ $(function(Query) {
 	.setFromURL('query')
 	.getJSON('/posts.json')
 	.done(function(data) {
-		// console.log("Posts from our json:");
-		// console.log(data); // Log our data for debugging
 
 		var searchIndex,
 		results,
 		$resultsCount = $('.search-results-count'),
-		$results = $('.search-results'),
+		$results = $('.search-results'), // Div class where results will appear (in search.html)
 		totalScore = 0,
 		percentOfTotal;
 
@@ -63,7 +62,7 @@ $(function(Query) {
 
 		if (results.length == 0) {
 			// TODO: Will need to set this relative to what is availabe (ex. categories.)
-			$results.append('<p>Hmm...no results found. How about searching through our <a href="' + site + '/how-to/">How-to</a>, <a href="' + site + '/strategies/">Strategies</a>, or <a href="' + site + '/troubleshooting/">Troubleshooting</a> categories instead?</p>');
+			$results.append('<div class="jumbotron"><p>Hmm...no results found. How about searching through our <a class="how-to-link" href="' + site + '/how-to/">How-to</a> or <a class="strategies-link" href="' + site + '/strategies/">Strategies</a> categories instead?</p></div>');
 		}
 		else {
 			// Get the total score of all items, so that we can divide each result into it, giving us a percentage.
