@@ -15,21 +15,31 @@ a.btn-info {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  background-color: #ff9800;
+  background-color: #f68932;
 }
 a.btn-info:hover {
   color: #ffffff;
-  background-color: #ffad33;
+  background-color: #f8a563;
+}
+a.btn-info:focus {
+  background-color: #f8a563;
+}
+a.btn-info:active {
+  color: #ffffff;
+  background-color: #eb6e0a;
 }
 .container-fluid {
   padding: 0px;
+}
+.jumbotron {
+  background-color: #ffffff;
 }
 /* Base styling */
 /* ----------------------------------------------------------*/
 body {
   font-size: 16px;
-  color: #575757;
-  background-color: #F4F5F9;
+  color: #434343;
+  background-color: #f4f5f9;
   font-family: 'Museo Sans', sans-serif;
 }
 h1,
@@ -53,12 +63,14 @@ ul {
   -moz-box-shadow: 4px 4px 30px #aaaaaa;
   box-shadow: 4px 4px 30px #aaaaaa;
   overflow: hidden;
-  background-color: #455A64;
+  background-color: #8cc63e;
   color: #ffffff;
   visibility: hidden;
   z-index: 1;
 }
 .cd-top:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
   opacity: 1;
   color: #ffffff;
   text-decoration: none;
@@ -73,7 +85,9 @@ ul {
   visibility: visible;
 }
 .cd-fade-out {
-  opacity: .5;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 /* _includes styles */
 /* ----------------------------------------------------------*/
@@ -84,7 +98,7 @@ ul {
   border: none;
 }
 #header button {
-  background-color: #F4F5F9;
+  background-color: #f4f5f9;
 }
 #header a {
   color: #ffffff;
@@ -111,14 +125,14 @@ ul {
   background-color: #455a64;
 }
 #footer #links-container li {
-  color: #4caf50;
+  color: #8cc63e;
   list-style-type: none;
 }
 #footer #links-container li a {
   color: #ffffff;
 }
 #footer #links-container li a:hover {
-  color: #78909c;
+  color: #90a7b2;
 }
 #footer #links-container .logo {
   width: 36px;
@@ -148,13 +162,13 @@ ul {
   padding-left: 0px;
 }
 .sidebar-container ul.sidebar-content li {
-  border-bottom: 1px solid #F4F5F9;
+  border-bottom: 1px solid #f4f5f9;
 }
 .sidebar-container ul.sidebar-content li a {
   display: block;
   padding: 10px 0px 10px 20px;
   font-size: 16px;
-  color: #666666;
+  color: #434343;
   text-decoration: none;
 }
 .sidebar-container ul.sidebar-content li a:hover {
@@ -164,14 +178,14 @@ ul {
   padding: 10px 0px 10px 20px;
 }
 .sidebar-container ul.sidebar-content ul.sub-menu li a {
-  color: #575757;
+  color: #434343;
   font-size: 16px;
 }
 .sidebar-container ul.sidebar-content ul.sub-menu li a:hover {
-  color: #575757;
+  color: #434343;
   font-weight: 700;
   background-color: #ffffff;
-  border-left: 3px solid #b4bdc1;
+  border-left: 3px solid #8cc63e;
 }
 /* _layouts styles */
 /* ----------------------------------------------------------*/
@@ -198,7 +212,7 @@ ul {
 #home .post-cat-icon {
   height: 146px;
   display: inline-block;
-  background-color: white;
+  background-color: #ffffff;
 }
 #home .post-link {
   font-size: 26px;
@@ -218,22 +232,22 @@ ul {
   padding: 10px 0px;
 }
 #home .how-to {
-  background-color: #4caf50;
+  background-color: #00a9a6;
 }
 #home .how-to a {
-  color: #b5dfb7;
+  color: #ffffff;
 }
 #home .strategies {
-  background-color: #00bcd4;
+  background-color: #ed1555;
 }
 #home .strategies a {
-  color: #6eefff;
+  color: #ffffff;
 }
 #home .troubleshooting {
   background-color: #f68932;
 }
 #home .troubleshooting a {
-  color: #fcddc5;
+  color: #ffffff;
 }
 #home .post-details {
   font-size: 14px;
@@ -258,13 +272,39 @@ ul {
 }
 #home .pager li > a {
   border-radius: 3px;
-  padding: 5px 15px;
+  padding: 10px 15px;
   color: #ffffff;
-  background-color: #4caf50;
+  background-color: #8cc63e;
 }
 #home .pager li > a:hover {
   color: #ffffff;
-  background-color: #6ec071;
+  background-color: #a3d265;
+}
+#home .pager li > a:focus {
+  background-color: #a3d265;
+}
+#home .pager li > a:active {
+  color: #ffffff;
+  background-color: #71a130;
+}
+/* Search Results */
+.search-results .how-to-link {
+  color: #00a9a6;
+}
+.search-results .how-to-link:hover {
+  color: #00a9a6;
+}
+.search-results .how-to-link:focus {
+  color: #08a19e;
+}
+.search-results .strategies-link {
+  color: #ed1555;
+}
+.search-results .strategies-link:hover {
+  color: #fa0850;
+}
+.search-results .strategies-link:focus {
+  color: #e0225a;
 }
 /* Single-page styling (page.html) */
 .is-page h1 {
@@ -315,8 +355,8 @@ ul {
   border-radius: 50px;
   margin-right: 8px;
   padding: 4px;
-  color: #fff;
-  background: #00e676;
+  color: #ffffff;
+  background: #8cc63e;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -324,15 +364,8 @@ ul {
 .tutorial-post code {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #4db6ac;
+  color: #8cc63e;
   background-color: transparent;
-}
-.tutorial-post .details {
-  margin-top: 20px;
-  padding: 10px 5px;
-  background-color: #00a9a6;
-  color: #ffffff;
-  font-weight: 700;
 }
 .tutorial-post .tutorial-title {
   font-weight: 700;
