@@ -2,9 +2,18 @@
 layout: page
 ---
 <div id="home">
-    <h1 class="page-heading">Tutorials tagged with: "{{page.tag}}"</h1>
-    <hr/>
     <div id="template">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="page-heading">Posts tagged with: "{{ page.tag }}"</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="page-results">{{ site.tags.[page.tag].size }}{% if site.tags.[page.tag].size == 1 %} post {% else %} posts{% endif %} found</h3>
+        </div>
+      </div>
+    <hr />
     {% for post in site.posts %}
       {% for tag in post.tags %}
         {% if tag == page.tag %}
