@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Flow Tutorials
+title: Assist Tutorials
 email: prar@hawaii.edu
-description: Flow makes your life easier.
+description: Assist makes your life easier.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://flow.coe.hawaii.edu" # the base hostname & protocol for your site
+url: "https://assist.coe.hawaii.edu" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -25,7 +25,7 @@ gems:
 # Documentation: https://github.com/prose/prose/wiki/Prose-Configuration
 prose:
   rooturl: ''
-  siteurl: 'https://flow.coe.hawaii.edu'
+  siteurl: 'https://assist.coe.hawaii.edu'
   ignore: ['_config.yml','.gitignore', 'README.md', 'contact.html', 'index.html', 'search.html', '_includes', '_layouts', '_plugins', 'assets', 'how-to', 'strategies', 'troubleshooting']
   relativeLinks: ''
   media: 'img/post-images'
