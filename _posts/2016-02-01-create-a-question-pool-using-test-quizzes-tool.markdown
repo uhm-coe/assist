@@ -30,7 +30,7 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-02-01-create-a-question-pool-using-test-quizzes-tool/image01.png)
 
-    Tip: It's a good idea to give your pool a unique name. If you later create a random draw part, you'll select a question pool from a list of all the pools that you own or that have been shared with you.
+    `Tip: It's a good idea to give your pool a unique name. If you later create a random draw part, you'll select a question pool from a list of all the pools that you own or that have been shared with you.``
 
 5. To add questions to the newly created question pool, click on the question pool name in the list of pools available.
 
@@ -44,6 +44,6 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-02-01-create-a-question-pool-using-test-quizzes-tool/image02.png)
 
-    Tip: See [Types of questions available for assessments](https://laulima.hawaii.edu/portal/help/TOCDisplay/content.hlp?docId=argy) for more information on the question types.
+    `Tip: See [Types of questions available for assessments](https://laulima.hawaii.edu/portal/help/TOCDisplay/content.hlp?docId=argy) for more information on the question types.``
 
 8. Add your question and answer point value. click **Save**. Continue to add questions until you have reached the desired number of questions.
