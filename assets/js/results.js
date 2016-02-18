@@ -46,12 +46,15 @@ $(function(Query) {
 			results[result].title = data.filter(function(post){
 				return post.url === results[result].ref;
 			})[0].title;
+
 			results[result].category = data.filter(function(post){
 				return post.url === results[result].ref;
 			})[0].category;
+
 			results[result].date = data.filter(function(post){
 				return post.url === results[result].ref;
 			})[0].date;
+
 			results[result].blurb = data.filter(function(post){
 				return post.url === results[result].ref;
 			})[0].blurb;
