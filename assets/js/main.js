@@ -28,6 +28,29 @@ $(document).ready(function(){
 	}
 	formatPostContent();
 
+	/**
+	 * @name: formatPostContent()
+	 * @author: Myles Enriquez
+	 * @date: 20160217
+	 * @description: Adds custom tip styling to any paragraph containing a tip. Needed because there is no syntax for writing
+	 * tips in markdown.
+	 *
+	 * @params: null
+	 * @returns: null
+	 */
+	 function addTipStyling() {
+	 		$('#postcontent li p').each(function(){
+	 			var paragraphContent = $(this).html();
+	 			var searchFor = "TIP";
+
+	 			if(paragraphContent.toUpperCase().substring(0, searchFor.length) === searchFor ) {
+	 				$(this).addClass('tip-styling');
+	 			}
+
+	 		});
+	 }
+	 addTipStyling();
+
 
 	 /**
 	 * @name: backToTopButton()
@@ -62,7 +85,4 @@ $(document).ready(function(){
 		});
 	}
 	backToTopButton();
-
-
-
 });
