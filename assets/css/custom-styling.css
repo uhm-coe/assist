@@ -361,11 +361,10 @@ ul {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
-.tutorial-post code {
+.tutorial-post .tip-styling {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #8cc63e;
-  background-color: transparent;
 }
 .tutorial-post .tutorial-title {
   font-weight: 700;
