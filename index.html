@@ -1,14 +1,11 @@
 ---
-layout: page
+layout: primary-page
 weight: 1
 ---
 
 <div id="home">
-  <h1 class="page-heading">All Tutorials</h1>
-  <h3 class="page-results">Listing {{ site.posts.size }} {% if site.posts.size == 1 %}post{% else %}posts{% endif %}</h3>
-  <hr />
 
-  <!-- div template to hide default posts when item is searched -->
+
   <div id="template">
   {% for post in paginator.posts %}
     <div class="post-block">
