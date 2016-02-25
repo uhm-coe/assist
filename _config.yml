@@ -16,6 +16,7 @@ url: "https://assist.coe.hawaii.edu" # the base hostname & protocol for your sit
 markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
+exclude: [node_modules, gulpfile.js, package.json, README.md]
 
 # Gems
 gems:
