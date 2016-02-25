@@ -119,9 +119,6 @@ a {
 .container-fluid {
 	padding: 0px;
 }
-.jumbotron {
-	background-color: @white;
-}
 
 /* Base styling */
 /* ----------------------------------------------------------*/
@@ -181,7 +178,16 @@ ul {
 
 /* Site header (header.html) */
 #header {
-	background-color: @cool-gray-700;
+	height: 400px;
+	color: @white;
+	background-image:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+  url('/img/logos/front-page-background.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
 	border-radius: 0px;
 	border: none;
 	button {
@@ -193,6 +199,9 @@ ul {
 			font-size: 24px;
 			font-weight: 700;
 		}
+	}
+	p {
+		font-size: 16px;
 	}
 }
 
@@ -280,6 +289,27 @@ ul {
 
 /* _layouts styles */
 /* ----------------------------------------------------------*/
+/* Primary-page layout (primary-page.html) */
+.primary-header {
+	background-color: transparent;
+	.form-control {
+		height: 50px;
+		widtH: 600px;
+	}
+}
+
+/* Secondary-page layout (secondary-page.html) */
+.secondary-header {
+	div.search-header {
+		background-color: @cool-gray-700;
+		border-radius: 0px;
+		.form-control {
+			height: 50px;
+			widtH: 600px;
+		}
+	}
+}
+
 
 /* Front-page styling (index.html) */
 #home {

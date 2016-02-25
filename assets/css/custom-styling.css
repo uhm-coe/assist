@@ -31,9 +31,6 @@ a.btn-info:active {
 .container-fluid {
   padding: 0px;
 }
-.jumbotron {
-  background-color: #ffffff;
-}
 /* Base styling */
 /* ----------------------------------------------------------*/
 body {
@@ -93,7 +90,11 @@ ul {
 /* ----------------------------------------------------------*/
 /* Site header (header.html) */
 #header {
-  background-color: #455a64;
+  height: 400px;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/logos/front-page-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 0px;
   border: none;
 }
@@ -106,6 +107,9 @@ ul {
 #header a.navbar-brand {
   font-size: 24px;
   font-weight: 700;
+}
+#header p {
+  font-size: 16px;
 }
 /* Site footer (footer.html) */
 #footer {
@@ -189,6 +193,23 @@ ul {
 }
 /* _layouts styles */
 /* ----------------------------------------------------------*/
+/* Primary-page layout (primary-page.html) */
+.primary-header {
+  background-color: transparent;
+}
+.primary-header .form-control {
+  height: 50px;
+  widtH: 600px;
+}
+/* Secondary-page layout (secondary-page.html) */
+.secondary-header div.search-header {
+  background-color: #455a64;
+  border-radius: 0px;
+}
+.secondary-header div.search-header .form-control {
+  height: 50px;
+  widtH: 600px;
+}
 /* Front-page styling (index.html) */
 #home {
   margin-bottom: 50px;
