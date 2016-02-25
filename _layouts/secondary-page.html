@@ -1,0 +1,31 @@
+---
+layout: default-no-head
+---
+
+<div class="container-fluid is-page">
+	<div class="secondary-header">
+		<div class="row">
+	  	<div class="col-xs-12">
+	  		<div class="jumbotron text-center search-header">
+	  			<div class="row">
+	  				<form class="navbar-form navbar-center search" role="search">
+	          <div class="form-group">
+	            <input id="search-input" type="text" name="query" class="form-control search-box" placeholder="I need help with..." />
+	          </div>
+	        </form>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div><!-- .row -->
+	</div>
+  <div class="container">
+	  <div class="row">
+	    <div class="col-md-3">
+	    {% include sidebar.html %}
+	    </div>
+	    <div class="content col-md-9">
+	      {{ content }}
+	    </div>
+	  </div><!-- .row -->
+  </div>
+</div><!-- .container -->
