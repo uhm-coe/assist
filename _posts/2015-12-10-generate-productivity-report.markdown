@@ -12,8 +12,6 @@ materials: UH username and password, COE intranet access
 blurb: "How to generate the COE Departmental productivity report using the Academic Productivity tool."
 published: true
 ---
-# Generate COE Departmental Productivity Reports Using the Academic Productivity Tool
-
 1. Go to the COE Website (<https://coe.hawaii.edu>). Click on **Faculty & Staff Login**.
 
     ![]({{ site.baseurl }}/img/2015-12-10-generate-productivity-report/image04.png)
@@ -34,4 +32,4 @@ published: true
 
     ![]({{ site.baseurl }}/img/2015-12-10-generate-productivity-report/image00.png)
 
-    `Tip: APA is just text in APA (close to) format.`
+    Tip: APA is just text in APA (close to) format.
