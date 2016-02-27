@@ -89,7 +89,7 @@ ul {
 /* _includes styles */
 /* ----------------------------------------------------------*/
 /* Site header (header.html) */
-#header {
+.site-header {
   color: #ffffff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/logos/front-page-background.jpg');
   background-repeat: no-repeat;
@@ -97,47 +97,42 @@ ul {
   border-radius: 0px;
   border: none;
 }
-#header button {
-  background-color: #f4f5f9;
-}
-#header a {
-  color: #ffffff;
-}
-#header a.navbar-brand {
+.site-header a.navbar-brand {
   font-size: 24px;
   font-weight: 700;
+  color: #ffffff;
 }
-#header p {
+.site-header p {
   font-size: 16px;
 }
 /* Site footer (footer.html) */
-#footer {
+.site-footer {
   margin-bottom: 0px;
   border: none;
 }
-#footer #help-container {
+.site-footer #help-container {
   color: #ffffff;
   padding: 30px 0px;
   background-color: #607d8b;
 }
-#footer #help-container p {
+.site-footer #help-container p {
   font-size: 24px;
 }
-#footer #links-container {
+.site-footer #links-container {
   padding: 30px 50px;
   background-color: #455a64;
 }
-#footer #links-container li {
+.site-footer #links-container li {
   color: #8cc63e;
   list-style-type: none;
 }
-#footer #links-container li a {
+.site-footer #links-container li a {
   color: #ffffff;
 }
-#footer #links-container li a:hover {
+.site-footer #links-container li a:hover {
   color: #90a7b2;
 }
-#footer #links-container .logo {
+.site-footer #links-container .logo {
   width: 36px;
   height: 36px;
 }

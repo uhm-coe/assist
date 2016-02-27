@@ -1,13 +1,19 @@
-<div class="container-fluid">
-	<nav id="footer" class="navbar navbar-default navbar-static-bottom">
+<nav class="navbar navbar-default navbar-static-bottom site-footer">
+	<div class="container-fluid">
+		<!-- If the page is the contact page, don't show the "Contact Us" section -->
 		{% if page.title != "Contact" %}
+		<!-- Contact Us Section -->
 		<div id="help-container" class="container-fluid">
 			<div class="container">
+
+				<!-- "Contact Us" text -->
 				<div class="row text-center">
 					<div class="col-xs-12">
 						<p>Not finding what you're looking for? Let us know.</p>
 					</div>
 				</div><!-- .row -->
+
+				<!-- Contact Button -->
 				<div class="row text-center">
 					<div class="col-xs-12">
 						<a class="btn btn-info btn-lg" href="{{ "/contact.html" | prepend: site.baseurl }}">Contact</a>
@@ -16,6 +22,8 @@
 			</div>
 		</div><!-- #help-container -->
 		{% endif %}
+
+		<!-- Links Container -->
 	  <div id="links-container" class="container-fluid">
 	  	<div class="container">
 		    <div class="row">
@@ -23,35 +31,37 @@
 						<li>Quick Help</li>
 						<li><a href="{{ site.baseurl }}/">Tutorials</a></li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><a href="http://www.cis.hawaii.edu/">Center for Instructional Support</a></li>
+						<li><a href="http://www.cis.hawaii.edu/" target="_blank" title="This link opens up in a separate tab.">Center for Instructional Support</a></li>
 					</div>
 					<div class="col-xs-12 col-md-4">
 						<li>External Support</li>
-						<li><a href="http://www.hawaii.edu/its/" target="_blank">ITS</a></li>
-						<li><a href="http://www.hawaii.edu/talent/laulima_faculty.htm" target="_blank">Laulima Assistance</a></li>
-						<li><a href="http://www.cte.hawaii.edu/" target="_blank">Center for Teaching Excellence</a></li>
+						<li><a href="http://www.hawaii.edu/its/" target="_blank" title="This link opens up in a separate tab.">ITS</a></li>
+						<li><a href="http://www.hawaii.edu/talent/laulima_faculty.htm" target="_blank" title="This link opens up in a separate tab.">Laulima Assistance</a></li>
+						<li><a href="http://www.cte.hawaii.edu/" target="_blank" title="This link opens up in a separate tab.">Center for Teaching Excellence</a></li>
 					</div>
 					<div class="col-xs-12 col-md-4">
 						<li>Support Resources</li>
-						<li><a href="http://guides.library.manoa.hawaii.edu/sinclairlibrary/WongAudiovisualCenter" target="_blank">Wong Audiovisual Center</a></li>
-						<li><a href="https://dcdc.coe.hawaii.edu/support/collaborate" target="_blank">Web Conferencing Support Manager</a></li>
-						<li><a href="https://coe.hawaii.edu/intranet/faculty-staff-support/web-editors-guide" target="_blank">Web Editor's Guide</a></li>
+						<li><a href="http://guides.library.manoa.hawaii.edu/sinclairlibrary/WongAudiovisualCenter" target="_blank" title="This link opens up in a separate tab.">Wong Audiovisual Center</a></li>
+						<li><a href="https://dcdc.coe.hawaii.edu/support/collaborate" target="_blank" title="This link opens up in a separate tab.">Web Conferencing Support Manager</a></li>
+						<li><a href="https://coe.hawaii.edu/intranet/faculty-staff-support/web-editors-guide" target="_blank" title="This link opens up in a separate tab.">Web Editor's Guide</a></li>
 					</div>
 		    </div><!-- .row -->
 		    <hr />
+
+		    <!-- Logo Links -->
 				<div class="row">
 		    	<div class="col-xs-12">
 		    		<div class="pull-right">
-			    		<a href="https://manoa.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/uhmlogo.png" /></a>
-			    		<a href="https://coe.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/logo-coe.png" /></a>
-			    		<a href="https://dcdc.coe.hawaii.edu" target="_blank"><img class="logo" src="{{ site.baseurl }}/img/logos/dcdclogo.png" /></a>
+			    		<a href="https://manoa.hawaii.edu" target="_blank" title="This link opens up in a separate tab."><img class="logo" src="{{ site.baseurl }}/img/logos/uhmlogo.png" /></a>
+			    		<a href="https://coe.hawaii.edu" target="_blank" title="This link opens up in a separate tab."><img class="logo" src="{{ site.baseurl }}/img/logos/logo-coe.png" /></a>
+			    		<a href="https://dcdc.coe.hawaii.edu" target="_blank" title="This link opens up in a separate tab."><img class="logo" src="{{ site.baseurl }}/img/logos/dcdclogo.png" /></a>
 		    		</div>
 		    	</div>
 		    </div><!-- .row -->
-	  	</div>
+	  	</div><!-- .container -->
 	  </div><!-- #links-container -->
-	</nav><!-- #footer -->
-</div>
+  </div><!-- .container-fluid -->
+</nav><!-- .site-footer -->
 
 <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>

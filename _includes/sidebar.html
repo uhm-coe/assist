@@ -3,36 +3,47 @@
     <li class="sidebar-header">
       <h3 class="side-title">Filter</h3>
     </li>
+
+    <!-- Link back to home -->
     <li>
-      <a class="bold-link" href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/">Home</a>
     </li>
+
+    <!-- If any of our posts have a category variable declared, use the nested html -->
     {% if site.categories %}
-    <li class="collapsed active open" data-toggle="collapse" data-target="#categories">
-      <a href="#">
-        Categories
-        <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
-      </a>
-    </li>
-    <ul id="categories" class="sub-menu collapse">
-      {% for category in site.categories %}
-      <li><a href="{{ category | first | downcase | prepend: "/" | prepend: site.baseurl }}">{{ category | first }}</a></li>
-      {% endfor %}
-    </ul>
+      <!-- Category Tab -->
+      <li class="collapsed active" data-toggle="collapse" data-target="#categories">
+        <a href="#">
+          Categories
+          <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
+        </a>
+      </li>
+      <!-- List of Categories -->
+      <ul id="categories" class="sub-menu collapse">
+        <!-- For each category variable set, use nested thml -->
+        {% for category in site.categories %}
+          <li><a href="{{ category | first | downcase | prepend: "/" | prepend: site.baseurl }}">{{ category | first }}</a></li>
+        {% endfor %}
+      </ul>
     {% endif %}
 
+    <!-- If any of our posts have a tag variable declared, use the nested html -->
     {% if site.tags %}
-    <li class="collapsed active open" data-toggle="collapse" data-target="#tags">
-      <a href="#">
-        Tags
-        <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
-      </a>
-    </li>
-    <ul id="tags" class="sub-menu collapse">
-      {% for tag in site.tags %}
-      <li><a href="{{ tag | first | prepend: '/tag/' | prepend: site.baseurl }}">{{ tag | first }}</a></li>
-      {% endfor %}
-    </ul>
+      <!-- Tags Tab -->
+      <li class="collapsed active open" data-toggle="collapse" data-target="#tags">
+        <a href="#">
+          Tags
+          <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
+        </a>
+      </li>
+      <!-- List of Tags -->
+      <ul id="tags" class="sub-menu collapse">
+        <!-- For each tag variable set, use nested html -->
+        {% for tag in site.tags %}
+          <li><a href="{{ tag | first | prepend: '/tag/' | prepend: site.baseurl }}">{{ tag | first }}</a></li>
+        {% endfor %}
+      </ul>
     {% endif %}
 
-  </ul>
+  </ul><!-- .sidebar-content -->
 </div><!-- .sidebar-container -->
