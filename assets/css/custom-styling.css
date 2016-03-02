@@ -91,7 +91,7 @@ ul {
 /* Site header (header.html) */
 .site-header {
   color: #ffffff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/logos/front-page-background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/logos/front-page-background.png');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0px;
