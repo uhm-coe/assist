@@ -4,3 +4,7 @@ _site
 flow.sublime-project
 flow.sublime-workspace
 .DS_Store
+
+node_modules
+gulpfile.js
+package.json
