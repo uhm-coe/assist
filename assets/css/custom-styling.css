@@ -74,6 +74,11 @@ ul {
 }
 .cd-top:visited {
   color: #ffffff;
+  text-decoration: none;
+}
+.cd-top:focus {
+  color: #ffffff;
+  text-decoration: none;
 }
 .cd-top span {
   vertical-align: middle;
@@ -101,6 +106,10 @@ ul {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
+}
+.site-header a.navbar-brand:hover {
+  color: #e6e6e6;
+  text-decoration: underline;
 }
 .site-header p {
   font-size: 16px;

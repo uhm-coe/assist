@@ -27,7 +27,7 @@ published: true
 
     ![]({{ site.baseurl }}/img/2015-12-10-share-files-with-others-on-owncloud/image00.png)
 
-    `Tip: When sharing a folder, you can allow shared users to add and delete files or folders within the shared folder by checking the ‘can edit’ box.`
+    Tip: When sharing a folder, you can allow shared users to add and delete files or folders within the shared folder by checking the ‘can edit’ box.
 
 5. To verify that you have shared your file, click on **Shared with others** tab.
 

@@ -26,7 +26,7 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-01-11-import-an-assessment-using-assignments-test-surveys-tool/image01.png)
 
-    `Tip: The zip file will download to your Downloads folder or your browserʻs designated file download location. Drag the zip file onto the desktop for to easily locate this file when importing to your Laulima course site.`
+    Tip: The zip file will download to your Downloads folder or your browserʻs designated file download location. Drag the zip file onto the desktop for to easily locate this file when importing to your Laulima course site.
 
 
 4. Navigate to the Laulima course you want to import the assessment to. Click on **Assignments, Tests and Surveys tool**.

@@ -33,4 +33,4 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-01-11-link-to-a-wordpress-course-site-inside-a-laulima-course/image04.png)
 
-    `Tip: The new item you added to your Laulima course will appear at the bottom of the items in the left-hand column. You can reorder the items by clicking on Site Info > Edit Tools.`
+    Tip: The new item you added to your Laulima course will appear at the bottom of the items in the left-hand column. You can reorder the items by clicking on Site Info > Edit Tools.
