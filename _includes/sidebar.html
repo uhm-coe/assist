@@ -12,10 +12,10 @@
     <!-- If any of our posts have a category variable declared, use the nested html -->
     {% if site.categories %}
       <!-- Category Tab -->
-      <li class="collapsed active" data-toggle="collapse" data-target="#categories">
+      <li class="collapsed active" data-toggle="collapse" data-target="#categories" aria-expanded="false">
         <a href="#">
           Categories
-          <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
+          <span class="categoryjs glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
         </a>
       </li>
       <!-- List of Categories -->
@@ -33,7 +33,7 @@
       <li class="collapsed active open" data-toggle="collapse" data-target="#tags">
         <a href="#">
           Tags
-          <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
+          <span class="tagjs glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
         </a>
       </li>
       <!-- List of Tags -->

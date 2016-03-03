@@ -85,4 +85,26 @@ $(document).ready(function(){
 		});
 	}
 	backToTopButton();
+
+	/**
+	*	@name: Sidebar carrot toggle.
+	* @author: James Park
+	* @date: 20160303
+	* @description: Toggles carrot down/up depending on (un)collapsed list.
+	*/
+	$('#categories').on('hidden.bs.collapse shown.bs.collapse', function() {
+		if ( $(this).hasClass("in") ) {
+			$(".categoryjs").addClass('glyphicon-chevron-up').removeClass('glyphicon-chevron-down');
+		} else {
+			$(".categoryjs").addClass('glyphicon-chevron-down').removeClass('glyphicon-chevron-up');
+		}
+	})
+
+	$('#tags').on('hidden.bs.collapse shown.bs.collapse', function() {
+		if ( $(this).hasClass("in") ) {
+			$(".tagjs").addClass('glyphicon-chevron-up').removeClass('glyphicon-chevron-down');
+		} else {
+			$(".tagjs").addClass('glyphicon-chevron-down').removeClass('glyphicon-chevron-up');
+		}
+	})
 });
