@@ -32,4 +32,4 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-01-11-upload-a-resource-to-a-laulima-course/image04.png)
 
-    `Tip: Don’t see the resource you attempted to upload to the Laulima course site? Navigate to the Resources section of the course site and scroll through the list of items there. It’s possible that the resource was uploaded to a specific folder inside Resources instead of the root (base) folder.`
+    Tip: Don’t see the resource you attempted to upload to the Laulima course site? Navigate to the Resources section of the course site and scroll through the list of items there. It’s possible that the resource was uploaded to a specific folder inside Resources instead of the root (base) folder.
