@@ -74,6 +74,11 @@ ul {
 }
 .cd-top:visited {
   color: #ffffff;
+  text-decoration: none;
+}
+.cd-top:focus {
+  color: #ffffff;
+  text-decoration: none;
 }
 .cd-top span {
   vertical-align: middle;
