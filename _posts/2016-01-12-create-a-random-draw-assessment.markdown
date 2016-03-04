@@ -19,7 +19,7 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-01-12-create-a-random-draw-assessment/image04.png)
 
-    `Tip: Before you begin, make sure you know which existing question pool you plan to draw your questions from.`
+    Tip: Before you begin, make sure you know which existing question pool you plan to draw your questions from.
 
 2. Name your assessment in the **Assessment Title** field. Make sure the **Create using assessment builder** option is selected. Click **Create**.
 
