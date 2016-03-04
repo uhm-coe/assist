@@ -329,6 +329,16 @@ ul {
 .search-results .strategies-link:focus {
   color: #e0225a;
 }
+/* 404 Page */
+#not-found-page {
+  padding-bottom: 70px;
+}
+#not-found-page h1 {
+  font-size: 72px;
+}
+#not-found-page .row {
+  margin: 20px 0;
+}
 /* Single-page styling (page.html) */
 .is-page h1 {
   font-weight: 700;
