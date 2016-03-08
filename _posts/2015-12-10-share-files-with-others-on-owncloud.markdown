@@ -37,4 +37,4 @@ published: true
 
     ![]({{ site.baseurl }}/img/2015-12-10-share-files-with-others-on-owncloud/image01.png)
 
-    `Tip: It is recommended that you uncheck the delete box to prevent anyone from accidentally deleting your shared folder. Click on the black triangle to expand and view the delete box.`
+    Tip: It is recommended that you uncheck the delete box to prevent anyone from accidentally deleting your shared folder. Click on the black triangle to expand and view the delete box.
