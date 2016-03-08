@@ -480,6 +480,12 @@ ul {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 400;
 		color: @green-primary-color;
+		a {
+			color: darken(@green-primary-color, 20%);
+			&:hover {
+				color: darken(@green-primary-color, 30%)
+			}
+		}
 	}
 	.tutorial-title {
 		font-weight: 700;

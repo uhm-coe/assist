@@ -399,6 +399,12 @@ ul {
   font-weight: 400;
   color: #8cc63e;
 }
+.tutorial-post .tip-styling a {
+  color: #557a24;
+}
+.tutorial-post .tip-styling a:hover {
+  color: #3a5318;
+}
 .tutorial-post .tutorial-title {
   font-weight: 700;
 }
