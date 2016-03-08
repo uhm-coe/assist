@@ -29,6 +29,22 @@ $(document).ready(function(){
 	formatPostContent();
 
 	/**
+	*	@name: createExternalLinks()
+	* @author: Myles Enriquez
+	* @date: 20160308
+	* @description: Opens up external links in separate tab.
+	*/
+	function createExternalLinks() {
+		$('a').each(function() {
+			var a = new RegExp('/' + window.location.host + '/');
+			if (!a.test(this.href)) {
+				$(this).attr({ target : "_blank", title : "This link will open up in new tab." });
+			}
+		});
+	}
+	createExternalLinks();
+
+	/**
 	 * @name: formatPostContent()
 	 * @author: Myles Enriquez
 	 * @date: 20160217
