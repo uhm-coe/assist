@@ -8,8 +8,6 @@ $(function(Query) {
 	var query = new Query();
 	var site = location.protocol + "//" + window.location.host;
 
-	console.log(site);
-
 	query
 	.setFromURL('query')
 	.getJSON('/posts.json')
