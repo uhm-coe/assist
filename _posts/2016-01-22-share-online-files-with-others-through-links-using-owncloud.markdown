@@ -13,28 +13,28 @@ published: true
 
 1. Begin by clicking on the ownCloud icon and then selecting **Open ownCloud in browser**.
 
-    ![]({{ site.baseurl }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image00.png)
+    ![]({{ site.pathname }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image00.png)
 
 2. Locate the file you want to share, hover your mouse over the file and click on **Share**.
 
-    ![]({{ site.baseurl }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image01.png)
+    ![]({{ site.pathname }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image01.png)
 
 3. Check box to **Share link**.
 
-    ![]({{ site.baseurl }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image04.png)
+    ![]({{ site.pathname }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image04.png)
 
 4. You can also check the options to password protect or set an expiration date on the link, if you wish.
 
-    ![]({{ site.baseurl }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image03.png)
+    ![]({{ site.pathname }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image03.png)
 
     Tip: If you are sharing a document that contain sensitive information or personal identifiable information (PII), we recommend using one or both of these options.
 
 5. Copy the file link.
 
-    ![]({{ site.baseurl }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image05.png)
+    ![]({{ site.pathname }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image05.png)
 
 6. You can paste your copied link to an email message, Google doc or anywhere you would like the link to be available.
 
 7. To view links of files that you have already shared, click on the **Shared by link** tab on the left-hand side of the ownCloud client.
 
-    ![]({{ site.baseurl }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image07.png)
+    ![]({{ site.pathname }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image07.png)

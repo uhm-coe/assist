@@ -6,7 +6,7 @@
 
     <!-- Link back to home -->
     <li>
-      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.pathname }}/">Home</a>
     </li>
 
     <!-- If any of our posts have a category variable declared, use the nested html -->
@@ -22,7 +22,7 @@
       <ul id="categories" class="sub-menu collapse">
         <!-- For each category variable set, use nested thml -->
         {% for category in site.categories %}
-          <li><a href="{{ category | first | downcase | prepend: "/" | prepend: site.baseurl }}">{{ category | first }}</a></li>
+          <li><a href="{{ category | first | downcase | prepend: "/" | prepend: site.pathname }}">{{ category | first }}</a></li>
         {% endfor %}
       </ul>
     {% endif %}
@@ -40,7 +40,7 @@
       <ul id="tags" class="sub-menu collapse">
         <!-- For each tag variable set, use nested html -->
         {% for tag in site.tags %}
-          <li><a href="{{ tag | first | prepend: '/tag/' | prepend: site.baseurl }}">{{ tag | first }}</a></li>
+          <li><a href="{{ tag | first | prepend: '/tag/' | prepend: site.pathname }}">{{ tag | first }}</a></li>
         {% endfor %}
       </ul>
     {% endif %}

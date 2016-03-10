@@ -9,8 +9,8 @@
 title: Assist Tutorials
 email: prar@hawaii.edu
 description: Assist makes your life easier.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://assist.coe.hawaii.edu" # the base hostname & protocol for your site
+pathname: "" # the subpath of your site, e.g. /blog
+hostname: "https://assist.coe.hawaii.edu" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
