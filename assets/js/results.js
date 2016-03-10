@@ -6,7 +6,7 @@
 $(function(Query) {
 
 	var query = new Query();
-	var site = location.protocol + "//" + window.location.host;
+	var site = location.protocol + "//" + location.hostname;
 
 	query
 	.setFromURL('query')

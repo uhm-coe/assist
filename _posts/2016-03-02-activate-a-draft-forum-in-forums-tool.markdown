@@ -15,17 +15,17 @@ published: true
 
 1. Begin by navigating into the Laulima course site, then click on **Forums**.
 
-    ![]({{ site.baseurl }}/img/2016-03-02-activate-a-draft-forum-in-forums-tool/image02.png)
+    ![]({{ site.pathname }}/img/2016-03-02-activate-a-draft-forum-in-forums-tool/image02.png)
 
 2. Locate the draft forum you would like to activate and click on **Forum Settings**.
 
-    ![]({{ site.baseurl }}/img/2016-03-02-activate-a-draft-forum-in-forums-tool/image00.png)
+    ![]({{ site.pathname }}/img/2016-03-02-activate-a-draft-forum-in-forums-tool/image00.png)
 
 3. Scroll down to the bottom of the page and click on **Save**.
 
-    ![]({{ site.baseurl }}/img/2016-03-02-activate-a-draft-forum-in-forums-tool/image03.png)
+    ![]({{ site.pathname }}/img/2016-03-02-activate-a-draft-forum-in-forums-tool/image03.png)
 
 4. The forum is now posted and your students will be able to view.
 
-    ![]({{ site.baseurl }}/img/2016-03-02-activate-a-draft-forum-in-forums-tool/image01.png)
-    
+    ![]({{ site.pathname }}/img/2016-03-02-activate-a-draft-forum-in-forums-tool/image01.png)
+

@@ -8,3 +8,4 @@ flow.sublime-workspace
 node_modules
 gulpfile.js
 package.json
+npm-debug.log

@@ -16,7 +16,7 @@ published: true
 ##Introduction
 This strategy document explains an collaborative approach  for developing instructional content. The process includes three stages and utilizes Google Sheets, Google Docs, and Wordpress.
 
-![]({{ site.baseurl }}/img/outcomes.png)
+![]({{ site.pathname }}/img/outcomes.png)
 
 ###### Objective mapping of CHL-SI courses [http://bit.ly/CHL-SI](http://bit.ly/CHL-SI)
 
@@ -25,13 +25,13 @@ Each course has a unique layer of learning objectives that work in concert to su
 
 The course-level objectives are kept in a blueprint that visually calls out the objectives, content/activities, and assessments:
 
-![]({{ site.baseurl }}/img/course-blueprint.png)
+![]({{ site.pathname }}/img/course-blueprint.png)
 
 ###### An example course blueprint
 
 Beginning with the assessments, we map out the type of test objects or activities that would verify that the student has gained the desired knowledge, skills, and qualities. How do we know the student has learned what was intended? What level of complexity or cognitive skill is needed to perform the task?
 
-![]({{ site.baseurl }}/img/activities.png)
+![]({{ site.pathname }}/img/activities.png)
 
 ###### Common activities included in content
 
@@ -41,7 +41,7 @@ Also included in the above sheet are activities embedded in the content, prepari
 
 From there, the course structure is transferred to a content development template in Google docs.
 
-![]({{ site.baseurl }}/img/google-doc.png)
+![]({{ site.pathname }}/img/google-doc.png)
 
 ###### A Google doc template being fleshed out
 
@@ -49,11 +49,11 @@ The rough ideas in the blueprint are fleshed out and recieve several periods of 
 
 ### Finishing and publishing
 
-![]({{ site.baseurl }}/img/wp-backend.png)
+![]({{ site.pathname }}/img/wp-backend.png)
 
 ###### The WP visual editor of an example course page
 
-![]({{ site.baseurl }}/img/chl-course.png)
+![]({{ site.pathname }}/img/chl-course.png)
 
 ###### The live, polished version of a WP course site
 

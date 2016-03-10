@@ -19,7 +19,7 @@ layout: secondary-page
     <div class="post-block">
       <div class="row">
         <div class="col-xs-12">
-          <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <h2><a class="post-link" href="{{ post.url | prepend: site.pathname }}">{{ post.title }}</a></h2>
         </div>
         <div class="col-xs-12">
           {% if post.blurb %}
@@ -39,7 +39,7 @@ layout: secondary-page
         <div class="col-xs-12 col-md-5">
           {% if post.category %}
           <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
-          <a href="{{ post.category | downcase | prepend: '/' | prepend: site.baseurl }}" title="View all posts published in {{ post.category }}">{{ post.category }}</a>
+          <a href="{{ post.category | downcase | prepend: '/' | prepend: site.pathname }}" title="View all posts published in {{ post.category }}">{{ post.category }}</a>
           {% endif %}
         </div>
         <div class="col-xs-12 col-md-7 pull-right">
@@ -66,4 +66,4 @@ layout: secondary-page
   </div>
   <hr />
 </div>
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.pathname }}">via RSS</a></p>
