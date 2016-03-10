@@ -17,7 +17,7 @@
     // brings us to our search page with a query string attached
     goToLocation: function(route) {
       if(typeof this.q !== 'undefined' && typeof this.q === 'string') {
-        window.location = route + '/?query=' + this.q;
+        window.location = route + '?query=' + this.q;
       }
       else {
         return;
