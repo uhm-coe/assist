@@ -5,7 +5,6 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var stripDebug = require('gulp-strip-debug');
 var sass = require('gulp-sass');
 var optipng = require('gulp-optipng');
 var options = ['-o2'];
