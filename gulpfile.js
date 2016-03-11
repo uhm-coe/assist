@@ -72,16 +72,5 @@ gulp.task('sass', function() {
 });
 
 
-/**
- *	TASK: stripdebug
- *	USES: gulp-strip-debug
- *  DESCRIPTION: Removes all console.log and debugging messages from js files
- */
-gulp.task('stripdebug', function() {
-	return gulp.src('assets/js/*.js')
-	.pipe(stripDebug())
-	.pipe(gulp.dest('dist/js/'));
-});
-
 // Default task
 gulp.task('default', ['scripts', 'sass']);
