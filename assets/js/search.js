@@ -9,7 +9,6 @@ $(function(Query) {
 	// Create our Query object (set-query.js)
 	var query = new Query();
 
-	//
 	$('.search').on('submit', function(e) {
 		// stop the form from doing its default behavior
 		e.preventDefault();
