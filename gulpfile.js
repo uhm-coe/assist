@@ -42,7 +42,7 @@ gulp.task('scripts', function(){
 		.pipe(concat('all.js'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(uglify())
-		.pipe(gulp.dest('dist/js/'));
+		.pipe(gulp.dest('assets-dist/js/'));
 });
 
 
