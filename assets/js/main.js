@@ -124,6 +124,12 @@ $(document).ready(function(){
 		}
 	})
 
+	/**
+	*	@name: Bookmarks
+	* @author: James Park
+	* @date: 20160311
+	* @description: Bookmark posts.
+	*/
 	$('#bookmarkme').click(function() {
     if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
         window.sidebar.addPanel(document.title,window.location.href,'');
