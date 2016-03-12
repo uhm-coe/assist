@@ -24,8 +24,9 @@ ul {
 	bottom: 40px;
 	right: 30px;
 	@include Box-shadow (4px 4px 30px #aaa);
+	@include Border-radius(50px);
 	overflow: hidden;
-	background-color: $green-primary-color;
+	background-color: $orange-secondary-color;
 	color: $white;
 	visibility: hidden;
 	z-index: 1;
