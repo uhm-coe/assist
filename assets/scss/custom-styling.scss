@@ -1,0 +1,450 @@
+/* Base styling */
+/* ----------------------------------------------------------*/
+body {
+	// padding-bottom: 186px; // Based on footer height (will need to change)
+  font-size: 16px;
+  color: $base-text-color;
+  background-color: $main-bg-color;
+  font-family: 'Museo Sans', sans-serif;
+}
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+ul {
+	list-style-type: none;
+}
+.glyphicon {
+	margin: 0px 10px;
+}
+.cd-top {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	bottom: 40px;
+	right: 30px;
+	@include Box-shadow (4px 4px 30px #aaa);
+	overflow: hidden;
+	background-color: $green-primary-color;
+	color: $white;
+	visibility: hidden;
+	z-index: 1;
+	&:hover {
+		@include Opacity(1);
+		color: $white;
+		text-decoration: none;
+	}
+	&:visited {
+		color: $white;
+		text-decoration: none;
+	}
+	&:focus {
+		color: $white;
+		text-decoration: none;
+	}
+	span {
+		vertical-align: middle;
+	}
+}
+.cd-is-visible {
+		visibility: visible;
+	}
+.cd-fade-out {
+	@include Opacity(.5);
+}
+
+
+
+/* _includes styles */
+/* ----------------------------------------------------------*/
+
+
+/* Site header (header.html) */
+.site-header {
+	color: $white;
+	background-image:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+  url('../../img/optimized/front-page-background.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 0px;
+	border: none;
+	a.navbar-brand {
+			font-size: 24px;
+			font-weight: 700;
+			color: $white;
+			&:hover {
+				color: darken($white, 10%);
+				text-decoration: underline;
+			}
+	}
+	p {
+		font-size: 16px;
+	}
+}
+
+/* Site footer (footer.html) */
+.site-footer {
+	margin-bottom: 0px;
+	border: none;
+	#help-container {
+		color: $white;
+		padding: 30px 0px;
+		background-color: $cool-gray-500;
+		p {
+			font-size: 24px;
+		}
+	}
+	#links-container {
+		padding: 30px 50px;
+		background-color: $cool-gray-700;
+		li {
+			color: $green-primary-color;
+			list-style-type: none;
+			a {
+				color: $white;
+				&:hover {
+					color: lighten($cool-gray-700, 30%);
+				}
+			}
+		}
+		.logo {
+			width: 36px;
+			height: 36px;
+		}
+	}
+}
+
+/* Site sidebar (sidebar.html) */
+.sidebar-container {
+	background-color: $white;
+	@include Box-shadow (4px 4px 20px #eeeeee);
+	.sidebar-header {
+		background-color: #455a64;
+		@include Box-shadow(0px 8px 15px #eeeeee);
+		h3.side-title {
+			padding-left: 20px;
+			padding-top: 15px;
+			font-size: 20px;
+			font-weight: 700;
+			color: $white;
+		}
+	}
+	ul.sidebar-content {
+		padding-left: 0px;
+		li {
+			border-bottom: 1px solid $main-bg-color;
+			a {
+				display: block;
+				padding: 10px 0px 10px 20px;
+				font-size: 16px;
+				color: $base-text-color;
+				text-decoration: none;
+				&:hover {
+					font-weight: 700;
+				}
+			}
+		}
+		ul.sub-menu {
+			padding: 10px 0px 10px 20px;
+			li {
+				a {
+					color: $base-text-color;
+					font-size: 16px;
+					&:hover {
+						color: $base-text-color;
+						font-weight: 700;
+						background-color: $white;
+						border-left: 3px solid $green-primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/* _layouts styles */
+/* ----------------------------------------------------------*/
+/* Primary-page layout (primary-page.html) */
+.primary-header {
+	background-color: transparent;
+	.form-control {
+		height: 50px;
+		widtH: 600px;
+	}
+}
+
+/* Secondary-page layout (secondary-page.html) */
+.secondary-header {
+	background-color: transparent;
+		.form-control {
+			height: 50px;
+			widtH: 600px;
+		}
+}
+
+/* Front-page styling (index.html) */
+#home {
+
+	margin-bottom: 50px;
+	.post-block {
+		padding: 5px 10px 20px 10px;
+		margin-bottom: 40px;
+		background-color: $white;
+		@include Box-shadow(4px 4px 20px #dedede);
+	}
+	.page-heading {
+		font-size: 32px;
+		font-weight: 700;
+	}
+	.page-results {
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.post-cat-icon {
+		height: 146px;
+		display: inline-block;
+		background-color: $white;
+	}
+	.post-link {
+		font-size: 26px;
+		color: $neutral-gray-semi-dark;
+		font-weight: 700;
+		text-decoration: none;
+
+		&:hover {
+			color: $neutral-gray-light;
+			text-decoration: underline;
+		}
+		&:visited {
+			color: $neutral-gray-semi-dark;
+		}
+	}
+	.post-blurb {
+		color: $neutral-gray-semi-dark;
+		padding: 10px 0px;
+	}
+	.how-to {
+		background-color: $how-to-color;
+		a {
+			color: $white;
+		}
+	}
+	.strategies {
+		background-color: $strategies-color;
+		a {
+			color: $white;
+		}
+	}
+	.troubleshooting {
+		background-color:  $troubleshooting-color;
+		a {
+			color: $white;
+		}
+	}
+	.post-details {
+		font-size: 14px;
+		color: $white;
+		font-weight: 400;
+		padding: 5px 0px 5px 0px;
+		@include Box-shadow (4px 4px 20px #dedede);
+	}
+	.fa-tags {
+		color: $white;
+	}
+	.tag-link {
+		&:hover {
+			text-decoration: none;
+			border-bottom: 1px solid $white;
+		}
+		.tag-label {
+			color: $white;
+		  display: inline-block;
+		  font-size: 14px;
+		}
+	}
+	.pager {
+		li > a {
+			border-radius: 3px;
+			padding: 10px 15px;
+			@include Create-btn-color-states($green-primary-color);
+		}
+	}
+}
+
+/* Search Results */
+.search-results {
+	.how-to-link {
+		@include Create-link-color-states($how-to-color);
+	}
+	.strategies-link {
+		@include Create-link-color-states($strategies-color);
+	}
+}
+
+
+
+/* 404 Page */
+#not-found-page {
+	padding-bottom: 70px;
+	h1 {
+		font-size: 72px;
+	}
+	.row {
+		margin: 20px 0;
+	}
+}
+
+
+/* Single-page styling (page.html) */
+.is-page {
+	h1 {
+		font-weight: 700;
+	}
+}
+
+/* Single-post styling (post.html) */
+.tutorial-post {
+	h1, h2, h3, h4, h5 {
+		font-weight: 700;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	h6 {
+		font-weight: 700;
+	}
+	p {
+		color: $neutral-gray-semi-dark;
+	}
+	img {
+		margin-top: 40px;
+	}
+	ol {
+		counter-reset: li; /* Initiate a counter */
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
+		li {
+			position: relative;
+			margin: 0 0 6px 2em;
+			list-style: none;
+			&:before {
+				content: counter(li);
+				counter-increment: li;
+				/* Position and style number */
+				position: absolute;
+				top: -2px;
+				left: -2em;
+				@include Box-sizing();
+				width: 2em;
+				border-radius: 50px;
+
+				margin-right:8px;
+		    padding:4px;
+		    color: $white;
+		    background: $green-primary-color;
+		    font-weight:bold;
+		    font-family: 'Montserrat', sans-serif;
+		    text-align:center;
+			}
+		}
+	}
+	.tip-styling {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: $green-primary-color;
+		a {
+			color: darken($green-primary-color, 20%);
+			&:hover {
+				color: darken($green-primary-color, 30%)
+			}
+		}
+	}
+	.tutorial-title {
+		font-weight: 700;
+	}
+	.tutorial-blurb {
+		color: $neutral-gray-semi-dark;
+		margin-bottom: 20px;
+		font-weight: 400;
+	}
+	.tutorial-content {
+		.img-shadow {
+			@include Box-shadow(0px 0px 10px #888888);
+			&:hover {
+				@include Box-shadow(0px 0px 5px #888888);
+			}
+		}
+	}
+}
+
+/* Media Queries */
+/* ----------------------------------------------------------*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	/* Primary-page layout (primary-page.html) */
+	.primary-header {
+		background-color: transparent;
+		.form-control {
+			height: 50px;
+			widtH: 250px;
+		}
+	}
+
+	/* Secondary-page layout (secondary-page.html) */
+	.secondary-header {
+		background-color: transparent;
+			.form-control {
+				height: 50px;
+				widtH: 250px;
+			}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	/* Primary-page layout (primary-page.html) */
+	.primary-header {
+		background-color: transparent;
+		.form-control {
+			height: 50px;
+			widtH: 500px;
+		}
+	}
+
+	/* Secondary-page layout (secondary-page.html) */
+	.secondary-header {
+		background-color: transparent;
+			.form-control {
+				height: 50px;
+				widtH: 500px;
+			}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/* Primary-page layout (primary-page.html) */
+	.primary-header {
+		background-color: transparent;
+		.form-control {
+			height: 50px;
+			widtH: 600px;
+		}
+	}
+
+	/* Secondary-page layout (secondary-page.html) */
+	.secondary-header {
+		background-color: transparent;
+			.form-control {
+				height: 50px;
+				widtH: 600px;
+			}
+	}
+}
