@@ -10,6 +10,7 @@ layout: secondary-page
 						<div>
 					    <h1 class="tutorial-title">{{ page.title }}</h1>
 					    <h3 class="tutorial-blurb">{{ page.blurb }}</h3>
+              <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page">Bookmark This Page</a>
 				  	</div>
 				  	{% if page.category %}<p><b>In Category:</b> {{ page.category }}</p>{% endif %}
 				    {% if page.tags %}<p><b>Tagged with:</b> {% for tag in page.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }}, {% endif %}{% endfor %}</p>{% endif %}
@@ -47,4 +48,3 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
