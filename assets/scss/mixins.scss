@@ -20,6 +20,10 @@
 		color: $white;
 		background-color: darken($hex, 10%);
 	}
+	&:visited {
+		color: $white;
+		background-color: darken($hex, 5%);
+	}
 }
 
 @mixin Create-link-color-states($hex) {
