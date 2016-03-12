@@ -32,7 +32,7 @@ gulp.task('scripts', function(){
 		'assets/js/jquery.min.js',
 		'assets/js/bootstrap.min.js',
 		'assets/js/lunr.min.js',
-		// 'assets/js/set-query.js',
+		'assets/js/set-query.js',
 		'assets/js/main.js',
 		'assets/js/modalizer.js',
 		'assets/js/search.js',
