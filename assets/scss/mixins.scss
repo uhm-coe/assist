@@ -1,0 +1,61 @@
+/* Mixins */
+/* ----------------------------------------------------------*/
+@mixin Box-shadow ($string) {
+	-webkit-box-shadow: $string;
+	-moz-box-shadow:    $string;
+	box-shadow:         $string;
+}
+
+@mixin Create-btn-color-states($hex) {
+	color: $white;
+	background-color: $hex;
+	&:hover {
+		color: $white;
+		background-color: lighten($hex, 10%);
+	}
+	&:focus {
+		background-color: lighten($hex, 10%);
+	}
+	&:active {
+		color: $white;
+		background-color: darken($hex, 10%);
+	}
+}
+
+@mixin Create-link-color-states($hex) {
+	color: $hex;
+	&:hover {
+		color: saturate($hex, 10%);
+	}
+	&:focus {
+		color: desaturate($hex, 10%);
+	}
+}
+
+@mixin Box-sizing() {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin Opacity($opacity: 0.5) {
+	-webkit-opacity: 	$opacity;
+	-moz-opacity: 		$opacity;
+	opacity: 		$opacity;
+}
+
+@mixin Transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition:    $transition;
+	-ms-transition:     $transition;
+	-o-transition:      $transition;
+}
+@mixin Border-radius($radius: 5px) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius:    $radius;
+	border-radius:         $radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
