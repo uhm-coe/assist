@@ -1,5 +1,7 @@
 #Assist
 
+[![Build Status](https://travis-ci.org/uhm-coe/assist.svg?branch=master)](https://travis-ci.org/uhm-coe/assist)
+
 This README contains the general information about the Assist website. Detailed documentation for the site is located at: [Assist Documentation](https://www.gitbook.com/book/enriquezm/flow-support-site-documentation/details)
 
 ## Posts
