@@ -1,6 +1,6 @@
-#Flow
+#Assist
 
-This README contains the general information about the Support Site. Detailed documentation for the site is located at: [Support Site Documentation](https://www.gitbook.com/book/enriquezm/flow-support-site-documentation/details)
+This README contains the general information about the Assist website. Detailed documentation for the site is located at: [Assist Documentation](https://www.gitbook.com/book/enriquezm/flow-support-site-documentation/details)
 
 ## Posts
 #### Where are posts located?
