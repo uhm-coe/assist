@@ -132,11 +132,8 @@ $(document).ready(function(){
     } else if(window.opera && window.print) { // Opera Hotlist
         this.title=document.title;
         return true;
-    } /*else { // webkit - safari/chrome
+    } else { // webkit - safari/chrome
         alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
-    }*/ else {
-    	alert('doesnt work');
-    	return false;
     }
 	});
 });
