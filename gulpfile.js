@@ -54,22 +54,20 @@ var sassOptions = {
 	errLogToConsole: true,
 	outputStyle: 'compressed'
 };
-gulp.task('sass', function() {
+gulp.task('scss', function() {
 	return gulp.src([
-		'assets/scss/typography.scss',
+		'assets/scss/fonts.scss',
 		'assets/scss/variables.scss',
 		'assets/scss/mixins.scss',
 		'assets/scss/bootstrap-overrides.scss',
-		'assets/scss/base.scss',
-		'assets/scss/layouts.scss',
-		'assets/scss/includes.scss'
+		'assets/scss/custom-styling.scss'
 		])
 		.pipe(concat('all.scss'))
 		.pipe(sass(sassOptions).on('error', sass.logError))
 		.pipe(rename({ suffix: '.min' }))
-		.pipe(gulp.dest('dist/css'))
+		.pipe(gulp.dest('assets-dist/css'))
 });
 
 
 // Default task
-gulp.task('default', ['scripts', 'sass']);
+gulp.task('default', ['scripts', 'sass', 'optipng']);
