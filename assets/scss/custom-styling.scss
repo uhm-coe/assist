@@ -23,13 +23,13 @@ ul {
 	position: fixed;
 	bottom: 40px;
 	right: 30px;
-	@include Box-shadow (4px 4px 30px #aaa);
-	@include Border-radius(50px);
 	overflow: hidden;
 	background-color: $orange-secondary-color;
 	color: $white;
 	visibility: hidden;
 	z-index: 1;
+	@include Box-shadow (4px 4px 30px #aaa);
+	@include Border-radius(50px);
 	&:hover {
 		@include Opacity(1);
 		color: $white;
