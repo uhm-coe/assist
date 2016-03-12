@@ -17,7 +17,7 @@ markdown: kramdown
 # Number of posts displayed, before paginated
 paginate: 8
 paginate_path: "/page:num/"
-exclude: [node_modules, gulpfile.js, package.json, README.md, .gitignore]
+exclude: [node_modules, gulpfile.js, package.json, README.md, .gitignore, .travis.yml, Gemfile, scripts, vendor]
 
 # Gems
 gems:
