@@ -4,6 +4,8 @@
 
 This README contains the general information about the Assist website. Detailed documentation for the site is located at: [Assist Documentation](https://www.gitbook.com/book/enriquezm/flow-support-site-documentation/details)
 
+Reference for [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
+
 ## Posts
 #### Where are posts located?
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve` in your terminal, which launches a web server (localhost) and auto-regenerates your site when a file is updated.
