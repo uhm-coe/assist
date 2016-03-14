@@ -11,6 +11,9 @@ weight: 1
     <div class="post-block">
       <div class="row">
         <div class="col-xs-12">
+         {% include read-time.html %}
+        </div>
+        <div class="col-xs-12">
           <h2><a class="post-link" href="{{ post.url | prepend: site.pathname }}">{{ post.title }}</a></h2>
         </div>
         <div class="col-xs-12">
