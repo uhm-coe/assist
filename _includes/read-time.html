@@ -1,0 +1,8 @@
+<span id="read-time" title="Estimated read time.">
+	{% capture truncated_content %}
+		{{ page.content | truncatewords: 250 }}
+	{% endcapture %}
+	{% if page.content != truncated_content %}
+		{{ page.content | number_of_words | append: '.0' | divided_by: 180 | append: ' min read' }}
+	{% endif %}
+</span>
