@@ -46,7 +46,7 @@ gulp.task('scripts', function(){
 
 
 /**
- *	TASK: sass
+ *	TASK: scss
  *	USES: gulp-concat, gulp-sass, gulp-rename
  *  DESCRIPTION: Concats all scss files, compresses, and renames with .min
  */
@@ -60,7 +60,8 @@ gulp.task('scss', function() {
 		'assets/scss/variables.scss',
 		'assets/scss/mixins.scss',
 		'assets/scss/bootstrap-overrides.scss',
-		'assets/scss/custom-styling.scss'
+		'assets/scss/custom-styling.scss',
+		'assets/scss/post.scss'
 		])
 		.pipe(concat('all.scss'))
 		.pipe(sass(sassOptions).on('error', sass.logError))
@@ -68,6 +69,15 @@ gulp.task('scss', function() {
 		.pipe(gulp.dest('assets-dist/css'))
 });
 
+/**
+ *	TASK: watch
+ *	USES: gulp-watch
+ *  DESCRIPTION: Runs tasks when a script or stylesheet as been modified.
+ */
+gulp.task('watch', function() {
+	gulp.watch('assets/scss/**/*.scss', ['scss']);
+	gulp.watch('assets/js/**/*.js', ['scripts']);
+});
 
 // Default task
 gulp.task('default', ['scripts', 'sass', 'optipng']);
