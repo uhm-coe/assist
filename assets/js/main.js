@@ -143,8 +143,6 @@ $(document).ready(function(){
     //     return true;
     // } else if ( window.external && !window.chrome ) { // webkit - safari/chrome
     // 		e.preventDefault();
-    //     alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
-    // }
     alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
 	});
 });
