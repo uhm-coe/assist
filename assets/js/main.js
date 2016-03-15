@@ -130,16 +130,21 @@ $(document).ready(function(){
 	* @date: 20160311
 	* @description: Bookmark posts.
 	*/
-	$('#bookmarkme').click(function() {
-    if (window.sidebar && window.sidebar.addPanel) { // Mozilla Firefox Bookmark
-        window.sidebar.addPanel(document.title,window.location.href,'');
-    } else if(window.external && ('AddFavorite' in window.external)) { // IE Favorite
-        window.external.AddFavorite(location.href,document.title); 
-    } else if(window.opera && window.print) { // Opera Hotlist
-        this.title=document.title;
-        return true;
-    } else { // webkit - safari/chrome
-        alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
-    }
+	$('#BookmarkMe').click(function() {
+    // if ( window.sidebar && window.sidebar.addPanel ) { // Mozilla Firefox Bookmark
+    // 		e.preventDefault();
+    //     window.sidebar.addPanel( document.title,window.location.href,'' );
+    // } else if ( window.external && ( 'AddFavorite' in window.external ) ) { // IE Favorite
+    // 		e.preventDefault();
+    //     window.external.AddFavorite( location.href,document.title ); 
+    // } else if ( window.opera && window.print ) { // Opera Hotlist
+    // 		e.preventDefault();
+    //     this.title=document.title;
+    //     return true;
+    // } else if ( window.external && !window.chrome ) { // webkit - safari/chrome
+    // 		e.preventDefault();
+    //     alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
+    // }
+    alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
 	});
 });
