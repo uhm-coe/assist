@@ -18,7 +18,7 @@ This strategy document explains an collaborative approach  for developing instru
 
 ![]({{ site.pathname }}/img/outcomes.png)
 
-###### Objective mapping of CHL-SI courses [http://bit.ly/CHL-SI](http://bit.ly/CHL-SI)
+###### Objective mapping of CHL-SI courses [http://go.hawaii.edu/uM](http://go.hawaii.edu/uM)
 
 ### Blueprinting
 Each course has a unique layer of learning objectives that work in concert to support the more broad objectives of the program. For each learning objective at the course level, there will be related assessment items, content, and activities. The key piece is the assessment, which will inform decisions about content and activities. The content and activities support students as they gain knowledge, skills, and attitudinal qualities that prepare them for the assessment.
