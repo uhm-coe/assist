@@ -7,3 +7,5 @@ flow.sublime-workspace
 
 node_modules
 npm-debug.log
+Gemfile.lock
+
