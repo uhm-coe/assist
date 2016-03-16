@@ -14,7 +14,7 @@ blurb: "How to copy content from the Laulima development (dev) site to your curr
 published: true
 ---
 
-###Install the Necessary Laulima Tools
+### Install the Necessary Laulima Tools
 In order for you to copy content from the dev site to your live course site, you will need to install the same Laulima tools that were used in the dev site.
 
 1. Begin by logging into the Laulima dev site you will be copying the content from.
@@ -54,7 +54,7 @@ In order for you to copy content from the dev site to your live course site, you
 
     ![]({{ site.baseurl }}/img/2016-03-15-copy-content-from-laulima-dev-to-live-course/image06.png)
 
-###Import Content From Dev Site
+### Import Content From Dev Site
 You will now be able to copy all content from the dev site to your live course site.
 
 1. Click on **Import from Site**.
