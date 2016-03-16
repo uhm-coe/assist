@@ -31,14 +31,17 @@ $(document).ready(function(){
 	/**
 	*	@name: createExternalLinks()
 	* @author: Myles Enriquez
-	* @date: 20160308
+	* @date: 20160315
 	* @description: Opens up external links in separate tab.
 	*/
 	function createExternalLinks() {
 		$('a').each(function() {
-			var a = new RegExp('/' + window.location.host + '/');
-			if (!a.test(this.href)) {
-				$(this).attr({ target : "_blank", title : "This link will open up in new tab." });
+			// if href is 'http' or 'https'
+			if (this.href.substring(0, 4) == 'http' || this.href.substring(0, 5) == 'https') {
+				var a = new RegExp('/' + window.location.host + '/');
+				if (!a.test(this.href)) {
+					$(this).attr({ target : "_blank", title : "This link will open up in new tab." });
+				}
 			}
 		});
 	}
@@ -130,13 +133,13 @@ $(document).ready(function(){
 	* @date: 20160311
 	* @description: Bookmark posts.
 	*/
-	$('#BookmarkMe').click(function() {
+	$('#bookmark-button').click(function() {
     // if ( window.sidebar && window.sidebar.addPanel ) { // Mozilla Firefox Bookmark
     // 		e.preventDefault();
     //     window.sidebar.addPanel( document.title,window.location.href,'' );
     // } else if ( window.external && ( 'AddFavorite' in window.external ) ) { // IE Favorite
     // 		e.preventDefault();
-    //     window.external.AddFavorite( location.href,document.title ); 
+    //     window.external.AddFavorite( location.href,document.title );
     // } else if ( window.opera && window.print ) { // Opera Hotlist
     // 		e.preventDefault();
     //     this.title=document.title;
@@ -144,5 +147,15 @@ $(document).ready(function(){
     // } else if ( window.external && !window.chrome ) { // webkit - safari/chrome
     // 		e.preventDefault();
     alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this page.');
+	});
+
+	/**
+	*	@name: Print Page
+	* @author: Myles Enriquez
+	* @date: 20160315
+	* @description: Triggers print dialog when clicking print button.
+	*/
+	$('#print-button').click(function() {
+		window.print();
 	});
 });
