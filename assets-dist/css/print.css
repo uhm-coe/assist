@@ -6,10 +6,10 @@
   font-weight: bold;
 }
 #postcontent #template .tutorial-title {
-  font-size: 22px;
+  font-size: 18px;
 }
 #postcontent #template .tutorial-blurb {
-  font-size: 18px;
+  font-size: 16px;
 }
 #postcontent li {
   page-break-after: always;
@@ -21,6 +21,20 @@
   page-break-after: always;
   page-break-inside: avoid;
 }
+/* Print Button on single posts */
+#print-button {
+  display: none;
+}
+/* Bookmark Button on single posts */
+#bookmark-button {
+  display: none;
+}
+/* Disqus commenting thread container */
+.disqus-comments {
+  display: none;
+}
+/* Sidebar navigation */
 .sidebar-container {
   display: none;
 }
+
