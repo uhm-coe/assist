@@ -1,12 +1,14 @@
 /* Bootstrap Overrides */
 /* ----------------------------------------------------------*/
 a {
+	// overriding bootstrap 3 info btn styling
 	&.btn-info {
 		margin: 10px 0px;
 		border-radius: 3px;
 		border: none;
 		@include Create-btn-color-states($orange-secondary-color);
 	}
+	// overriding bootstrap 3 info btn styling
 }
 .container-fluid {
 	padding: 0px;
