@@ -4,7 +4,7 @@ title:  "Convert PowerPoint Presentation Slides to JPEG Images and Upload to Bla
 date:   2016-01-11 13:46:32
 category: How-to
 tags:
-- BBC
+- Blackboard Collaborate
 - PowerPoint 2011
 - Mac
 author: Frank Jumawan
