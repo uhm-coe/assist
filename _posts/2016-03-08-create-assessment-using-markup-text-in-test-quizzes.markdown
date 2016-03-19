@@ -10,7 +10,7 @@ tags:
 - Tools
 author: Frank Jumawan
 materials: UH username and password, Laulima course site, assessment questions in markup text
-blurb: "How to share ownCloud folders by sharing links. This feature can be used to share your files on ownCloud to others outside of the COE."
+blurb: "How to import multiple-choice, true/false and fill in the blank questions from Microsoft Word, Google Doc or a text editor to quickly create an assessment in Test & Quizzes Tool."
 published: true
 ---
 
