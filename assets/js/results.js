@@ -87,9 +87,14 @@ $(function(Query) {
 				url = result.ref,
 				date = result.date;
 
-				// TODO: List all tags relative to tag array size, in each category 
+				// TODO: List all tags relative to tag array size, in each category
+
+
 				if (category === "How-to") {
 					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details how-to"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category.toLowerCase() + '/" title="View all posts published in ' + category + '">' + category + '</a></div></div></div>');
+					for (var i = 0; i < tags.length; i++) {
+						$results.append('<a href="#">' + tags[i] + '</a>');
+					}
 				}
 				else if (category === 'Strategies') {
 					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details strategies"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category.toLowerCase() + '/" title="View all posts published in ' + category + '">' + category + '</a></div></div></div>');
