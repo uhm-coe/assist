@@ -6,6 +6,7 @@
 		"title" : "{{ post.title | escape }}",
 		"blurb" : "{{ post.blurb }}",
 		"category" : "{{ post.category }}",
+		"tags" : [{% for tag in post.tags %}{% if forloop.last != true %} "{{ tag }}",{% else %} "{{ tag }}"{% endif %}{% endfor %}],
 		"content" : "{{ post.content | strip_html | strip_newlines | remove: "	" | escape | remove: "\"}}",
 		"url" : "{{ post.url | prepend: site.pathname }}",
 		"date" : "{{ post.date | date: '%b %d, %Y' }}"
