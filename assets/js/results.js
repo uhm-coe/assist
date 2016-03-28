@@ -21,9 +21,10 @@ $(function(Query) {
 		percentOfTotal;
 
 		searchIndex = lunr(function() {
-			this.field('title');
+			// this.field('title');
 			this.field('blurb');
 			this.field('category');
+			this.field('tags');
 			this.field('content');
 			this.ref('url');
 			this.field('date');
@@ -36,8 +37,8 @@ $(function(Query) {
 
 		// Search for the query and store the results as an array
 		results = searchIndex.search(query.get());
-		// console.log("Query results:");
-		// console.log(results);
+		console.log("Query results:");
+		console.log(results);
 
 		// Add the fields of each post into each result (not standard in lunr.js)
 		for(var result in results) {
@@ -48,6 +49,10 @@ $(function(Query) {
 			results[result].category = data.filter(function(post){
 				return post.url === results[result].ref;
 			})[0].category;
+
+			results[result].tags = data.filter(function(post){
+				return post.url === results[result].ref;
+			})[0].tags;
 
 			results[result].date = data.filter(function(post){
 				return post.url === results[result].ref;
@@ -78,17 +83,29 @@ $(function(Query) {
 				var title = result.title,
 				blurb = result.blurb,
 				category = result.category,
+				tags = result.tags,
 				url = result.ref,
 				date = result.date;
+				tagLinks = "";
+
+				// Go through all tags associated with post
+					for (var i = 0; i < tags.length; i++) {
+						if ( i == tags.length - 1) {
+							tagLinks += '<a href="/tag/'+ tags[i] +'">' + tags[i] + '</a>';
+						}
+						else {
+							tagLinks += '<a href="/tag/'+ tags[i] +'">' + tags[i] + ',</a>';
+						}
+					}
 
 				if (category === "How-to") {
-					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details how-to"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category.toLowerCase() + '/" title="View all posts published in ' + category + '">' + category + '</a></div></div></div>');
+					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details how-to"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category.toLowerCase() + '/" title="View all posts published in ' + category + '">' + category + '</a></div><div class="col-xs-12 col-md-7 pull-right"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>' + tagLinks + '</div></div></div></div>');
 				}
 				else if (category === 'Strategies') {
-					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details strategies"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category.toLowerCase() + '/" title="View all posts published in ' + category + '">' + category + '</a></div></div></div>');
+					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details strategies"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category.toLowerCase() + '/" title="View all posts published in ' + category + '">' + category + '</a></div><div class="col-xs-12 col-md-7 pull-right"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>' + tagLinks + '</div></div></div></div>');
 				}
 				else {
-					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details troubleshooting"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category.toLowerCase() + '/" title="View all posts published in ' + category + '">' + category + '</a></div></div></div>');
+					$results.append('<div class="post-block"><div class="row"><div class="col-xs-12"><h2><a class="post-link" href="' + url + '">' + title + '</a></h2></div><div class="col-xs-12"><p class="post-blurb">' + blurb + '</p></div></div><div class="row post-details troubleshooting"><div class="col-xs-12 col-md-5"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span><a href="' + site + "/" + category.toLowerCase() + '/" title="View all posts published in ' + category + '">' + category + '</a></div><div class="col-xs-12 col-md-7 pull-right"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>' + tagLinks + '</div></div></div></div>');
 				}
 			});
 		}
