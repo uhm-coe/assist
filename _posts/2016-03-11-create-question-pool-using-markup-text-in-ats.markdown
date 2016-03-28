@@ -6,7 +6,8 @@ category: How-to
 tags:
 - Laulima
 - Assessment
-- Assignments, Test and Surveys
+- Assignments
+- Test and Surveys
 - Tools
 author: Frank Jumawan
 materials: UH username and password, Laulima course site, assessment questions in markup text
