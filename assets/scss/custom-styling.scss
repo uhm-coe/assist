@@ -65,12 +65,13 @@ ul {
 	color: $white;
 	background-image:
 	linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
     ),
-  url('../../img/optimized/front-page-background.png');
+	url('../../img/optimized/front-page-background.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	border-radius: 0px;
 	border: none;
 	a.navbar-brand {
