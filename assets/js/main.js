@@ -156,6 +156,10 @@ $(document).ready(function(){
 	* @description: Triggers print dialog when clicking print button.
 	*/
 	$('#print-button').click(function() {
+		// $("#sidebar").removeClass("col-md-3");
+		// document.getElementById('sidebar').setAttribute("class", "hide");
+		// $("#postcontent").removeClass("col-md-9");
+		// document.getElementById('postcontent').setAttribute("class", "wide");
 		window.print();
 	});
 });
