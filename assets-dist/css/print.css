@@ -38,3 +38,12 @@
   display: none;
 }
 
+/* Sidebar and post manipulation */
+.hide {
+  display: none;
+}
+
+.wide {
+  margin: auto;
+  width: 100%;
+}

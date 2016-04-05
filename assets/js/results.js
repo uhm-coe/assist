@@ -37,8 +37,8 @@ $(function(Query) {
 
 		// Search for the query and store the results as an array
 		results = searchIndex.search(query.get());
-		console.log("Query results:");
-		console.log(results);
+		// console.log("Query results:");
+		// console.log(results);
 
 		// Add the fields of each post into each result (not standard in lunr.js)
 		for(var result in results) {
