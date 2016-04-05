@@ -151,15 +151,39 @@ $(document).ready(function(){
 
 	/**
 	*	@name: Print Page
-	* @author: Myles Enriquez
+	* @author: Myles Enriquez and James Park
 	* @date: 20160315
 	* @description: Triggers print dialog when clicking print button.
 	*/
 	$('#print-button').click(function() {
-		// $("#sidebar").removeClass("col-md-3");
-		// document.getElementById('sidebar').setAttribute("class", "hide");
-		// $("#postcontent").removeClass("col-md-9");
-		// document.getElementById('postcontent').setAttribute("class", "wide");
-		window.print();
+		var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+		var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+		var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+		var is_safari = navigator.userAgent.indexOf('Safari') > -1;
+
+		// Due to Chrome having both Chrome and Safari in it's userAgent string.
+		if ( is_chrome && is_safari ) {
+			is_safari = false;
+		}
+
+		// Check to see if browser specification works.
+		// if ( is_safari ) { alert('Safari') };
+
+		if ( is_safari ) {
+			$("#sidebar").removeClass("col-md-3");
+			document.getElementById('sidebar').setAttribute("class", "hide");
+			$("#postcontent").removeClass("col-md-9");
+			document.getElementById('postcontent').setAttribute("class", "wide");
+			window.print();
+			setTimeout(function() {
+				window.close();
+				location.reload();
+			}, 100);
+		} else if ( is_firefox ) {
+			alert('For best print results please print in Chrome, IE, or Safari');
+			window.print();
+		} else {
+			window.print();
+		}
 	});
 });
