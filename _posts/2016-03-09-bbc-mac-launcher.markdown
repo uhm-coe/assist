@@ -2,6 +2,7 @@
 layout: post
 title:  "Installing Blackboard Collaborate Launcher for Mac"
 date:   2016-03-09 08:30:00
+readtime: 2
 category: How-to
 tags:
 - Blackboard Collaborate

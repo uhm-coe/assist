@@ -2,6 +2,7 @@
 layout: post
 title:  "Create Assessment Using Markup Text in The Test & Quizzes Tool"
 date:   2016-03-08 08:30:00
+readtime: 5
 category: How-to
 tags:
 - Laulima
