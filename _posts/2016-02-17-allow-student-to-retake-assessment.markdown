@@ -2,6 +2,7 @@
 layout: post
 title:  "Allow Student to Retake an Assessment in Test & Quizzes"
 date:   2016-02-17 13:46:32
+readtime: 3
 category: How-to
 tags:
 - Laulima

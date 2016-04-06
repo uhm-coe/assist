@@ -2,6 +2,7 @@
 layout: post
 title: "Request a Laulima Development Course Site"
 date: 2016-03-28 08:00:00
+readtime: 2
 category: How-to
 tags:
 - Laulima

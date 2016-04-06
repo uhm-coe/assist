@@ -2,6 +2,7 @@
 layout: post
 title:  "Create Question Pool Using Markup Text in The Assignments, Tests and Surveys Tool"
 date:   2016-03-11 08:30:00
+readtime: 5
 category: How-to
 tags:
 - Laulima
