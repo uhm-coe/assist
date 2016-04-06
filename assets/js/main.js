@@ -175,6 +175,8 @@ $(document).ready(function(){
 			$("#postcontent").removeClass("col-md-9");
 			document.getElementById('postcontent').setAttribute("class", "wide");
 			window.print();
+
+			// Refresh page to re-show hidden divs on Safari
 			setTimeout(function() {
 				window.close();
 				location.reload();
