@@ -8,7 +8,7 @@ layout: secondary-page
 	  		<div id="template">
 					<header class="post-header">
 						<div class="row date">
-							<span class="col-xs-12 col-md-6 text-left">POSTED: {{ page.date | date: '%B %d, %Y' | upcase }}</p>{% if page.readtime %}{{ page.readtime}} MINUTE READ{% endif %}</span>
+							<span class="col-xs-12 col-md-6 text-left">POSTED: {{ page.date | date: '%B %d, %Y' | upcase }} <br /> {% if page.readtime %}{{ page.readtime}} MINUTE READ{% endif %}</span>
 							<span class="col-xs-12 col-md-6 text-right">AUTHOR: {{ page.author  | upcase }}</span>
 						</div>
 				    <h1 class="tutorial-title">{{ page.title }}</h1>
