@@ -2,6 +2,7 @@
 layout: post
 title:  "Share Files with Others on ownCloud"
 date:   2015-12-10 13:46:32
+readtime: 3
 category: How-to
 tags:
 - ownCloud

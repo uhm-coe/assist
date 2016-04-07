@@ -2,6 +2,7 @@
 layout: post
 title:  "Import an Assessment Using the Assignments, Test and Surveys Tool"
 date:   2016-01-11 13:46:32
+readtime: 5
 category: How-to
 tags:
 - Laulima

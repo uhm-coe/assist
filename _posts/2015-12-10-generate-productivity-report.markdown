@@ -2,6 +2,7 @@
 layout: post
 title:  "Generate COE Departmental Productivity Reports Using the Academic Productivity Tool"
 date:   2015-12-10 13:46:32
+readtime: 2
 category: How-to
 tags:
 - COE Website
