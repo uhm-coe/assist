@@ -2,6 +2,7 @@
 layout: post
 title:  "Share ownCloud Local Drive Folders via Links"
 date:   2016-03-02 08:30:00
+readtime: 2
 category: How-to
 tags:
 - ownCloud

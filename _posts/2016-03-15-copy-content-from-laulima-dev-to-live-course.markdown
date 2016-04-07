@@ -2,6 +2,7 @@
 layout: post
 title: "Copy Content From Laulima Development Site to Live Course Site"
 date: 2016-03-15 08:00:00
+readtime: 10
 category: How-to
 tags:
 - Laulima

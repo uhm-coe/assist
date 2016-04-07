@@ -2,6 +2,7 @@
 layout: post
 title:  "Activate a Draft Forum in the Forums Tool"
 date:   2016-03-02 08:30:00
+readtime: 2
 category: How-to
 tags:
 - Laulima
@@ -28,4 +29,3 @@ published: true
 4. The forum is now posted and your students will be able to view.
 
     ![]({{ site.pathname }}/img/2016-03-02-activate-a-draft-forum-in-forums-tool/image01.png)
-
