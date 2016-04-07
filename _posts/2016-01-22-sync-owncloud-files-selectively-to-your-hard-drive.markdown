@@ -2,6 +2,7 @@
 layout: post
 title:  "Sync ownCloud Files Selectively to Your Hard Drive"
 date:   2016-01-22 13:46:32
+readtime: 3
 category: How-to
 tags:
 - ownCloud

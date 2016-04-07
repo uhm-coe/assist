@@ -2,6 +2,7 @@
 layout: post
 title:  "Share Local Files With Others Through Links Using ownCloud"
 date:   2016-01-22 13:46:32
+readtime: 2
 category: How-to
 tags:
 - ownCloud

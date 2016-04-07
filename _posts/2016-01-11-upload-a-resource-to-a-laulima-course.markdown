@@ -2,6 +2,7 @@
 layout: post
 title:  "Upload a Resource to a Laulima Course"
 date:   2016-01-11 13:46:32
+readtime: 2
 category: How-to
 tags:
 - Laulima

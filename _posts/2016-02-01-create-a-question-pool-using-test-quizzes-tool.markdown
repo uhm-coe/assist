@@ -2,6 +2,7 @@
 layout: post
 title:  "Create a Question Pool Using The Test & Quizzes Tool"
 date:   2016-02-01 13:46:32
+readtime: 2
 category: How-to
 tags:
 - Laulima

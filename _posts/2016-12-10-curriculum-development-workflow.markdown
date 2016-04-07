@@ -2,6 +2,7 @@
 layout: post
 title:  "SME Curriculum Development Workflow"
 date:   2016-02-04 13:46:32
+readtime: 1
 category: Strategies
 tags:
 - Workflow

@@ -2,6 +2,7 @@
 layout: post
 title:  "Create a Random Draw Assessment From an Existing Question Pool Using The Test & Quizzes Tool"
 date:   2016-01-12 13:46:32
+readtime: 3
 category: How-to
 tags:
 - Laulima

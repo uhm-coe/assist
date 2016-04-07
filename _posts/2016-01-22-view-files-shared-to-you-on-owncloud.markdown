@@ -2,6 +2,7 @@
 layout: post
 title:  "View Files Shared With You on ownCloud"
 date:   2016-01-22 13:46:32
+readtime: 2
 category: How-to
 tags:
 - ownCloud

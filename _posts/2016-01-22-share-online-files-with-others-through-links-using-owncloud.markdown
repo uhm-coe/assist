@@ -2,6 +2,7 @@
 layout: post
 title:  "Share Online Files With Others Through Links Using ownCloud"
 date:   2016-01-22 13:46:32
+readtime: 2
 category: How-to
 tags:
 - ownCloud
@@ -37,4 +38,4 @@ published: true
 
 7. To view links of files that you have already shared, click on the **Shared by link** tab on the left-hand side of the ownCloud client.
 
-    ![]({{ site.pathname }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image07.png)
+    ![]({{ site.pathname }}/img/2016-01-22-share-online-files-with-others-through-links-using-owncloud/image02.png)

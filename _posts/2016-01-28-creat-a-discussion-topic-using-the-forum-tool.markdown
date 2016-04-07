@@ -2,6 +2,7 @@
 layout: post
 title:  "Create a Discussion Topic Using The Forum Tool"
 date:   2016-01-28 13:46:32
+readtime: 3
 category: How-to
 tags:
 - Laulima
