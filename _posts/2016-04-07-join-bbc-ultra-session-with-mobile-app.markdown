@@ -2,6 +2,7 @@
 layout: post
 title: "Join a Blackboard Collaborate Ultra Session With The Mobile App"
 date: 2016-04-07 08:00:00
+readtime: 2
 category: How-to
 tags:
 - Laulima
