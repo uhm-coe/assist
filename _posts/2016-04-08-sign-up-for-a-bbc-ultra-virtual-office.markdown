@@ -2,6 +2,7 @@
 layout: post
 title: "Sign up For a Blackboard Collaborate Ultra Virtual Office"
 date: 2016-04-08 08:00:00
+readtime: 2
 category: How-to
 tags:
 - Laulima
