@@ -10,9 +10,10 @@ tags:
 - Tools
 author: Frank Jumawan
 materials: Link to Instructor’s virtual office, Bb Student App for Android and iPhone
-blurb: How to join a Blackboard Collaborate Ultra Session with the Bb Student mobile app for Android and iPhone."
+blurb: "How to join a Blackboard Collaborate Ultra Session with the Bb Student mobile app for Android and iPhone."
 published: true
 ---
+
 ##Install Mobile App##
 1. With your mobile device, access the Apple App Store (iOS) or Google Play (Android). Search for *Bb Student*.
 

@@ -2,10 +2,10 @@
 layout: post
 title: "Share ownCloud Online Folders via Links"
 date: 2016-04-05 08:00:00
+readtime: 2
 category: How-to
 tags:
 - ownCloud
-readtime: 2
 author: Frank Jumawan
 materials: ownCloud account, ownCloud Client 2.0, A folder to share in ownCloud
 blurb: "How to share ownCloud folders by sharing links. This feature can be used to share your files on ownCloud to others outside of the COE."
