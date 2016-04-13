@@ -181,6 +181,7 @@ $(document).ready(function(){
 				window.close();
 				location.reload();
 			}, 100);
+			// Firefox is still somewhat glitchy
 		} else if ( is_firefox ) {
 			alert('For best print results please print in Chrome, IE, or Safari');
 			window.print();
