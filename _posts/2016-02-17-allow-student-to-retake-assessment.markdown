@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Allow Student to Retake an Assessment in Test & Quizzes"
+title:  "Allow Student to Retake an Assessment in Tests & Quizzes"
 date:   2016-02-17 13:46:32
 readtime: 3
 category: How-to
 tags:
 - Laulima
-- Test & Quizzes
-- Assessment
+- Tests & Quizzes
+- Assessments
 - Tools
 author: Frank Jumawan
 materials: UH username and password, assessment questions

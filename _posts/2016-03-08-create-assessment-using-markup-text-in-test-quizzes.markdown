@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Create Assessment Using Markup Text in The Test & Quizzes Tool"
+title:  "Create Assessment Using Markup Text in The Tests & Quizzes Tool"
 date:   2016-03-08 08:30:00
 readtime: 5
 category: How-to
 tags:
 - Laulima
-- Assessment
-- Test & Quizzes
+- Assessments
+- Tests & Quizzes
 - Tools
 author: Frank Jumawan
 materials: UH username and password, Laulima course site, assessment questions in markup text

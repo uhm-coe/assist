@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Create a Question Pool Using The Test & Quizzes Tool"
+title:  "Create a Question Pool Using The Tests & Quizzes Tool"
 date:   2016-02-01 13:46:32
 readtime: 2
 category: How-to
 tags:
 - Laulima
-- Test & Quizzes
-- Assessment
+- Tests & Quizzes
+- Assessments
 - Tools
 author: Frank Jumawan
 materials: UH username and password, assessment questions
