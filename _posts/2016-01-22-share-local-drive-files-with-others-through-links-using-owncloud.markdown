@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Share Local Files With Others Through Links Using ownCloud"
+title:  "Share ownCloud Local Files via Links"
 date:   2016-01-22 13:46:32
 readtime: 2
 category: How-to
@@ -8,7 +8,7 @@ tags:
 - ownCloud
 author: Frank Jumawan
 materials: ownCloud account, ownCloud Client 2.0
-blurb: "How to share your local files through links using ownCloud. This feature is useful when sharing your files on ownCloud to others outside of the COE."
+blurb: "How to share your ownCloud local files via links. This feature is useful when sharing your files on ownCloud to others outside of the COE."
 published: true
 ---
 
