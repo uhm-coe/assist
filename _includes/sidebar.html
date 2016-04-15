@@ -19,9 +19,10 @@
         </a>
       </li>
       <!-- List of Categories -->
+      {% assign sorted_categories = site.categories | sort %}
       <ul id="categories" class="sub-menu collapse">
         <!-- For each category variable set, use nested thml -->
-        {% for category in site.categories %}
+        {% for category in sorted_categories %}
           <li><a href="{{ category | first | downcase | prepend: "/" | prepend: site.pathname }}">{{ category | first }}</a></li>
         {% endfor %}
       </ul>
@@ -37,9 +38,10 @@
         </a>
       </li>
       <!-- List of Tags -->
+      {% assign sorted_tags = site.tags | sort %}
       <ul id="tags" class="sub-menu collapse">
         <!-- For each tag variable set, use nested html -->
-        {% for tag in site.tags %}
+        {% for tag in sorted_tags %}
           <li><a href="{{ tag | first | prepend: '/tag/' | prepend: site.pathname }}">{{ tag | first }}</a></li>
         {% endfor %}
       </ul>
