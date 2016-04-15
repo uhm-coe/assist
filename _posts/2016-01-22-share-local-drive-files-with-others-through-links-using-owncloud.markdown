@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Share ownCloud Local Files With Others via Links"
+title:  "Share ownCloud Local Files via Links"
 date:   2016-01-22 13:46:32
 readtime: 2
 category: How-to
