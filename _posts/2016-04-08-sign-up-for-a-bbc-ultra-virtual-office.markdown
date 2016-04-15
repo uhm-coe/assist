@@ -13,6 +13,7 @@ Materials: Blackboard Collaborate Ultra vOffice Request Form
 blurb: "How to sign up for a Blackboard Collaborate Ultra virtual office (vOffice)."
 published: true
 ---
+
 1. Complete [Ultra vOffice Request Form](https://docs.google.com/a/hawaii.edu/forms/d/1rPZDLs2oqeZTJn8p4gsvSqy4RDnoV3oMq90VCq4I6Nc/viewform).
 
     ![]({{ site.baseurl }}/img/2016-04-08-sign-up-for-a-bbc-ultra-virtual-office/image03.png)

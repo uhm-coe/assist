@@ -15,9 +15,17 @@ layout: secondary-page
 				    <h3 class="tutorial-blurb">{{ page.blurb }}</h3>
 				  	{% if page.category %}<p><b>In Category:</b> {{ page.category }}</p>{% endif %}
 				    {% if page.tags %}<p><b>Tagged with:</b> {% for tag in page.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }}, {% endif %}{% endfor %}</p>{% endif %}
-				    {% if page.materials %}<p><b>Materials needed:</b> {{ page.materials }}</p>{% endif %}
-				    <span><a class="btn btn-info" id="bookmark-button" rel="sidebar" title="Add this article to your bookmarks.">Bookmark This Article</a></span>
-				    <span><a class="btn btn-info" id="print-button" title="Print this article.">Print This Article</a></span>
+            {% if page.materials %}<p><b>Materials needed:</b> {{ page.materials }}</p>{% endif %}
+            <span><a class="btn btn-info" id="bookmark-button" rel="sidebar" title="Add this article to your bookmarks.">Bookmark This Article</a></span>
+            <span><a class="btn btn-info" id="print-button" title="Print this article.">Print This Article</a></span>
+            <div class="social-icons">
+                <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><span>Twitter</span></a>
+                <a href="https://facebook.com/sharer.php?u={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span>Facebook</span></a>
+                <a href="https://plus.google.com/share?url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span>Google</span></a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Linkedin"><span>Linkedin</span></a>
+                <a href="http://www.tumblr.com/share/link?url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Tumblr"><span>Tumblr</span></a>
+                <a href="http://pinterest.com/pin/create/button/?url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Pinterest"><span>Pinterest</span></a>
+            </div>
 		  		</header>
 				</div>
 			</div>

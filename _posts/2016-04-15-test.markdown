@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Troubleshooting Testing Post"
+date:   2015-12-10 13:46:32
+readtime: 2
+category: Troubleshooting
+tags:
+- COE Website
+- Intranet
+- Reports
+author: James Park
+materials: UH username and password, COE intranet access
+blurb: "This is a blurb!"
+published: true
+---
+
+1. Delete me.
