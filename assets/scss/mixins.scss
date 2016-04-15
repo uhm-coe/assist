@@ -101,13 +101,15 @@
     }
     
     $icons: (
-      twitter:  (char: "\f099", color: #55acee),
-      google:   (char: "\f0d5", color: #dd4b39),
-      facebook: (char: "\f09a", color: #3b5998),
-      github:   (char: "\f09b", color: #231f20),
-      linkedin: (char: "\f0e1", color: #0977b5),
-      dribbble: (char: "\f17d", color: #ea4c89),
-      rss:      (char: "\f09e", color: #ff6600)
+      twitter:  	(char: "\f099", color: #55acee),
+      google:   	(char: "\f0d5", color: #dd4b39),
+      facebook: 	(char: "\f09a", color: #3b5998),
+      github:   	(char: "\f09b", color: #231f20),
+      linkedin: 	(char: "\f0e1", color: #0977b5),
+      dribbble: 	(char: "\f17d", color: #ea4c89),
+      rss:      	(char: "\f09e", color: #ff6600),
+      tumblr:		(char: "\f173", color: #32506d),
+      pinterest:	(char: "\f0d3", color: #cb2027)
     );
     
     @each $social, $icon in $icons {
