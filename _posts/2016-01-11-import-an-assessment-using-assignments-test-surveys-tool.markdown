@@ -6,8 +6,7 @@ readtime: 5
 category: How-to
 tags:
 - Laulima
-- Assignments
-- Tests and Surveys
+- Assignments, Tests and Surveys
 - Assessments
 author: Frank Jumawan
 materials: UH username and password, Access to assessment from previous course

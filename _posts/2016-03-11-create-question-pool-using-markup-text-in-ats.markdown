@@ -1,14 +1,13 @@
 ---
 layout: post
-title:  "Create Question Pool Using Markup Text in The Assignments, Tests and Surveys Tool"
+title:  "Create a Question Pool Using Markup Text in The Assignments, Tests and Surveys Tool"
 date:   2016-03-11 08:30:00
 readtime: 5
 category: How-to
 tags:
 - Laulima
-- Assessment
-- Assignments
-- Test and Surveys
+- Assessments
+- Assignments, Tests and Surveys
 - Tools
 author: Frank Jumawan
 materials: UH username and password, Laulima course site, assessment questions in markup text
