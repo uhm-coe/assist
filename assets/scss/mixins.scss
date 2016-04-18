@@ -99,6 +99,10 @@
       font: 1.5em/1.75 "FontAwesome";
       @include font-smoothing();
     }
+
+    &:after {
+      content: none !important;
+    }
     
     $icons: (
       twitter:  	(char: "\f099", color: #55acee),
