@@ -14,4 +14,6 @@ blurb: "This is a blurb!"
 published: true
 ---
 
-1. Delete me.
+* Delete me.
+* Delete me.
+* Delete me.

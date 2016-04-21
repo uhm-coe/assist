@@ -359,6 +359,36 @@ ul {
 			}
 		}
 	}
+	ul {
+		// counter-reset: li; /* Initiate a counter */
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
+		li {
+			position: relative;
+			margin: 0 0 6px 2em;
+			list-style: none;
+			&:before {
+				// content: counter(li);
+				// counter-increment: li;
+				/* Position and style number */
+				position: absolute;
+				top: 7px;
+				left: -2em;
+				@include Box-sizing();
+				// width: 1em;
+				border-radius: 50px;
+
+				margin-right:8px;
+		    padding:4px;
+		    color: $white;
+		    background: $black;
+		    font-weight:bold;
+		    font-family: 'Montserrat', sans-serif;
+		    text-align:center;
+			}
+		}
+	}
 	.tip-styling {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 400;
