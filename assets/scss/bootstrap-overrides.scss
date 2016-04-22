@@ -13,3 +13,11 @@ a {
 .container-fluid {
 	padding: 0px;
 }
+
+.tutorial-post {
+	ul {
+		hr {
+			border-top: none;
+		}
+	}
+}
