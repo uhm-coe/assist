@@ -72,12 +72,12 @@ limitations under the License.
 
 ## Project Members
 
-Billy Meinke (https://github.com/billymeinke)
-Claire Chun (https://github.com/cchun8)
-Frank Jumawan (https://github.com/fjumawan)
-James Park (https://github.com/parkjc)
-Myles Enriquez (https://github.com/enriquezm)
-Paul Ryan (https://github.com/figureone)
+- Billy Meinke (https://github.com/billymeinke)
+- Claire Chun (https://github.com/cchun8)
+- Frank Jumawan (https://github.com/fjumawan)
+- James Park (https://github.com/parkjc)
+- Myles Enriquez (https://github.com/enriquezm)
+- Paul Ryan (https://github.com/figureone)
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
