@@ -72,7 +72,7 @@ limitations under the License.
 
 ## Project Members
 
-- Billy Meinke (https://github.com/billymeinke)
+- [Billy Meinke](https://github.com/billymeinke)
 - Claire Chun (https://github.com/cchun8)
 - Frank Jumawan (https://github.com/fjumawan)
 - James Park (https://github.com/parkjc)
