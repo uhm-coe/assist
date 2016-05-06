@@ -63,7 +63,7 @@ $(document).ready(function(){
 	 			var searchFor = "TIP";
 
 	 			if(paragraphContent.toUpperCase().substring(0, searchFor.length) === searchFor ) {
-	 				$(this).addClass('tip-styling').prepend("<div class='icon-large icon-lightbulb'></div>");
+	 				$(this).addClass('tip-styling').prepend("<div class='glyphicon glyphicon-info-sign'></div>");
 	 			}
 
 	 		});

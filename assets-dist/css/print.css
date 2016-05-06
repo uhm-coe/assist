@@ -1,49 +1,51 @@
-#postcontent #template p {
-  font-size: 12px;
-  display: inline-block;
-}
-#postcontent #template p b {
-  font-weight: bold;
-}
-#postcontent #template .tutorial-title {
-  font-size: 18px;
-}
-#postcontent #template .tutorial-blurb {
-  font-size: 16px;
-}
-#postcontent li {
-  page-break-after: always;
-  page-break-inside: avoid;
-}
-#postcontent img {
-  width: 50%;
-  height: auto;
-  page-break-after: always;
-  page-break-inside: avoid;
-}
-/* Print Button on single posts */
-#print-button {
-  display: none;
-}
-/* Bookmark Button on single posts */
-#bookmark-button {
-  display: none;
-}
-/* Disqus commenting thread container */
-.disqus-comments {
-  display: none;
-}
-/* Sidebar navigation */
-.sidebar-container {
-  display: none;
-}
+@media print {
+  #postcontent #template p {
+    font-size: 12px;
+    display: inline-block;
+  }
+  #postcontent #template p b {
+    font-weight: bold;
+  }
+  #postcontent #template .tutorial-title {
+    font-size: 18px;
+  }
+  #postcontent #template .tutorial-blurb {
+    font-size: 16px;
+  }
+  #postcontent li {
+    /*page-break-after: always;*/
+    page-break-inside: avoid;
+  }
+  #postcontent img {
+    width: 50%;
+    height: auto;
+    /*page-break-after: always;*/
+    page-break-inside: avoid;
+  }
+  /* Print Button on single posts */
+  #print-button {
+    display: none;
+  }
+  /* Bookmark Button on single posts */
+  #bookmark-button {
+    display: none;
+  }
+  /* Disqus commenting thread container */
+  .disqus-comments {
+    display: none;
+  }
+  /* Sidebar navigation */
+  .sidebar-container {
+    display: none;
+  }
 
-/* Sidebar and post manipulation */
-.hide {
-  display: none;
-}
+  /* Sidebar and post manipulation */
+  .hide {
+    display: none;
+  }
 
-.wide {
-  margin: auto;
-  width: 100%;
+  .wide {
+    margin: auto;
+    width: 100%;
+  }
 }
