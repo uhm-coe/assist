@@ -21,10 +21,15 @@ published: true
 
     Tip: The screenshots used in this tutorial will be illustrated with an iOS version on the left and an Android on the right.
 
+    ![]({{ site.baseurl }}/img/2016-04-07-join-bbc-ultra-session-with-mobile-app/image05.png)
+
 2. Install the Bb Student App.
 
     ![]({{ site.baseurl }}/img/2016-04-07-join-bbc-ultra-session-with-mobile-app/image02.png)
 
+    Tip: Although the Bb Student app is available to iPhone only, you should be able to use this app on the iPad. When you search for the Bb Student app in the App Store, you will need to change your search filter to **iPhone Only**.
+
+    ![]({{ site.baseurl }}/img/2016-04-07-join-bbc-ultra-session-with-mobile-app/image05.png)
 
 ##Join a Session##
 1. In your mobile device, open link provided by your instructor. Typically, your instructor will email the link or post it to the Laulima course site.
