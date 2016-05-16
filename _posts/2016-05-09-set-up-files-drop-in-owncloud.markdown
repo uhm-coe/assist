@@ -29,7 +29,7 @@ published: true
 
     ![]({{ site.pathname }}/img/2016-05-09-set-up-files-drop-in-owncloud/image02.png)
 
-    Tip: We recommend you Name the folder so it indicates that the folder is meant for anonymous uploads (example Anonymous File Drop, Anonymous Uploads, etc.)
+    Tip: We recommend you name the folder so it indicates that the folder is meant for anonymous uploads (example Anonymous File Drop, Anonymous Uploads, etc.)
 
 5. Click on your on your profile name and then click on **Personal**.
 
