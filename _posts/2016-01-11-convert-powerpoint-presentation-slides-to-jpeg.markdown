@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Convert PowerPoint Presentation Slides to JPEG Images and Upload to Blackboard Collaborate"
+title:  "Convert PowerPoint Presentation Slides to JPEG Images and Upload to Blackboard Collaborate Using PowerPoint 2011 For Mac"
 date:   2016-01-11 13:46:32
 readtime: 5
 category: How-to
@@ -10,7 +10,7 @@ tags:
 - Mac
 author: Frank Jumawan
 materials: .pptx format presentation slides, Microsoft PowerPoint, Blackboard Collaborate
-blurb: "How to convert a Powerpoint (.pptx) slideshow to image files (.jpeg) using PowerPoint and the upload presentation to Blackboard Collaborate. This tutorial will help Blackboard Collaborate moderators work around issues experienced when trying to upload pptx formatted presentation slides."
+blurb: "How to convert a Powerpoint (.pptx) slideshow to image files (.jpeg) using PowerPoint 2011 For Mac and upload converted presentation to Blackboard Collaborate. This tutorial will help Blackboard Collaborate moderators work around issues experienced when trying to upload pptx formatted presentation slides."
 published: true
 ---
 
