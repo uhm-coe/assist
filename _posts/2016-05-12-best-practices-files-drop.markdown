@@ -2,8 +2,8 @@
 layout: post
 title: "Best Practices on Files Drop in ownCloud"
 date: 2016-05-02 08:00:00
-Readtime: 2
-category: strategies
+readtime: 2
+category: Strategies
 tags:
 - ownCloud
 author: Frank Jumawan
