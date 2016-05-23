@@ -21,16 +21,16 @@ The Files Drop feature in ownCloud that allows anyone to upload files with the c
 To get started with Files Drop, you must [enable and setup the Files Drop feature in ownCloud](https://assist.coe.hawaii.edu/how-to/2016/05/08/set-up-files-drop-in-owncloud.html)
 
 ###Instructions to Users
-When sending out your Files Drop link for users to upload, we recommend providing the following information to prevent miscommunications from occurring.
+When sending out your Files Drop link for users to upload, we recommend providing the following information to prevent miscommunications from occurring:
 
-- File size limit (max 1 GB)
+####File size limit (max 1 GB)
 
-- A file naming convention
-    - For student assignment or assessment submission - LastName_FirstName_AssignmentName
-    - For application or form submission - LastName_FirstInitial_FormName
-    - For more information on file naming convention, see [Folder and File Name Convention - 10 Rules for Best Practice](http://www.exadox.com/en/articles/file-naming-convention-ten-rules-best-practice)
+####A file naming convention
+- For student assignment or assessment submission (LastName_FirstName_AssignmentName)
+- For application or form submission (LastName_FirstInitial_FormName)
+- For more information on file naming convention, see [Folder and File Name Convention - 10 Rules for Best Practice](http://www.exadox.com/en/articles/file-naming-convention-ten-rules-best-practice)
 
-- Acceptable file types (PDF, Excel, Word, PowerPoint)
+####Acceptable file types (PDF, Excel, Word, PowerPoint)
 
 Here is a [generic template](https://docs.google.com/document/d/1zuWZTbm8BAus1QrOBUnTROZ_elOQpsCGESkNJPybCas/edit) you could use and distribute to users.
 
