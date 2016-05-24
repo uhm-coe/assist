@@ -25,42 +25,46 @@ published: true
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image05.png)
 
-4. Select your image format. Your default image format is JPEG. You can optionally set your image format to PNG or GIF by clicking on the selection menu. These image file types are accepted by Blackboard Collaborate as well.
+4. Select **Desktop** as your file destination.
+
+    ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image12.png)
+
+5. Select your image format. Your default image format is JPEG. You can optionally set your image format to PNG or GIF by clicking on the selection menu. These image file types are accepted by Blackboard Collaborate as well.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image03.png)
 
-5. Click on **Save Every Slide**.
+6. Click on **Save Every Slide**.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image00.png)
 
 
-6. Enter 1024 in the *Height field*. The width value will automatically adjust.
+7. Enter 1024 in the *Height field*. The width value will automatically adjust.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image11.png)
 
-7. Click on **Save**. Each slide of the presentation will be saved as  a set of JPEG files in a folder.
+8. Click on **Save**. Each slide of the presentation will be saved as  a set of JPEG files in a folder.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image04.png)
 
-8. In Blackboard Collaborate, click on **Load Content**.
+9. In Blackboard Collaborate, click on **Load Content**.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image01.png)
 
-9. Locate and open the presentation slides folder on your desktop.
+10. Locate and open the presentation slides folder on your desktop.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image09.png)
 
-10. Select all of the slide images by clicking on the first slide and **hold shift + mouse click** on last slide. Then click **Open**.
+11. Select all of the slide images by clicking on the first slide and **hold shift + mouse click** on last slide. Then click **Open**.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image07.png)
 
-11. Click on **Import Images as Individual Pages**. Click on **Load**.
+12. Click on **Import Images as Individual Pages**. Click on **Load**.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image02.png)
 
-12. Verify that your presentation slides have uploaded by clicking on the top right menu and clicking on Show Page Explorer.
+13. Verify that your presentation slides have uploaded by clicking on the top right menu and clicking on Show Page Explorer.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image06.png)
-13. You will see your uploaded slides in the Page Explorer.
+14. You will see your uploaded slides in the Page Explorer.
 
     ![]({{ site.pathname }}/img/2016-05-17-convert-powerpoint16-presentation-slides-to-jpeg/image10.png)
