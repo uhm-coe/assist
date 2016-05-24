@@ -7,7 +7,7 @@ category: How-to
 tags:
 - Laulima
 - DCDC
-- BBC
+- Blackboard Collaborate
 author: Claire Chun, Frank Jumawan
 Materials: Blackboard Collaborate Ultra vOffice Request Form
 blurb: "How to sign up for a Blackboard Collaborate Ultra virtual office (vOffice)."
