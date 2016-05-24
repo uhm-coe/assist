@@ -6,7 +6,7 @@ readtime: 2
 category: How-to
 tags:
 - Laulima
-- BBC
+- Blackboard Collaborate
 - Tools
 author: Frank Jumawan
 materials: Link to Instructor’s virtual office, Bb Student App for Android and iPhone
