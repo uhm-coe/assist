@@ -6,7 +6,7 @@ category: Strategies
 tags:
 - ownCloud
 author: Frank Jumawan
-materials: list down, Materials needed, completed items needed, to complete this tutorial
+materials:
 blurb: "A guide to get you started with ownCloud and is intended for College (COE) faculty and staff."
 published: true
 ---
