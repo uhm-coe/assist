@@ -30,7 +30,8 @@ When giving out your Files Drop link for users to upload, we recommend providing
 - For application or form submissions: "LastName_FirstInitial_FormName"
 - For more information on file naming conventions, see [Folder and File Name Convention - 10 Rules for Best Practice](http://www.exadox.com/en/articles/file-naming-convention-ten-rules-best-practice)
 
-####Be aware of the acceptable file types (PDF, Excel, Word, PowerPoint)
+####Use common file types (PDF, Excel, Word, PowerPoint)
+While ownCloud Files Drop can be used to upload many file types, common file types (as above) are handled best by ownCloud.
 
 Here is a [generic template](https://docs.google.com/document/d/1zuWZTbm8BAus1QrOBUnTROZ_elOQpsCGESkNJPybCas/edit) you can use and distribute to users.
 
