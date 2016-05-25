@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Best Practices on Files Drop in ownCloud"
+title: "Best Practices for using Files Drop in ownCloud"
 date: 2016-05-02 08:00:00
 readtime: 2
 category: Strategies
@@ -21,18 +21,18 @@ The Files Drop feature in ownCloud that allows anyone to upload files with the c
 To get started with Files Drop, you must [enable and setup the Files Drop feature in ownCloud](https://assist.coe.hawaii.edu/how-to/2016/05/08/set-up-files-drop-in-owncloud.html)
 
 ###Instructions to Users
-When sending out your Files Drop link for users to upload, we recommend providing the following information to prevent miscommunications from occurring:
+When giving out your Files Drop link for users to upload, we recommend providing the following guideline information to avoid common issues:
 
-####File size limit (max 1 GB)
+####Be aware of the file size limit (max 1 GB)
 
-####A file naming convention
-- For student assignment or assessment submission (LastName_FirstName_AssignmentName)
-- For application or form submission (LastName_FirstInitial_FormName)
-- For more information on file naming convention, see [Folder and File Name Convention - 10 Rules for Best Practice](http://www.exadox.com/en/articles/file-naming-convention-ten-rules-best-practice)
+####Use a file naming convention (examples below)
+- For student assignment or assessment submissions: "LastName_FirstName_AssignmentName"
+- For application or form submissions: "LastName_FirstInitial_FormName"
+- For more information on file naming conventions, see [Folder and File Name Convention - 10 Rules for Best Practice](http://www.exadox.com/en/articles/file-naming-convention-ten-rules-best-practice)
 
-####Acceptable file types (PDF, Excel, Word, PowerPoint)
+####Be aware of the acceptable file types (PDF, Excel, Word, PowerPoint)
 
-Here is a [generic template](https://docs.google.com/document/d/1zuWZTbm8BAus1QrOBUnTROZ_elOQpsCGESkNJPybCas/edit) you could use and distribute to users.
+Here is a [generic template](https://docs.google.com/document/d/1zuWZTbm8BAus1QrOBUnTROZ_elOQpsCGESkNJPybCas/edit) you can use and distribute to users.
 
 ###Managing Incoming Files
-Please be aware that if you are expecting incoming files from hundreds of users, you may need to manage and organize the files. We highly recommend moving all incoming files at a periodic basis depending on the amount of files you are receiving (daily, weekly, or monthly, usually at the end of business day).
+Please be aware that if you are expecting incoming files from many users, you may need to manage the files you receive. We highly recommend sorting and/or removing older files on a periodic basis depending on the amount of files sent to you via Files Drop (daily, weekly, or monthly, usually at the end of business day).
