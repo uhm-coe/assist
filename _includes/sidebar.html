@@ -49,3 +49,14 @@
 
   </ul><!-- .sidebar-content -->
 </div><!-- .sidebar-container -->
+
+{% if page.category == 'Strategies' %}
+<div class="sidebar-container">
+  <ul class="sidebar-content">
+      <li class="sidebar-header">
+        <h3 class="side-title">Table of Contents</h3>
+      </li>
+        <div id="toc"></div>
+    </ul>
+</div>
+{% endif %}

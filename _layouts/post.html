@@ -18,6 +18,7 @@ layout: secondary-page
             {% if page.materials %}<p><b>Materials needed:</b> {{ page.materials }}</p>{% endif %}
             <span><a class="btn btn-info" id="bookmark-button" rel="sidebar" title="Add this article to your bookmarks.">Bookmark This Article</a></span>
             <span><a class="btn btn-info" id="print-button" title="Print this article.">Print This Article</a></span>
+
             <div class="social-icons">
                 <a href="https://twitter.com/share?text=A tutorial on Assist: {{ page.title }}&amp;url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><span>Twitter</span></a>
                 <a href="https://facebook.com/sharer.php?u={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span>Facebook</span></a>
@@ -30,7 +31,7 @@ layout: secondary-page
 				</div>
 			</div>
 			<hr />
-  			{{ content }}
+            {{ content }}
   	</div>
   	<div id="modals"></div>
   </div>

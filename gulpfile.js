@@ -33,10 +33,11 @@ gulp.task('scripts', function(){
 		'assets/js/bootstrap.min.js',
 		'assets/js/lunr.min.js',
 		'assets/js/set-query.js',
+        'assets/js/toc.js',
 		'assets/js/main.js',
 		'assets/js/modalizer.js',
 		'assets/js/search.js',
-		'assets/js/results.js'
+		'assets/js/results.js',
 		])
 		.pipe(concat('all.js'))
 		.pipe(rename({ suffix: '.min' }))
