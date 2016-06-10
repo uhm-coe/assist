@@ -13,7 +13,7 @@ materials: Blackboard Collaborate, Blackboard Collaborate Launcher
 blurb: "How to download and install Blackboard Collaborate Launcher on Windows."
 published: true
 ---
-1. Open Firefox and click on your instructor's virtual office (vOffice) or use this [test room](<http://tinyurl.com/clairesvoffice>). If you can successfully get into the BBC practice room, you already have the launcher and do not need to go through the following steps. If you do not have the launcher installed, when you click on a BCC virtual office link you will come to this page in Firefox.* Click Download.
+1. Open Firefox and click on your instructor's virtual office (vOffice) or use this [test room](<http://tinyurl.com/clairesvoffice>). If you can successfully get into the BBC practice room, you already have the launcher and do not need to go through the following steps. If you do not have the launcher installed, when you click on a BCC virtual office link you will come to this page below in Firefox. Click Download.
 
     ![]({{ site.baseurl }}/img/2016-06-09-bbc-win-launcher/image00.png)
 
