@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	/**
 	 * @name: formatPostContent()
 	 * @author: Myles Enriquez
@@ -189,4 +188,6 @@ $(document).ready(function(){
 			window.print();
 		}
 	});
+
+    $('#toc').toc();
 });
