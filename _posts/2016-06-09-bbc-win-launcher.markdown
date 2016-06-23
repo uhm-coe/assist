@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Installing Blackboard Collaborate Launcher for Windows"
+title:  "Install the Blackboard Collaborate Launcher for Windows"
 date:   2016-06-09 06:00:00
 readtime: 2
 category: How-to
@@ -33,6 +33,6 @@ published: true
 
 **That’s it!** The launcher is now installed and the process of entering a BbC virtual office will now begin.  You should not need to install the launcher again.
 
-The process of joining a session will happen EVERY time you join a BbC session. Installing the launcher was a one-time process.
+The process of joining a session will happen each time you join a BbC session, but installing the launcher is a one-time process.
 
 Refer to the instructions on joining a BbC session by [clicking here](https://assist.coe.hawaii.edu/how-to/2016/06/13/bbc-win-join.html).
