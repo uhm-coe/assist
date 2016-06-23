@@ -19,7 +19,7 @@ published: true
 
     Tip: If you know you have the launcher installed and are still prompted to download it (like the picture above), click on “Launch Blackboard Collaborate now” below the Download button
 
-2. After you click Download, Save the file.
+2. After you click **Download**, Save the file.
 
     ![]({{ site.baseurl }}/img/2016-03-09-bbc-mac-launcher/image01.png)
 
