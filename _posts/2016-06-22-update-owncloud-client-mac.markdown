@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Update Your ownCloud Client on Your Mac Computer"
+title: "Update the ownCloud Client on a Mac Computer"
 date: 2016-06-22 08:00:00
 readtime: 4
 category: How-to
@@ -8,7 +8,7 @@ tags:
 - ownCloud
 author: Frank Jumawan
 materials: ownCloud Client older than version 2.1.1
-blurb: "How to update your ownCloud Client to the latest version if you have verified you have an old version of the ownCloud Client"
+blurb: "How to update the ownCloud Client to the latest version if you have verified you have an old version of the ownCloud Client"
 published: true
 ---
 
