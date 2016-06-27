@@ -15,7 +15,7 @@ blurb: "How to join a Blackboard Collaborate session on Windows."
 published: true
 ---
 #### Introduction
-Below are the steps for signing into a Blackboard Collaborate session. You’ll need to have the Blackboard Collaborate Launcher downloaded first in order to open the meeting file. If you have not already downloaded it, please refer to the tutorial titled, "Installing Blackboard Collaborate Launcher for Windows" by [clicking here](<https://assist.coe.hawaii.edu/how-to/2016/06/09/bbc-win-launcher.html>).
+Below are the steps for signing into a Blackboard Collaborate session. You’ll need to have the Blackboard Collaborate Launcher downloaded first in order to open the meeting file. If you have not already downloaded it, please refer to the tutorial titled, "Installing Blackboard Collaborate Launcher for Windows" by [clicking here](<https://assist.coe.hawaii.edu/how-to/2016/06/08/bbc-win-launcher.html>).
 
 1. Use your instructorʻs link or this [test room](<http://tinyurl.com/uh-bbc>) in Firefox, commonly referred to as Blackboard Collaborate (**BbC**) virtual office (**vOffice**). If you are using a headset, plug it in before launching the session. Enter your name as you wish it to appear in the session (we suggest using both your first and last name). Click on **Log In**.
 
@@ -69,4 +69,4 @@ Below are the steps for signing into a Blackboard Collaborate session. You’ll 
 
     ![]({{ site.baseurl }}/img/2016-06-13-bbc-win-join/image07.png)
 
-A friendly reminder that each faculty who uses Blackboard Collaborate has their own vOffice link. 
+A friendly reminder that each faculty who uses Blackboard Collaborate has their own vOffice link.
