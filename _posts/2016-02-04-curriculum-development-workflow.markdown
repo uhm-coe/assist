@@ -17,7 +17,7 @@ published: true
 ##Introduction
 This strategy document explains an collaborative approach  for developing instructional content. The process includes three stages and utilizes Google Sheets, Google Docs, and Wordpress.
 
-![]({{ site.pathname }}/img/outcomes.png)
+![]({{ site.pathname }}/img/2016-02-04-curriculum-workflow/outcomes.png)
 
 ###### Objective mapping of CHL-SI courses [http://go.hawaii.edu/uM](http://go.hawaii.edu/uM)
 
@@ -26,13 +26,13 @@ Each course has a unique layer of learning objectives that work in concert to su
 
 The course-level objectives are kept in a blueprint that visually calls out the objectives, content/activities, and assessments:
 
-![]({{ site.pathname }}/img/course-blueprint.png)
+![]({{ site.pathname }}/img/2016-02-04-curriculum-workflow/course-blueprint.png)
 
 ###### An example course blueprint
 
 Beginning with the assessments, we map out the type of test objects or activities that would verify that the student has gained the desired knowledge, skills, and qualities. How do we know the student has learned what was intended? What level of complexity or cognitive skill is needed to perform the task?
 
-![]({{ site.pathname }}/img/activities.png)
+![]({{ site.pathname }}/img/2016-02-04-curriculum-workflow/activities.png)
 
 ###### Common activities included in content
 
@@ -42,19 +42,19 @@ Also included in the above sheet are activities embedded in the content, prepari
 
 From there, the course structure is transferred to a content development template in Google docs.
 
-![]({{ site.pathname }}/img/google-doc.png)
+![]({{ site.pathname }}/img/2016-02-04-curriculum-workflow/google-doc.png)
 
 ###### A Google doc template being fleshed out
 
-The rough ideas in the blueprint are fleshed out and recieve several periods of review. As it is finalized at the 25% and 100% milestones, content is migrated into the Wordpress course site.
+The rough ideas in the blueprint are fleshed out and receive several periods of review. As it is finalized at the 25% and 100% milestones, content is migrated into the Wordpress course site.
 
 ### Finishing and publishing
 
-![]({{ site.pathname }}/img/wp-backend.png)
+![]({{ site.pathname }}/img/2016-02-04-curriculum-workflow/wp-backend.png)
 
 ###### The WP visual editor of an example course page
 
-![]({{ site.pathname }}/img/chl-course.png)
+![]({{ site.pathname }}/img/2016-02-04-curriculum-workflow/chl-course.png)
 
 ###### The live, polished version of a WP course site
 
