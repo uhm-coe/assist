@@ -66,7 +66,7 @@ You will now be able to copy all content from the dev site to your live course s
 
     ![]({{ site.baseurl }}/img/2016-03-15-copy-content-from-laulima-dev-to-live-course/image05.png)
 
-3. Locate the dev site you will be copying the course from and click on its corresponding radio button. This will be the course you viewed earlier in this tutorial.
+3. Locate the site you will be copying the course from and click on its corresponding radio button. This will be the course you viewed earlier in this tutorial.
 
     ![]({{ site.baseurl }}/img/2016-03-15-copy-content-from-laulima-dev-to-live-course/image09.png)
 
