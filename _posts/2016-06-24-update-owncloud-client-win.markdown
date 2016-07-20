@@ -28,7 +28,7 @@ published: true
 
     ![]({{ site.baseurl }}/img/2016-06-24-update-owncloud-client-win/image01.png)
 
-5. **Thatʻs it!** To see which version you are on, right click on the ownCloud icon (see Step 1 for location), click on **Settings** and choose the **General** tab to view the **Updates** section located towards the bottom of the panel. If you are on an older version of ownCloud, choose **Restart & Update**, then follow Step 4.
+5. **Thatʻs it!** To see which version you are on, right click on the ownCloud icon (see Step 1), click on **Settings** and choose the **General** tab to view the **Updates** section located towards the bottom of the panel. If you are on an older version of ownCloud, choose **Restart & Update**, then follow Step 4.
 
     ![]({{ site.baseurl }}/img/2016-06-24-update-owncloud-client-win/image04.png)
 
