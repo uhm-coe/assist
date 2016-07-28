@@ -3,7 +3,7 @@ layout: workshop
 title:  "Strategies for Synchronous Class Meetings"
 date:   2016-7-27 13:46:32
 readtime: 2
-category: Workshop
+category: Workshops
 tags:
 - Online teaching
 - Synchronous
