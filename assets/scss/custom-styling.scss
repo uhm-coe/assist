@@ -505,3 +505,10 @@ ul {
     padding-left: 0px;
 }
 
+#toc.rotate {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
