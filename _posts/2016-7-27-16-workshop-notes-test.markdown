@@ -12,7 +12,7 @@ author: Billy Meinke
 materials: Some things you should bring with you
 blurb: "This workshop provides examples of activities that can encourage participation and engagement with learners in distance courses."
 digilitfocus: Communications and Collaboration (JISC)
-published: true
+published: false
 ---
 
 ### Introduction
