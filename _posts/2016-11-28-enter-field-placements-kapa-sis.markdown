@@ -37,6 +37,7 @@ On this screen, you should see a *list of only your teacher candidates*.
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image02.png)
 
 To begin entering/editing placement data for a teacher candidate, click on the number shown under the Placements column, which will show:
+
 - 0 if no placement data has been entered and saved yet  
 - 1, 2, 3, etc. representing all saved placements to date for this student this semester
 
@@ -51,6 +52,7 @@ This screen shows everything in SIS concerning the student. Move down to the exp
 
 ### Students Placement (Overview)
 This screen is where you will be working to input all placement data for the selected student. Below is a list of all fields where you will need to input data or otherwise check for accuracy:
+
 - Start Term, End Term
 - Type
 - Placement Site
