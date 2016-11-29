@@ -3,7 +3,7 @@ layout: post
 title: "Enter Field Placements Data for KAPA SIS"
 date: 2016-11-28 08:00:00
 readtime: 20
-category: Strategy
+category: How-to
 tags:
 - SIS
 - ITE
@@ -17,12 +17,12 @@ This tutorial assumes you have access to SIS. If you do not have access, please 
 
 The following is a visual tutorial for the new KAPA SIS system. Please know that this system is new and is still being continually developed, so there may be bugs and other such issues present.
 
-**Note:** Some buttons and selections seen in this tutorial may or may not be present in your view of the screen.
+**TiP:** Some buttons and selections seen in this tutorial may or may not be present in your view of the screen.
 
 You may find ‘Tip’ throughout this tutorial noting some things you may have to work around. Thank you for your patience. We will update this tutorial whenever there are new changes/updates to the interface.
 
 ### SIS Login Page
-Login into SIS with your UH username and password at the following web address (please bookmark for future reference) [https://sis.coe.hawaii.edu/kapa/user_session/new](https://sis.coe.hawaii.edu/kapa/user_session/new).
+Login into SIS with your UH username and password at [the SIS Login Page](https://sis.coe.hawaii.edu/kapa/user_session/new). Please bookmark for future reference.
 
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image03.png)
 
@@ -40,14 +40,14 @@ To begin entering/editing placement data for a teacher candidate, click on the n
 - 0 if no placement data has been entered and saved yet  
 - 1, 2, 3, etc. representing all saved placements to date for this student this semester
 
-**Note:** Please be aware that a new tab will open when you click on the number.
+**Tip:** Please be aware that a new tab will open when you click on the number.
 
 ### Student’s Overview
 This screen shows everything in SIS concerning the student. Move down to the expanded *Placements sub-section*, and click the Show button of the top-most record, which is the placement of the most current semester.
 
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image08.png)
 
-**Note:** If entering an additional placement for your student (i.e., your student’s 2nd half of the semester placement), see *Additional placements*.
+**Tip:** If entering an additional placement for your student (i.e., your student’s 2nd half of the semester placement), see [Additional Placements](#additional-placements).
 
 ### Students Placement (Overview)
 This screen is where you will be working to input all placement data for the selected student. Below is a list of all fields where you will need to input data or otherwise check for accuracy:
@@ -90,26 +90,30 @@ Select *all grade* levels that your student is observing in this placement. Chec
 
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image09.png)
 
-**Note:** the grade levels are currently not in order and there is no Save or OK button; simply click out of the selection window to close the menu and save your selections.
+**Tip:** the grade levels are currently not in order and there is no Save or OK button; simply click out of the selection window to close the menu and save your selections.
 ### Content Area
 Please select the content area of the mentor teacher.
+
 #### EEP
 - If a special education placement, please ensure that ‘SPED’ is selected.
 - If an early childhood placement, please ensure that ‘ECE’ is selected.
 - Selecting ‘GEN’ or ‘ELEM’ for all other placements is sufficient.
 
-#### MEdT: Any status that is available for selection and applicable is sufficient
-#### SEC: Any status that is available for selection and applicable is sufficient, otherwise, selecting ‘SEC’ is also sufficient
+#### MEdT
+- Any status that is available for selection and applicable is sufficient
+
+#### SEC
+- Any status that is available for selection and applicable is sufficient, otherwise, selecting ‘SEC’ is also sufficient
 
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image04.png)
 
 ### Primary Supervisor, Secondary Supervisor
-If there is a faculty member other than yourself or your co-coordinator is who is supervising your student in the field, please input them into these fields. If your supervisor cannot be selected from the menus, please notify Adam at [itega@hawaii.edu](itega@hawaii.edu).
+If there is a faculty member other than yourself or your co-coordinator who is supervising your student in the field, please input them into these fields. If your supervisor cannot be selected from the menus, please notify Adam at [itega@hawaii.edu](itega@hawaii.edu).
 
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image00.png)
 
 ### Note
-Please enter any notes that you deem important for us to know regarding this placement in this field. If it is something you want us to address right away, please also notify Adam at [itega@hawaii.edu](itega@hawaii.edu).
+Please enter any notes that you deem important for us to know regarding this placement. If it is something you want us to address right away, please also notify Adam at [itega@hawaii.edu](itega@hawaii.edu).
 
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image10.png)
 
@@ -126,7 +130,7 @@ Click the left arrow below the student’s name on the placement screen to retur
 ### Additional Placements
 This step assumes you’ve completed the first placement for a student and have gone through all the prerequisite steps.
 
-Click the *New Placement* button in the expanded *Placements sub-section* of the Student’s Overview (see *Student's Overview* if you need a refresher).
+Click the *New Placement* button in the expanded *Placements sub-section* of the Student’s Overview (see [Student's Overview](#students-overview) if you need a refresher).
 
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image08.png)
 
