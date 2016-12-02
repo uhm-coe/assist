@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Enter Field Placements Data for KAPA SIS"
-date: 2016-11-28 08:00:00
+title: "Enter Field Placements Data for SIS"
+date: 2016-12-01 08:00:00
 readtime: 20
 category: How-to
 tags:
@@ -10,12 +10,12 @@ tags:
 - placements
 author: Adam Tanare Jr.
 materials: access to SIS, permissions to access SIS Placements module
-blurb: "How to enter placements into the KAPA SIS."
+blurb: "How to enter placements into the SIS."
 published: true
 ---
 This tutorial assumes you have access to SIS. If you do not have access, please contact Adam at [itega@hawaii.edu](itega@hawaii.edu).
 
-The following is a visual tutorial for the new KAPA SIS system. Please know that this system is new and is still being continually developed, so there may be bugs and other such issues present.
+The following is a visual tutorial for the new SIS system. Please know that this system is new and is still being continually developed, so there may be bugs and other such issues present.
 
 **TiP:** Some buttons and selections seen in this tutorial may or may not be present in your view of the screen.
 
