@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enter Field Placements Data for SIS"
+title: "Enter Field Placements Data for The New SIS"
 date: 2016-12-01 08:00:00
 readtime: 20
 category: How-to
@@ -10,45 +10,67 @@ tags:
 - placements
 author: Adam Tanare Jr.
 materials: access to SIS, permissions to access SIS Placements module
-blurb: "How to enter placements into the SIS."
+blurb: "How to enter placements into the new SIS."
 published: true
 ---
 This tutorial assumes you have access to SIS. If you do not have access, please contact Adam at [itega@hawaii.edu](itega@hawaii.edu).
 
 The following is a visual tutorial for the new SIS system. Please know that this system is new and is still being continually developed, so there may be bugs and other such issues present.
 
-**TiP:** Some buttons and selections seen in this tutorial may or may not be present in your view of the screen.
+**Note:** Some buttons and selections seen in this tutorial may or may not be present in your view of the screen.
 
-You may find ‘Tip’ throughout this tutorial noting some things you may have to work around. Thank you for your patience. We will update this tutorial whenever there are new changes/updates to the interface.
+You may find ‘Note’ throughout this tutorial noting some things you may have to work around. Thank you for your patience. We will update this tutorial whenever there are new changes/updates to the interface.
 
 ### SIS Login Page
 Login into SIS with your UH username and password at [the SIS Login Page](https://sis.coe.hawaii.edu/kapa/user_session/new). Please bookmark for future reference.
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image03.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image00.png)
 
 ### SIS Landing Page
 After successful login, you will see this screen. Click **Program** in upper menu, then select **Enrollments** from its sub menu.
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image11.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image14.png)
 
 ### Enrollments Landing Page
-On this screen, you should see a *list of only your teacher candidates*.
+**Note**: If you are entering data for a semester OTHER than the current one, please make sure to change the semester being viewed by following the instructions below:
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image02.png)
+Click the Search Button
+
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image15.png)
+
+The Search window appears, which can filter for different criteria. Make sure that **Term** reflects the semester you want to work with, then hit the blue OK button.
+
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image05.png)
+
+On this Enrollments Landing Page, you should see a list of only your teacher candidates. Again, make sure it reflects the semester you are intending to make changes for.
+
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image13.png)
 
 To begin entering/editing placement data for a teacher candidate, click on the number shown under the Placements column, which will show:
 
-- 0 if no placement data has been entered and saved yet  
+- 0 if no placement data has been entered and saved yet
 - 1, 2, 3, etc. representing all saved placements to date for this student this semester
 
-**Tip:** Please be aware that a new tab will open when you click on the number.
+**Note**: Please be aware that a new tab will open when you click on the number.
+
 
 ### Student’s Overview
-This screen shows everything in SIS concerning the student. Move down to the expanded *Placements sub-section*, and click the Show button of the top-most record, which is the placement of the most current semester.
+This screen shows everything in SIS concerning the student. Move down to the expanded *Placements sub-section*.
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image08.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image04.png)
 
-**Tip:** If entering an additional placement for your student (i.e., your student’s 2nd half of the semester placement), see [Additional Placements](#additional-placements).
+By default, you must create the initial placement for each of your candidates; click the *New* Placement button at the top right of the sub-section to do so.
+
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image16.png)
+
+*Ensure that the Start Term and End Term match the current semester*. Then click the blue Save button. You will be taken to the Student’s Placement (Overview) screen for this new placement.
+
+NOTES:
+
+- If you are going back to edit a placement, click the Show button record you want to edit.
+- Return to the Student’s Overview screen when you need to make additional placements for a candidate and repeat this step.
+- If a student has the same exact school and mentor from the previous semester, click Show next to that record, and update the End Term (see next step).
+
 
 ### Students Placement (Overview)
 This screen is where you will be working to input all placement data for the selected student. Below is a list of all fields where you will need to input data or otherwise check for accuracy:
@@ -62,10 +84,11 @@ This screen is where you will be working to input all placement data for the sel
 - Primary Supervisor, Secondary Supervisor
 - Note
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image12.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image06.png)
 
 ### Start Term, End Term
-Ensure that the start and end term selections are for the current semester.
+Ensure that the start and end term selections are for the current semester.s
+
 
 ### Type
 Defaults to ‘Mentor’. If your student is an emergency hire, select ‘OJT’.
@@ -73,26 +96,26 @@ Defaults to ‘Mentor’. If your student is an emergency hire, select ‘OJT’
 ### Placement Site
 Select this placement’s school.
 
-Note: Type part or all of your school’s name into the search field for quick
+**Note**: Type part or all of your school’s name into the search field for quick
 selection. If your school cannot be found, please notify Adam at [itega@hawaii.edu](itega@hawaii.edu.).
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image14.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image07.png)
 
 ### Mentor
 *Select* this placement’s mentor teacher. **Mandatory:** check if the mentor is already in the SIS database by typing their last name into the *search field*.
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image01.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image09.png)
 
 If the mentor cannot be found, enter their first name, last name, and email address into the fields below the *search field*. Click the blue OK button to save the mentor selection.
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image05.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image02.png)
 
 ### Grades
 Select *all grade* levels that your student is observing in this placement. Check the box next to each grade level.
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image09.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image12.png)
 
-**Tip:** the grade levels are currently not in order and there is no Save or OK button; simply click out of the selection window to close the menu and save your selections.
+**Note:** the grade levels are currently not in order and there is no Save or OK button; simply click out of the selection window to close the menu and save your selections.
 ### Content Area
 Please select the content area of the mentor teacher.
 
@@ -107,36 +130,24 @@ Please select the content area of the mentor teacher.
 #### SEC
 - Any status that is available for selection and applicable is sufficient, otherwise, selecting ‘SEC’ is also sufficient
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image04.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image01.png)
 
 ### Primary Supervisor, Secondary Supervisor
 If there is a faculty member other than yourself or your co-coordinator who is supervising your student in the field, please input them into these fields. If your supervisor cannot be selected from the menus, please notify Adam at [itega@hawaii.edu](itega@hawaii.edu).
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image00.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image07.png)
 
 ### Note
 Please enter any notes that you deem important for us to know regarding this placement. If it is something you want us to address right away, please also notify Adam at [itega@hawaii.edu](itega@hawaii.edu).
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image10.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image03.png)
 
 ### Saving
 Click the blue Save button at the bottom of the screen to save the placement. You should see a notification appear toward the top of this screen.
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image06.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image10.png)
 
 ### Returning to Your List
 Click the left arrow below the student’s name on the placement screen to return to your Enrollments screen that shows your list of students.
 
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image07.png)
-
-### Additional Placements
-This step assumes you’ve completed the first placement for a student and have gone through all the prerequisite steps.
-
-Click the *New Placement* button in the expanded *Placements sub-section* of the Student’s Overview (see [Student's Overview](#students-overview) if you need a refresher).
-
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image08.png)
-
-
-*Change the Start Term and End Term to match the current semester.* Then click the blue Save button. You will be taken to the Placement overview screen for this new placement (refer to Step 5).
-
-![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image13.png)
+![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image11.png)
