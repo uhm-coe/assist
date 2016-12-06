@@ -63,13 +63,13 @@ By default, you must create the initial placement for each of your candidates; c
 
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image16.png)
 
-*Ensure that the Start Term and End Term match the current semester*. Then click the blue Save button. You will be taken to the Student’s Placement (Overview) screen for this new placement.
+*Ensure that the start and end term selections are for the semester you are currently working on*. Then click the blue Save button. You will be taken to the Student’s Placement (Overview) screen for this new placement.
 
 NOTES:
 
 - If you are going back to edit a placement, click the Show button record you want to edit.
 - Return to the Student’s Overview screen when you need to make additional placements for a candidate and repeat this step.
-- If a student has the same exact school and mentor from the previous semester, click Show next to that record, and update the End Term (see next step).
+
 
 
 ### Students Placement (Overview)
@@ -87,11 +87,11 @@ This screen is where you will be working to input all placement data for the sel
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image06.png)
 
 ### Start Term, End Term
-Ensure that the start and end term selections are for the current semester.s
+Ensure that the start and end term selections are for the semester you are currently working on.
 
 
 ### Type
-Defaults to ‘Mentor’. If your student is an emergency hire, select ‘OJT’.
+Defaults to ‘Mentor’. If your student is an emergency hire, select ‘OJT’. If your student fits in another criteria (ie. an emergency hire with a supervising teacher), please let Adam know.
 
 ### Placement Site
 Select this placement’s school.
@@ -115,7 +115,7 @@ Select *all grade* levels that your student is observing in this placement. Chec
 
 ![]({{ site.pathname }}/img/2016-11-28-enter-field-placements-kapa-sis/image12.png)
 
-**Note:** the grade levels are currently not in order and there is no Save or OK button; simply click out of the selection window to close the menu and save your selections.
+**Note:** There is no Save or OK button; simply click out of the selection window to close the menu to save your selections.
 ### Content Area
 Please select the content area of the mentor teacher.
 
