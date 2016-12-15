@@ -127,11 +127,11 @@ ul {
 	.sidebar-header {
 		background-color: #455a64;
 		@include Box-shadow(0px 8px 15px #eeeeee);
-		h3.side-title {
+		h1.side-title {
 			padding-left: 20px;
 			padding-top: 15px;
-			font-size: 20px;
-			font-weight: 700;
+			font-size: 19px;
+			font-weight: 500;
 			color: $white;
 		}
 	}
@@ -245,6 +245,12 @@ ul {
 	}
 	.troubleshooting {
 		background-color:  $troubleshooting-color;
+		a {
+			color: $white;
+		}
+	}
+	.workshops {
+		background-color:  $workshop-color;
 		a {
 			color: $white;
 		}

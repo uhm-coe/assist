@@ -1,0 +1,43 @@
+---
+layout: secondary-page
+---
+<div class="container tutorial-post post-container" id="home">
+	<div class="row">
+  	<div class="col-xs-12 col-md-9 tutorial-content container" id="postcontent">
+  		<div>
+	  		<div id="template">
+					<header class="post-header">
+						<div class="row date">
+							<span class="col-xs-12 col-md-6 text-left">POSTED: {{ page.date | date: '%B %d, %Y' | upcase }}<br /> {% if page.readtime %}{{ page.readtime}} MINUTE READ{% endif %}</span>
+							<span class="col-xs-12 col-md-6 text-right">AUTHOR: {{ page.author  | upcase }}</span>
+						</div>
+				    <h1 class="tutorial-title">{{ page.title }}</h1>
+				    <h3 class="tutorial-blurb">{{ page.blurb }}</h3>
+				  	{% if page.category %}<p><b>In Category:</b> {{ page.category }}</p>{% endif %}
+				    {% if page.tags %}<p><b>Tagged with:</b> {% for tag in page.tags %}{% if forloop.last == true %}{{ tag }}{% else %}{{ tag }}, {% endif %}{% endfor %}</p>{% endif %}
+            {% if page.materials %}<p><b>Materials needed:</b> {{ page.materials }}</p>{% endif %}
+						{% if page.digilitfocus %}<p><b>Digital Literacy Focus:</b> {{ page.digilitfocus }}</p>{% endif %}
+            <span><a class="btn btn-info" id="bookmark-button" rel="sidebar" title="Add this article to your bookmarks.">Bookmark This Article</a></span>
+            <span><a class="btn btn-info" id="print-button" title="Print this article.">Print This Article</a></span>
+
+            <div class="social-icons">
+                <a href="https://twitter.com/share?text=A tutorial on Assist: {{ page.title }}&amp;url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><span>Twitter</span></a>
+                <a href="https://facebook.com/sharer.php?u={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span>Facebook</span></a>
+                <a href="https://plus.google.com/share?url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span>Google</span></a>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Linkedin"><span>Linkedin</span></a>
+                <a href="http://www.tumblr.com/share/link?url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Tumblr"><span>Tumblr</span></a>
+                <a href="http://pinterest.com/pin/create/button/?url={{ site.hostname }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Pinterest"><span>Pinterest</span></a>
+            </div>
+		  		</header>
+				</div>
+			</div>
+			<hr />
+            {{ content }}
+  	</div>
+  	<div id="modals"></div>
+  </div>
+  <div>
+    <a class="btn btn-primary" href="https://github.com/uhm-coe/assist/edit/master/{{ page.path }}">Help improve this article @ Github</a>
+  </div>
+</div>
+{% include disqus.html %}
